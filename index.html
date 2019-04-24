@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creativia</title>
+    <link rel="stylesheet" href="app/css/main.css">
+    <link rel="stylesheet" href="app/css/vendors/bootstrap.css">
+    <link rel="stylesheet" href="app/css/vendors/font-awesome.css">
+
+</head>
+<body>
+<header class="">
+    <div class="header-row">
+        <div class="container d-flex align-items-center">
+<!--            <div class="col-lg-3">-->
+<!--                   <div class="octagon" id="octagon">-->
+<!--                       <svg-->
+<!--                               xmlns="http://www.w3.org/2000/svg"-->
+<!--                               xmlns:xlink="http://www.w3.org/1999/xlink"-->
+<!--                               width="NaN%" height="NaN%">-->
+<!--                           <path fill-rule="evenodd"  stroke-width="2px" stroke="rgb(255, 0, 54)" fill="rgb(19, 19, 19)"-->
+<!--                                 d="M256.005,5.730 L256.005,53.272 L191.269,117.999 L69.728,117.999 L4.995,53.272 L4.995,5.730 "/>-->
+<!--                           <image  x="71px" y="48px" width="120px" height="23px"  xlink:href="data:img/png;base64,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" />-->
+<!--                       </svg>-->
+<!--                       &lt;!&ndash;<a href="#">Creativia</a>&ndash;&gt;-->
+<!--                   </div>-->
+<!--            </div>-->
+<!--            <div class="col-lg-9">-->
+<!--                <div class="nav-wrapper">-->
+<!--                    <ul class="nav">-->
+<!--                        <li class="nav-item"><a href="#">home</a></li>-->
+<!--                        <li class="nav-item"><a href="#">about us</a></li>-->
+<!--                        <li class="nav-item"><a href="#">portfolio</a></li>-->
+<!--                        <li class="nav-item"><a href="#">clients</a></li>-->
+<!--                        <li class="nav-item"><a href="#">team</a></li>-->
+<!--                        <li class="nav-item"><a href="#">services</a></li>-->
+<!--                        <li class="nav-item"><a href="#">blog</a></li>-->
+<!--                        <li class="nav-item"><a href="#">contact</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="col-lg-5">
+                    <a class="navbar-brand" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                             width="NaN%" height="NaN%">
+                            <path fill-rule="evenodd"  stroke-width="2px" stroke="rgb(255, 0, 54)" fill="rgb(19, 19, 19)"
+                                  d="M256.005,5.730 L256.005,53.272 L191.269,117.999 L69.728,117.999 L4.995,53.272 L4.995,5.730 "/>
+                            <image  x="71px" y="48px" width="120px" height="23px"  xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler col-lg-5" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-lg-7" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" >contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<!--        <div class="slide-item">-->
+<!--            <img src="app/img/header-bg.png" alt="">-->
+<!--        </div>-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="app/img/header-bg.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>why <span class="red-text">creativia?</span></h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo.
+                                Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus
+                                odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat.
+                                Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, 
+                            </p>
+                            <div class="btn-group">
+                                <a href="#" class="slider-btn">features</a>
+                                <a href="#" class="slider-btn">free psd</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="app/img/header-bg.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>why <span class="red-text">creativia?</span></h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo.
+                                Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus
+                                odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat.
+                                Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, </p>
+                            <div class="btn-group">
+                                <a href="#" class="slider-btn">features</a>
+                                <a href="#" class="slider-btn">free psd</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="app/img/header-bg.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>why <span class="red-text">creativia?</span></h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo.
+                                Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus
+                                odio Fusce sed enim erat. Mauris dictum lorem eu tortor porta placerat.
+                                Suspendisse ac vestibulum eros. Nulla mi ipsum, consequat commodo condimentum vitae, </p>
+                            <div class="btn-group">
+                                <a href="#" class="slider-btn">features</a>
+                                <a href="#" class="slider-btn">free psd</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+</header>
+<section class="about">
+    <div class="row">
+        <div class="container">
+            <div class="section-header col-lg-12">
+                <h2>about <span class="red-text">creativia</span></h2>
+                <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="red-text">Accusantium aperiam</span> cum error facilis illo iure, minima modi perspiciatis provident.</p>
+            </div>
+            <div class="col-lg-6 hexagon-wrapper">
+                <div class="col-lg-12 d-flex">
+                    <div class="box hexagon">
+                        <div class="box-inner hexagon-inner"></div>
+                    </div>
+                    <div class="box-left position-absolute">
+                        <div class="box-inner hexagon"></div>
+                    </div>
+                    <div class="box-right position-absolute">
+                        <div class="box-inner hexagon"></div>
+                    </div>
+<!--                    <div class="hexagon">-->
+<!--                        <div class="hexagon-first">-->
+<!--                            <div class="hexagon-second">-->
+<!--                                <img src="app/img/about-2.png" alt="" width="" height="" />-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="hexagon">-->
+<!--                        <div class="hexagon-first">-->
+<!--                            <div class="hexagon-second">-->
+<!--                                <img src="app/img/about-3.png" alt="" width="" height="" />-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio enim et illo labore maxime provident quibusdam sunt voluptates voluptatum. Adipisci, aut culpa, dolor dolore excepturi magni modi molestias, natus possimus praesentium quia sequi similique! Assumenda neque nostrum nulla reiciendis!</p>
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Collapsible Group Item #2
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+<script src="app/js/vendors/bootstrap.js"></script>
+<script src="app/js/main.js"></script>
+
+</body>
+</html>

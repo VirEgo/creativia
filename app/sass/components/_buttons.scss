@@ -1,0 +1,19 @@
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.slider-btn {
+  padding: 17px 35px;
+  display: block;
+  text-transform: uppercase;
+  background-color: #131313;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+  &:hover {
+    background-color: #ff0036;
+    color: #fff;
+    text-decoration: none;
+  }
+}

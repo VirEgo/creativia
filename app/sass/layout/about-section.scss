@@ -1,0 +1,79 @@
+
+//.hexagon, .hexagon div {
+//  margin: 0 auto;
+//  transform-origin: 50% 50%;
+//  overflow: hidden;
+//  width: 300px;
+//  height: 300px;
+//}
+//.hexagon {
+//  width: 325px;
+//  height: 230px;
+//}
+//.hexagon div {
+//  width: 100%;
+//  height: 100%;
+//}
+//.hexagon {
+//  transform: rotate(120deg);
+//}
+//.hexagon-first {
+//  transform: rotate(-60deg);
+//}
+.box {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background: #fff;
+}
+.box-left,
+.box-right{
+  width: 270px;
+  height: 270px;
+  margin: auto;
+  position: absolute;
+  top: 1rem;
+  .box-inner {
+    width: 260px;
+    height: 260px;
+  }
+}
+.box-inner {
+  width: 290px;
+  height: 290px;
+  background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
+  background-size: cover;
+  background-position: 0 0;
+  margin: auto;
+  top: 6px;
+  position: relative;
+}
+
+.hexagon {
+  //transform: rotate(-60deg);
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.hexagon-inner {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.hexagon-wrapper {
+  .box{
+    z-index: 1;
+    margin: auto;
+  }
+  .box-left{
+    position: absolute;
+    left: -1rem;
+  }
+  .box-right{
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+
+

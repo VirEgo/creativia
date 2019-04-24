@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'raleway_blackregular';
+    src: url('../../fonts/Raleway/raleway-black-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../../fonts/Raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway_extraboldregular';
+    src: url('../../fonts/Raleway/raleway-extrabold-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway_extralightregular';
+    src: url('../../fonts/Raleway/raleway-extralight-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway_lightregular';
+    src: url('../../fonts/Raleway/raleway-light-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway_mediumregular';
+    src: url('../../fonts/Raleway/raleway-medium-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../../fonts/Raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'raleway_thinregular';
+    src: url('../../fonts/Raleway/raleway-thin-webfont.woff2') format('woff2'),
+         url('../../fonts/Raleway/raleway-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

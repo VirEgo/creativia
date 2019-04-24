@@ -1,0 +1,38 @@
+@import url(../css/base/fonts.css);
+.header-row {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 1; }
+
+.nav-item {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 0px 15px;
+  margin: 30px 0; }
+  .nav-item a {
+    color: #a4a4a4;
+    text-decoration: none; }
+    .nav-item a:hover {
+      color: #fff; }
+
+.octagon {
+  position: absolute;
+  top: -2.8rem; }
+
+.slider-wrapper img {
+  width: 100%;
+  position: absolute;
+  top: 0; }
+
+* {
+  font-family: "ralewayregular", sans-serif; }
+
+ul li {
+  list-style: none; }
+  ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1rem; }
+
+/*# sourceMappingURL=main.css.map */
