@@ -128,6 +128,40 @@
   position: absolute;
   right: 1rem; }
 
+.btn-link {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px !important; }
+
+.accordion-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid #ff0036;
+  display: block;
+  margin: 0 2rem 0 0; }
+  .accordion-icon svg {
+    width: 15px;
+    height: 15px; }
+    .accordion-icon svg path {
+      fill: #ff0036; }
+
+.divider {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%; }
+  .divider:before, .divider:after {
+    content: '';
+    width: 50%;
+    display: block;
+    height: 1px;
+    background-color: #262626;
+    margin: 0 auto; }
+
 .btn-group {
   display: flex;
   justify-content: space-between;

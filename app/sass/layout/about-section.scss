@@ -75,5 +75,46 @@
   }
 }
 
+.btn-link {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px!important;
+}
+.accordion-icon {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid $red-color;
+  display: block;
+  margin: 0 2rem 0 0;
 
+  svg {
+    width: 15px;
+    height: 15px;
+    path {
+      fill: $red-color;
+    }
+  }
+}
+
+.divider {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+  &:before,
+  &:after {
+    content: '';
+    width: 50%;
+    display: block;
+    height: 1px;
+    background-color: #262626;
+    margin: 0 auto;
+  }
+  :after {}
+}
 
