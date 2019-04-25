@@ -148,19 +148,162 @@
     .accordion-icon svg path {
       fill: #ff0036; }
 
-.divider {
+.about .divider {
   margin: 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%; }
-  .divider:before, .divider:after {
+  .about .divider:before, .about .divider:after {
     content: '';
     width: 50%;
     display: block;
     height: 1px;
     background-color: #262626;
     margin: 0 auto; }
+  .about .divider svg {
+    width: 25px;
+    height: 25px; }
+
+.portfolio-section {
+  position: relative; }
+  .portfolio-section .divider {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -.5rem; }
+    .portfolio-section .divider:before, .portfolio-section .divider:after {
+      content: '';
+      width: 50%;
+      display: block;
+      height: 2px;
+      background-color: #ff0036;
+      margin: 0 auto; }
+    .portfolio-section .divider svg path {
+      fill: #ff0036; }
+
+.portfolios {
+  padding-bottom: 110px;
+  background-color: #262626;
+  position: relative; }
+
+.portfolio-nav-wrapper {
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626; }
+  .portfolio-nav-wrapper .portfolio-header {
+    color: #fff;
+    padding-bottom: 27px;
+    font-weight: 700; }
+
+.portfolio-nav {
+  margin: 0;
+  padding: 0; }
+
+.portfolio-item {
+  padding: 0 23px; }
+  .portfolio-item a {
+    color: #a4a4a4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .portfolio-item a:hover {
+      color: #ff0036;
+      text-decoration: none;
+      transition: color .2s; }
+
+.portfolio-example {
+  position: relative;
+  height: 355px;
+  overflow: hidden; }
+  .portfolio-example.orange {
+    background-color: #f39943; }
+  .portfolio-example.blue {
+    background-color: #3782aa; }
+  .portfolio-example.pink {
+    background-color: #ef5d88; }
+  .portfolio-example.dirty-white {
+    background-color: #f6f0e0; }
+  .portfolio-example.light-green {
+    background-color: #56cc82; }
+  .portfolio-example.grey {
+    background-color: #95a5a5; }
+  .portfolio-example.light-blue {
+    background-color: #24b0c9; }
+  .portfolio-example.peach {
+    background-color: #fa8562; }
+  .portfolio-example img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%); }
+
+.product-features-header {
+  font-size: 30px;
+  font-weight: bold; }
+
+.links {
+  padding-top: 3rem;
+  position: relative; }
+  .links .links-icon {
+    position: relative; }
+    .links .links-icon svg {
+      position: absolute;
+      margin: auto;
+      margin-left: -2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px; }
+      .links .links-icon svg:first-child {
+        z-index: 1; }
+  .links .link-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 15px;
+    border: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px; }
+    .links .link-item:hover {
+      background-color: #ff0036;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff; }
+      .links .link-item:hover svg:first-child path {
+        fill: #ff0036 !important; }
+      .links .link-item:hover svg:last-child path {
+        fill: #fff !important; }
+      .links .link-item:hover a {
+        text-decoration: none;
+        color: #fff; }
+    .links .link-item a {
+      text-decoration: none;
+      color: #333; }
+
+.mockup img {
+  position: absolute;
+  left: -3rem;
+  padding-bottom: 100px; }
+
+.mockup .slider-btn {
+  background-color: #393939;
+  z-index: 2;
+  position: absolute;
+  bottom: -120%;
+  left: 50%;
+  transform: translate(-50%, 0%); }
 
 .btn-group {
   display: flex;
@@ -189,3 +332,10 @@ ul li {
     text-decoration: none;
     color: #000;
     font-size: 1rem; }
+
+section .section-header {
+  padding-top: 100px;
+  padding-bottom: 55px; }
+
+section .section-description {
+  padding-bottom: 100px; }

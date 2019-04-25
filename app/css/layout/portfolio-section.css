@@ -1,0 +1,81 @@
+.portfolio-section {
+  position: relative; }
+  .portfolio-section .divider {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -.5rem; }
+    .portfolio-section .divider:before, .portfolio-section .divider:after {
+      content: '';
+      width: 50%;
+      display: block;
+      height: 2px;
+      background-color: #ff0036;
+      margin: 0 auto; }
+    .portfolio-section .divider svg path {
+      fill: #ff0036; }
+
+.portfolios {
+  padding-bottom: 110px;
+  background-color: #262626;
+  position: relative; }
+
+.portfolio-nav-wrapper {
+  padding: 100px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626; }
+  .portfolio-nav-wrapper .portfolio-header {
+    color: #fff;
+    padding-bottom: 27px;
+    font-weight: 700; }
+
+.portfolio-nav {
+  margin: 0;
+  padding: 0; }
+
+.portfolio-item {
+  padding: 0 23px; }
+  .portfolio-item a {
+    color: #a4a4a4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .portfolio-item a:hover {
+      color: #ff0036;
+      text-decoration: none;
+      transition: color .2s; }
+
+.portfolio-example {
+  position: relative;
+  height: 355px;
+  overflow: hidden; }
+  .portfolio-example.orange {
+    background-color: #f39943; }
+  .portfolio-example.blue {
+    background-color: #3782aa; }
+  .portfolio-example.pink {
+    background-color: #ef5d88; }
+  .portfolio-example.dirty-white {
+    background-color: #f6f0e0; }
+  .portfolio-example.light-green {
+    background-color: #56cc82; }
+  .portfolio-example.grey {
+    background-color: #95a5a5; }
+  .portfolio-example.light-blue {
+    background-color: #24b0c9; }
+  .portfolio-example.peach {
+    background-color: #fa8562; }
+  .portfolio-example img {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%); }

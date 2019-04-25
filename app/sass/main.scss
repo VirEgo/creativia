@@ -4,12 +4,17 @@
 //layouts
 @import "layout/header";
 @import "layout/about-section";
+@import "layout/portfolio-section";
+@import "layout/product-features";
 
 //fonts
 @import "../css/base/fonts.css";
 
 //components
 @import "components/buttons";
+
+// variables
+@import "components/variables";
 
 * {
   font-family: "ralewayregular", sans-serif;
@@ -24,3 +29,13 @@ ul {
     }
   }
 }
+section {
+  .section-header {
+    padding-top: 100px;
+    padding-bottom: 55px;
+  }
+  .section-description {
+    padding-bottom: 100px;
+  }
+}
+

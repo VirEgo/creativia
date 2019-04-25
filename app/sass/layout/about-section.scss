@@ -20,6 +20,8 @@
 //.hexagon-first {
 //  transform: rotate(-60deg);
 //}
+
+$red-color:     #ff0036;
 .box {
   width: 300px;
   height: 300px;
@@ -98,23 +100,29 @@
     }
   }
 }
-
-.divider {
-  margin: 5rem auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-
-  &:before,
-  &:after {
-    content: '';
+.about {
+  .divider {
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    display: block;
-    height: 1px;
-    background-color: #262626;
-    margin: 0 auto;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 50%;
+      display: block;
+      height: 1px;
+      background-color: #262626;
+      margin: 0 auto;
+    }
+    svg {
+      width: 25px;
+      height: 25px;
+    }
   }
-  :after {}
 }
+
+
 
