@@ -247,6 +247,9 @@
     top: 50%;
     transform: translate(0, -50%); }
 
+.product-features {
+  height: 90vh; }
+
 .product-features-header {
   font-size: 30px;
   font-weight: bold; }
@@ -304,6 +307,12 @@
   bottom: -120%;
   left: 50%;
   transform: translate(-50%, 0%); }
+
+.clients {
+  background-image: url(../../img/clients-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block; }
 
 .btn-group {
   display: flex;
