@@ -1,6 +1,60 @@
 .clients {
-  background-image: url(../../img/clients-bg.png);
+
+  position: relative;
+  margin-top: 177px;
+  padding-bottom: 100px;
+  background-image: url("../../img/clients-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  display: block;
+  .section-header {
+    padding-top: 0;
+  }
+
+  .divider {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:  -.5rem;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 50%;
+      display: block;
+      height: 2px;
+      background-color: $red-color;
+      margin: 0 auto;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: $red-color;
+      }
+    }
+  }
+  .partners-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .partners-line {
+    display: flex;
+    .partner-item {
+      padding: 45px 40px 20px;
+      border: 1px solid #c9c9c9;
+      &:nth-child(1){
+        margin-right: 30px;
+      }
+    }
+    &:nth-child(1){
+      margin-bottom: 40px;
+    }
+  }
 }
+
+
