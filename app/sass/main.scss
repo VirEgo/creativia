@@ -7,6 +7,9 @@
 @import "layout/portfolio-section";
 @import "layout/product-features";
 @import "layout/clients-section";
+@import "layout/team-section";
+@import "layout/services";
+@import "layout/twitter-section";
 
 //fonts
 @import "../css/base/fonts.css";
@@ -31,12 +34,117 @@ ul {
   }
 }
 section {
+  padding-bottom: 100px;
+  position: relative;
   .section-header {
     padding-top: 100px;
     padding-bottom: 55px;
+    text-align: center;
   }
   .section-description {
     padding-bottom: 100px;
+    text-align: center;
   }
+  .divider {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -.65rem;
+    &.black {
+      &:before,
+      &:after {
+        background-color: #000;
+      }
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      width: 50%;
+      display: block;
+      height: 2px;
+      background-color: $red-color;
+      margin: 0 auto;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: $red-color;
+      }
+    }
+  }
+}
+
+.hexagon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  margin:auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.hexagon, .hexagon:before, .hexagon:after {
+  background: #fff;
+}
+.hexagon:before, .hexagon:after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  width: 57px;
+  height: 57px;
+  -moz-transform: rotate(145deg) skew(22.5deg);
+  -webkit-transform: rotate(145deg) skew(22.5deg);
+  transform: rotate(145deg) skew(22.5deg);
+}
+.hexagon:before {
+  top: -29px;
+}
+.hexagon:after {
+  top: 27px;
+}
+.hexagon i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 55px;
+  background:#666;
+  z-index: 1;
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 55px;
+}
+
+.skill-progressbar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-progressbar > .inner {
+  position: absolute;
+  color: red;
+}
+
+.skill-progressbar > svg {
+  height: 100%;
+  display: block;
 }
 

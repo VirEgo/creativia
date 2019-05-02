@@ -1,0 +1,114 @@
+.team-wrapper {
+  flex-direction: row;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+}
+.card-deck {
+  width: 100%;
+  @media screen and (max-width:576px ){
+    .col-12 {
+      flex-basis: 25%;
+    }
+  }
+}
+.person-card {
+  position: relative;
+  border: 1px solid #c9c9c9;
+  //margin: 0 5px;
+  border-radius: 0!important;
+  //cursor: pointer;
+  text-align: center;
+  img {
+    border-radius: 0;
+  }
+  &:hover {
+    border: 1px solid #1b1e21;
+    .person-name {
+      color: $red-color;
+    }
+    .socials-hover {
+      visibility: visible;
+    }
+  }
+  .socials-hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    .hexagon {
+      margin-right: 10px;
+    }
+    svg {
+      width: 15px;
+      height: 15px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+      path {
+        fill: $red-color;
+      }
+    }
+  }
+  .card-img-top {
+    position: relative;
+    img{
+      width: 100%;
+    }
+  }
+}
+.chart {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  @media screen and (max-width:576px) {
+    width: 100px;
+    height: 100px;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    @media screen and (max-width:576px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .percent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75rem;
+  }
+}
+.skills-wrapper {
+  @media screen and (max-width:480px) {
+  flex-direction: column;
+    margin: auto;
+}
+}
+.skill-item {
+  text-align: center;
+  .skill-name {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .percent  {
+    font-family: Arial, sans-serif;
+    .red-text {
+      font-family: Arial, sans-serif;
+    }
+  }
+}
+

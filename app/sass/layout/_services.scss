@@ -1,0 +1,113 @@
+.services {
+  background-color: #272727;
+  color: #a4a4a4;
+}
+
+.services-wrapper {
+  @media screen and(max-width:576px) {
+     .service-item {
+       &:first-child {
+        .service-header {
+          justify-content: flex-start;
+        }
+       }
+
+       &:last-child {
+         .service-header {
+           justify-content: flex-end;
+         }
+       }
+     }
+  }
+}
+.service-item {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all  ease .4s;
+  .service-header {
+    display: flex;
+    margin-bottom: 1rem;
+    .service-name {
+      text-transform: uppercase;
+    }
+  }
+  .service-body {
+    padding: 30px 35px;
+    background-color: #343434;
+  }
+  .hexagon {
+    background-color: #a4a4a4;
+  }
+  .hexagon {
+    margin-right: 1rem;
+    &:before {
+      top: -50px;
+    }
+    svg {
+      path {
+        fill: #262626;
+      }
+    }
+  }
+  &:hover {
+    transition: all  ease 1s;
+    color: #fff;
+    .service-body { background-color: #3d2329; transition: all  ease 1s; }
+    .hexagon {background-color: #ff0036; transition: all  ease 1s;}
+    svg > path {fill: #fff; transition: all  ease 1s;}
+  }
+}
+
+.card-body {
+  padding: 0!important;
+  text-align: center;
+  .card-title {
+    p {
+      font-size: 20px;
+      background-color: #262626;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 0!important;
+      padding: 15px 0;
+    }
+    span {
+      display: block;
+      width: 100%;
+      font-size: 36px;
+      background-color: #f2f2f2;
+      color: #262626;
+      padding: 25px 0;
+      sub {
+        font-size: 14px;
+      }
+    }
+  }
+  .card-text {
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+}
+.card-footer {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  cursor: pointer;
+  transition: all  ease-in-out .8s;
+  &:hover {
+    transition: all  ease-in-out .8s;
+    .card-title {
+     span {
+       background-color: $red-color;
+       color: #fff;
+       transition: all  ease-in-out .8s;
+     }
+    }
+    .btn-order {
+      background-color: #ff0036;
+      transition: all  ease-in-out .8s;
+    }
+  }
+}

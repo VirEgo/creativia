@@ -1,0 +1,38 @@
+.twitter {
+  background-color: #272727;
+  padding-top: 100px;
+  position: relative;
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cacaca;
+  }
+
+}
+.tweet {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  svg{
+    width: 45px!important;
+    height: 45px;
+    path {
+      fill: $red-color;
+    }
+  }
+}
+.container {
+  position: relative;
+  .big-tweet {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -20%;
+    left: -10%;
+    transform: rotate(-30deg);
+    z-index: 1;
+    path {
+      fill:#3d3d3d;
+    }
+  }
+}
