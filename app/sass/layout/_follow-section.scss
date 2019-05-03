@@ -1,7 +1,9 @@
 .follow-section{
   color: #fff;
-  background: rgba(0,0,0,0) url("../img/header-bg.png")center 0%;
+  background: rgba(0, 0, 0, 0) url("../img/header-bg.png") 0% 0%;
   transition: background-color 1s;
+  background-repeat: no-repeat;
+  background-size: cover;
   &:hover {
     background-color: rgba(0,0,0,.8);
     transition: background-color ease-in-out .9s;
