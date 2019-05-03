@@ -1,6 +1,14 @@
-var gulp       = require('gulp'),
+var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
     browserSync  = require('browser-sync');
+var urlAdjuster = require('gulp-css-url-adjuster');
+
+gulp.src('app/css/main.css')
+    .pipe(urlAdjuster({
+    prepend: 'app/img',
+    append: '?version=1',
+}))
+    .pipe(gulp.dest('modifiedStyle.css'));
 
 gulp.task('sass', function() {
     return gulp.src('app/sass/**/*.scss')

@@ -1,0 +1,35 @@
+.article {
+  margin-bottom: 2rem;
+  .article-image {
+    img {
+      width: 100%;
+      height: 200px;
+    }
+  }
+  .article-title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 18px;
+  }
+  .article-info {
+    padding-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: #a2a2a2;
+      margin-right: 23px;
+      transition: color ease-in-out .5s;
+      &:hover {
+        color: #ff0036;
+      }
+    }
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+  .article-text {
+    font-size: 16px;
+    color: #505050;
+    line-height: 15px;
+  }
+}

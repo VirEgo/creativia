@@ -1,0 +1,76 @@
+.follow-section{
+  color: #fff;
+  background: rgba(0,0,0,0) url("../img/header-bg.png")center 0%;
+  transition: background-color 1s;
+  &:hover {
+    background-color: rgba(0,0,0,.8);
+    transition: background-color ease-in-out .9s;
+  }
+  &:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+}
+.follows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials {
+  display: flex;
+  .hexagon {
+    background-color: #ff0036;
+    margin-right: 2rem;
+    width: 60px;
+    height: 60px;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  .hexagon:before {
+    top: -50px;
+    width: auto;
+    height: auto;
+  }
+  .hexagon:before, .hexagon:after {
+    height: auto;
+    width: auto;
+  }
+}
+.follow {
+  a {
+    color: #ff0036;
+    &:hover {
+      color: #fff;
+      .hexagon-body {
+        polygon {
+          transition: fill ease .5s;
+          fill: #ff0036;
+        }
+      }
+    }
+  }
+  svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+.hexagon-svg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+  margin-right: 3rem;
+  transform: rotate(28deg);
+  svg {
+    position: absolute;
+    &:last-child {
+      left: 50%;
+      transform: translateX(-50%) rotate(-28deg);
+    }
+  }
+}

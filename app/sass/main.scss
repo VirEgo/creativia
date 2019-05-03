@@ -10,6 +10,9 @@
 @import "layout/team-section";
 @import "layout/services";
 @import "layout/twitter-section";
+@import "layout/blog-section";
+@import "layout/follow-section";
+@import "layout/location-section";
 
 //fonts
 @import "../css/base/fonts.css";
@@ -31,6 +34,40 @@ ul {
       color: #000;
       font-size: 1rem;
     }
+  }
+}
+a{
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+input, textarea {
+  outline: none;
+  box-shadow: none;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #c6c6c6;
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #c6c6c6;
+  }
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    border: 1px solid #c6c6c6;
+    -webkit-text-fill-color: #000;
+    background-color: #fff!important;
+    background-image: none;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    //transition: background-color 5000s ease-in-out 0s;
   }
 }
 section {

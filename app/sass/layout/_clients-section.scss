@@ -1,12 +1,17 @@
 .clients {
-
+  color: #fff;
   position: relative;
   margin-top: 177px;
   padding-bottom: 100px;
-  background-image: url("../../img/memphis-mini-dark.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #c7b39b;
+  background: rgba(0,0,0,0.7) url("../img/clients-bg.png");
+
+  &:before {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
+  
   .section-header {
     padding-top: 95px;
   }
@@ -48,6 +53,8 @@
     .partner-item {
       padding: 45px 40px 20px;
       border: 1px solid #c9c9c9;
+      background-color: #d6d6d6;
+      box-shadow: inset hoff voff blur #000;
       &:nth-child(1){
         margin-right: 30px;
       }
