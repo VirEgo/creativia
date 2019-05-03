@@ -185,3 +185,12 @@ section {
   display: block;
 }
 
+.gm-style {
+  div:nth-child(11){
+    display: none;
+  }
+  &:nth-child(10){
+    display: none;
+  }
+}
+

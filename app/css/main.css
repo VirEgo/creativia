@@ -744,6 +744,21 @@
       .map-wrapper .forms .map-address,
       .map-wrapper .forms .map-form {
         width: 70%; } }
+    .map-wrapper .forms .map-address:before {
+      content: '';
+      width: 0;
+      height: 0;
+      transform: rotate(-45deg);
+      border-right: 25px solid transparent;
+      border-left: 79px solid transparent;
+      border-bottom: 25px solid #262626;
+      display: block;
+      position: absolute;
+      bottom: -24px;
+      right: -3px; }
+      @media screen and (max-width: 767px) {
+        .map-wrapper .forms .map-address:before {
+          visibility: hidden; } }
     @media screen and (max-width: 767px) {
       .map-wrapper .forms {
         bottom: -620px; }
@@ -964,3 +979,9 @@ section {
 .skill-progressbar > svg {
   height: 100%;
   display: block; }
+
+.gm-style div:nth-child(11) {
+  display: none; }
+
+.gm-style:nth-child(10) {
+  display: none; }

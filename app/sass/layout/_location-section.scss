@@ -48,7 +48,22 @@
       }
     }
     .map-address {
-      
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        transform: rotate(-45deg);
+        border-right: 25px solid transparent;
+        border-left: 79px solid transparent;
+        border-bottom: 25px solid #262626;
+        display: block;
+        position: absolute;
+        bottom: -24px;
+        right: -3px;
+        @media screen and (max-width:767px){
+          visibility: hidden;
+        }
+      }
     }
     @media screen and (max-width: 767px){
       bottom: -620px;
@@ -74,3 +89,5 @@
     }
   }
 }
+
+
