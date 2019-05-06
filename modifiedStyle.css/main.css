@@ -54,10 +54,8 @@
 }
 
 .navbar-collapse {
-  align-items: flex-end;
+  align-items: flex-end !important;
   flex-direction: column;
-  position: relative;
-  right: -20%;
 }
 
 @media screen and (max-width: 992px) {
@@ -775,6 +773,7 @@
 
 .clients .partners-line {
   display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -795,8 +794,21 @@
   margin-right: 25px;
 }
 
+@media screen and (max-width: 767px) {
+  .clients .partners-line .partner-item:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .clients .partners-line:nth-child(1) {
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .clients .partners-line:nth-child(1) {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .clients .section-description {
@@ -1237,7 +1249,7 @@
 
 .follow-section {
   color: #fff;
-  background: rgba(0, 0, 0, 0) url("app/img../img/header-bg.png?version=1") center 0%;
+  background: rgba(0, 0, 0, 0) url("app/img../img/header-bg.png?version=1") 0% 0%;
   transition: background-color 1s;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1790,8 +1802,4 @@ section .divider svg path {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background: none !important;
-}
-
-.carousel {
-  position: relative !important;
 }
