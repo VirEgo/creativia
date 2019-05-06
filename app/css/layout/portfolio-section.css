@@ -9,7 +9,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -.5rem; }
+    bottom: 5.6rem; }
     .portfolio-section .divider:before, .portfolio-section .divider:after {
       content: '';
       width: 50%;
@@ -19,11 +19,15 @@
       margin: 0 auto; }
     .portfolio-section .divider svg path {
       fill: #ff0036; }
+    @media screen and (max-width: 576px) {
+      .portfolio-section .divider {
+        bottom: 2.5rem; } }
 
 .portfolios {
   padding-bottom: 110px;
   background-color: #262626;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .portfolio-nav-wrapper {
   padding: 100px 0;
@@ -91,3 +95,22 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+  .portfolio-example .portfolio-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .portfolio-example .portfolio-hover svg path {
+      fill: #fff; }
+    .portfolio-example .portfolio-hover p {
+      color: #fff;
+      font-size: 16px; }
+  .portfolio-example:hover .portfolio-hover {
+    visibility: visible;
+    transition: all ease-in-out .5s; }

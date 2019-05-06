@@ -11,7 +11,8 @@ $red-color:         #ff0036;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom:  -.5rem;
+    bottom: 5.6rem;
+
 
     &:before,
     &:after {
@@ -27,6 +28,9 @@ $red-color:         #ff0036;
         fill: $red-color;
       }
     }
+    @media screen and (max-width: 576px){
+      bottom: 2.5rem;
+    }
   }
 
 }
@@ -34,6 +38,7 @@ $red-color:         #ff0036;
   padding-bottom: 110px;
   background-color: #262626;
   position: relative;
+  overflow: hidden;
 }
 .portfolio-nav-wrapper {
   padding: 100px 0;
@@ -119,5 +124,32 @@ $red-color:         #ff0036;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .portfolio-hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+    p {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
+  &:hover {
+    .portfolio-hover {
+      visibility: visible;
+      transition: all ease-in-out .5s;
+    }
   }
 }

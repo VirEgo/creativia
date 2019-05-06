@@ -5,22 +5,59 @@ $red-color:     #ff0036;
 .header-row {
   background-color: rgba(0,0,0,.7);
   position: relative;
-  z-index: 1;
+  z-index: 10;
   margin-top: 3px;
+  @media screen and (max-width: 992px){
+    background-color: rgba(0, 0, 0, 1);
+    text-align: center;
+    .nav-item {
+
+    }
+  }
   @media screen and (max-width: 767px){
     margin-top: 0;
     .navbar-brand {
       top: 0;
-      right: -25rem;
+      left: 0;
+      img {
+        width: 150px;
+      }
     }
   }
 }
-.nav-item {
 
+.navbar {
+  width: 100%;
+  .navbar-toggler {
+    position: relative;
+    left: 90%;
+    path {
+      fill: #262626 ;
+    }
+    &:focus,
+    &:active {
+      border: none;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+}
+.navbar-collapse {
+  align-items: flex-end!important;
+  flex-direction: column;
+  @media screen and (max-width: 992px) {
+    text-align: center;
+    margin-left: 30%;
+    right: 0;
+    align-items: flex-end;
+  }
+}
+.section-header {
+  padding-top: 40px!important;
+}
+.nav-item {
   padding: 0px 15px;
   margin: 30px 0;
-
-
 }
 .octagon {
   position: absolute;
@@ -45,9 +82,6 @@ $red-color:     #ff0036;
   overflow: hidden;
   top: -60px!important;
 }
-.carousel-item {
-  background: rgba(0,0,0,.5);
-}
 .carousel-caption {
   top: 32%;
   h5 {
@@ -57,11 +91,28 @@ $red-color:     #ff0036;
   p {
     font-size: 1rem;
   }
+  @media screen and (max-width:576px) {
+    // top: 20%;
+    h5 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+      // text-overflow: ellipsis;
+      // white-space: nowrap;
+      // overflow: hidden;
+    }
+    }
+  }
+
+.carousel-control-prev, 
+.carousel-control-next {
+  z-index: 3!important;
 }
 
 .navbar-brand {
   position: absolute;
-  top: -3.2rem;
+  top: -2.2rem;
   @media screen and (max-width: 767px){
     svg {
       width: 15%;
@@ -84,33 +135,53 @@ $red-color:     #ff0036;
     @media screen and (max-width: 1198px) {
       font-size: 16px;
     }
-    @media screen and (max-width: 992px) {
+    @media screen and (min-width: 992px) {
       font-size: 14px;
+      &:hover {
+        color: #fff!important;
+        &:before {
+          content: '';
+          width: 100%;
+          height: 3px;
+          position: absolute;
+          background-color: $red-color;
+          margin-top: -19px;
+          right: 0;
+        }
+        &:after {
+          content: '';
+          width: 100%;
+          height: 3px;
+          position: absolute;
+          background-color: $red-color;
+          margin-top: 40px;
+          left: 0;
+        }
+      }
     }
     &:hover {
       color: #fff!important;
-      &:before {
-        content: '';
-        width: 100%;
-        height: 3px;
-        position: absolute;
-        background-color: $red-color;
-        margin-top: -19px;
-        right: 0;
-      }
-      &:after {
-        content: '';
-        width: 100%;
-        height: 3px;
-        position: absolute;
-        background-color: $red-color;
-        margin-top: 40px;
-        left: 0;
-      }
     }
-
   }
-}
 .btn-group {
   margin-top: 53px;
+}
+}
+
+.overflow {
+  background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    content: ' ';
+  }
 }

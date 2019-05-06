@@ -1,0 +1,23 @@
+.card-deck {
+    display: flex;
+    @media screen and (max-width: 767px) {
+        display: none!important;
+    }
+}
+
+.card-carousel {
+    display: none;
+    .carousel-indicators {
+        margin-bottom: 0;
+        li {
+            background-color: #000;
+        }
+    }
+    @media screen and (max-width: 767px){
+      visibility: visible;
+      display: flex;
+      flex-direction: column-reverse;
+      margin: auto;
+      width: 90%;
+    }
+  }

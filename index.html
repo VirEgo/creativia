@@ -12,20 +12,17 @@
 
 </head>
 <body>
-<header class="">
+<header class="header">
     <div class="header-row">
         <div class="container d-flex align-items-center">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="col-lg-5">
-                    <a class="navbar-brand" href="#">
-                        <img src="app/img/logo.png" alt="creativia">
-                    </a>
-                </div>
-
-                <button class="navbar-toggler col-lg-5" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="#">
+                    <img src="app/img/logo.png" alt="creativia">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse col-lg-7" id="navbarNav">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">home <span class="sr-only">(current)</span></a>
@@ -59,8 +56,10 @@
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="app/img/header-bg.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="d-block w-100 overflow">
+                            <!-- <img src="app/img/header-bg.png" class="" alt="..."> -->
+                        </div> 
+                        <div class="carousel-caption  d-md-block">
                             <h5>why <span class="red-text">creativia?</span></h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo.
                                 Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus
@@ -74,8 +73,10 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="app/img/header-bg.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="d-block w-100 overflow">
+                            <!-- <img src="app/img/header-bg.png" class="" alt="..."> -->
+                        </div> 
+                        <div class="carousel-caption  d-md-block">
                             <h5>why <span class="red-text">creativia?</span></h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo.
                                 Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus
@@ -88,8 +89,10 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="app/img/header-bg.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="d-block w-100 overflow">
+                            <!-- <img src="app/img/header-bg.png" class="d-block w-100" alt="..."> -->
+                        </div> 
+                        <div class="carousel-caption  d-md-block">
                             <h5>why <span class="red-text">creativia?</span></h5>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et dolor justo.
                                 Phasellus eu ligula ac nisl volutpat tincidunt. Vestibulum vitae rhoncus
@@ -102,17 +105,20 @@
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <a class="carousel-control-prev carousel-control" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left carousel-control-prev-icon"></i>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <a class="carousel-control-next carousel-control" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right carousel-control-next-icon"></i>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
 </header>
 <section class="container about">
+    <h2 class="section-header product-features-header">about <span class="red-text">creativia</span></h2>
+    <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="red-text">Lorem , ea fugit ipsum</span> nam nesciunt non odit vitae? Exercitationem, facere, recusandae.</p>
+
     <div class="row">
        <div class="col-lg-6">
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti distinctio enim et illo labore maxime provident quibusdam sunt voluptates voluptatum. Adipisci, aut culpa, dolor dolore excepturi magni modi molestias, natus possimus praesentium quia sequi similique! Assumenda neque nostrum nulla reiciendis!</p>
@@ -164,13 +170,13 @@
        </div>
        <div class="col-lg-6 hexagon-wrapper">
                <div class="col-lg-12 d-flex">
-                   <div class="box hexagon">
+                   <div class="box hexagon-big">
                        <div class="box-inner hexagon-inner"></div>
                    </div>
-                   <div class="box-left position-absolute">
+                   <div class="box-left ">
                        <div class="box-inner hexagon"></div>
                    </div>
-                   <div class="box-right position-absolute">
+                   <div class="box-right">
                        <div class="box-inner hexagon"></div>
                    </div>
                </div>
@@ -183,23 +189,35 @@
     </div>
     <div class=" advantages-wrapper row text-center">
         <div class="col-lg-3 advantage-item">
-            <div class="advantages-icon"><i class="fas fa-heart"></i></div>
+            <!-- <div class="advantages-icon"></div> -->
+            <a href="#" class="hexagon"><span class="inner-hexagon"><i class="fas fa-heart"></i></span></i></a>
             <h2 class="advantages-header">flat design</h2>
             <p class="advantages-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio esse molestias nobis praesentium qui totam vel!</p>
         </div>
         <div class="col-lg-3 advantage-item">
-            <div class="advantages-icon"><i class="fas fa-heart"></i></div>
-            <h2 class="advantages-header">flat design</h2>
+            <!-- <div class="advantages-icon"></div> -->
+            <a href="#" class="hexagon"><span class="inner-hexagon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="439.679px" height="439.679px" viewBox="0 0 439.679 439.679" style="width: 20px;height: auto;" xml:space="preserve">
+                <g><path d="M145.031,169.879c-2.666-2.857-6.089-4.286-10.276-4.286c-4.192,0-7.521,1.434-9.995,4.286l-34.546,34.258    c-2.666,2.667-3.997,5.996-3.997,9.994c0,3.997,1.334,7.428,3.997,10.282l116.203,116.483c2.284,2.286,5.138,3.621,8.564,4.004    c0.383,0.191,0.955,0.28,1.714,0.28c3.805,0,7.324-1.431,10.564-4.284l208.417-208.42c2.669-2.859,4.004-6.283,4.004-10.282    c0-3.997-1.335-7.424-4.004-10.277l-34.256-34.263c-2.854-2.856-6.283-4.281-10.28-4.281s-7.426,1.429-10.28,4.281l-163.88,164.17    L145.031,169.879z"/>
+                    <path d="M422.835,182.435L246.108,359.164c-7.426,7.803-16.848,11.711-28.267,11.711h-7.994l-1.713-1.144    c-7.044-1.718-13.418-5.235-19.13-10.567L73.089,242.681c-7.995-7.994-11.992-17.515-11.992-28.55    c0-11.228,3.997-20.647,11.992-28.262l34.261-34.545c7.804-7.804,17.318-11.709,28.549-11.709c10.85,0,20.273,3.999,28.266,11.991    l53.676,53.677L331.467,91.364l-75.657-75.66C245.721,5.619,233.542,0.576,219.263,0.576c-14.275,0-26.457,5.042-36.542,15.128    L15.131,183.292C5.042,193.382,0,205.562,0,219.839c0,14.279,5.046,26.455,15.131,36.547l167.594,167.586    c10.085,10.089,22.314,15.13,36.685,15.13c14.372,0,26.503-5.041,36.403-15.13l167.59-167.586    c10.089-10.093,15.133-22.269,15.133-36.551c0-14.281-5.044-26.457-15.133-36.547L422.835,182.435z"/></g>
+                </svg></span></i></a>
+            <h2 class="advantages-header">retina ready</h2>
             <p class="advantages-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio esse molestias nobis praesentium qui totam vel!</p>
         </div>
         <div class="col-lg-3 advantage-item">
-            <div class="advantages-icon"><i class="fas fa-heart"></i></div>
-            <h2 class="advantages-header">flat design</h2>
+            <a href="#" class="hexagon"><span class="inner-hexagon"><i class="fas fa-tablet-alt"></i></span></i></a>
+            <!-- <div class="advantages-icon"></div> -->
+            <h2 class="advantages-header">responsive</h2>
             <p class="advantages-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio esse molestias nobis praesentium qui totam vel!</p>
         </div>
         <div class="col-lg-3 advantage-item">
-            <div class="advantages-icon"><i class="fas fa-heart"></i></div>
-            <h2 class="advantages-header">flat design</h2>
+            <a href="#" class="hexagon"><span class="inner-hexagon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="511.62px" height="511.62px" viewBox="0 0 511.62 511.62" style="width: 15px;height: auto;" xml:space="preserve">
+                <g>
+                    <path d="M156.45,351.309c8.564,12.272,19.368,23.935,32.404,34.972c13.039,11.036,26.215,20.553,39.543,28.547    c13.326,7.998,28.553,15.893,45.682,23.702l-0.287-0.287l1.143,0.287c-12.754-24.365-19.128-45.679-19.128-63.953    c0-9.709,2.334-18.894,7-27.549c4.661-8.664,10.749-16.426,18.268-23.271c7.522-6.851,15.848-13.702,24.982-20.554    c9.133-6.857,18.267-14.232,27.411-22.127c9.134-7.898,17.463-16.276,24.981-25.126c7.519-8.852,13.606-19.558,18.274-32.12    c4.661-12.563,6.995-26.269,6.995-41.112c0-18.654-2.621-36.164-7.851-52.534c-5.235-16.368-12.135-30.693-20.697-42.968    c-8.562-12.275-19.362-23.935-32.408-34.97c-13.038-11.04-26.214-20.557-39.539-28.549C269.897,15.703,254.671,7.804,237.543,0    l0.284,0.288L236.971,0c12.56,24.741,18.839,46.061,18.839,63.95c0,9.707-2.331,18.892-6.995,27.55    c-4.665,8.66-10.754,16.415-18.271,23.269c-7.52,6.851-15.846,13.703-24.982,20.557c-9.139,6.851-18.276,14.228-27.411,22.126    c-9.136,7.898-17.462,16.274-24.982,25.122c-7.517,8.852-13.606,19.558-18.271,32.12c-4.661,12.563-6.995,26.269-6.995,41.112    c0,18.654,2.611,36.165,7.846,52.533C140.985,324.708,147.886,339.037,156.45,351.309z"/>
+                    <path d="M454.092,477.788c-1.811-1.803-3.949-2.703-6.42-2.703H63.95c-2.474,0-4.615,0.9-6.423,2.703    c-1.809,1.808-2.712,3.949-2.712,6.424v18.271c0,2.479,0.903,4.617,2.712,6.427c1.809,1.811,3.949,2.711,6.423,2.711h383.722    c2.471,0,4.609-0.9,6.42-2.711c1.807-1.81,2.714-3.948,2.714-6.427v-18.271C456.806,481.737,455.905,479.596,454.092,477.788z"/>
+                </g>
+                </svg></span></i></a>
+            <!-- <div class="advantages-icon"></div> -->
+            <h2 class="advantages-header">clean & usefull</h2>
             <p class="advantages-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa distinctio esse molestias nobis praesentium qui totam vel!</p>
         </div>
     </div>
@@ -219,35 +237,83 @@
             <div class="portfolio-items-wrapper col-lg-12 row p-0 m-0">
                 <div class="portfolio-example orange col-12 col-sm-6 col-md-4 col-lg-4">
                     <img src="app/img/portfolio/money.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
                 <div class="portfolio-example blue  col-12 col-sm-6 col-md-2 col-lg-2">
                     <img src="app/img/portfolio/bank.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
                 <div class="portfolio-example pink  col-12 col-sm-6 col-md-4 col-lg-4">
                     <img src="app/img/portfolio/flower.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
                 <div class="portfolio-example dirty-white  col-12 col-sm-6 col-md-2 col-lg-2">
                     <img src="app/img/portfolio/cards.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-items-wrapper col-lg-12 row p-0 m-0">
                 <div class="portfolio-example light-green  col-12 col-sm-6 col-md-2 col-lg-2">
                     <img src="app/img/portfolio/calculator.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
                 <div class="portfolio-example grey col-12 col-sm-6 col-md-4 col-lg-4">
                     <img src="app/img/portfolio/exchange.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
                 <div class="portfolio-example light-blue  col-12 col-sm-6 col-md-2 col-lg-2">
                     <img src="app/img/portfolio/wallet.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
                 <div class="portfolio-example peach col-12 col-sm-6 col-md-4 col-lg-4">
                     <img src="app/img/portfolio/check.png" alt="">
+                    <div class="portfolio-hover">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 42 42" style="width: 20px;height: auto;" xml:space="preserve">
+                                <path d="M37.059,16H26V4.941C26,2.224,23.718,0,21,0s-5,2.224-5,4.941V16H4.941C2.224,16,0,18.282,0,21s2.224,5,4.941,5H16v11.059  C16,39.776,18.282,42,21,42s5-2.224,5-4.941V26h11.059C39.776,26,42,23.718,42,21S39.776,16,37.059,16z"/>
+                            </svg>
+                            <p>design name</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="divider">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 184.751 184.751" style="enable-background:new 0 0 184.751 184.751;width: 15px;height: 15px;" xml:space="preserve">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 184.751 184.751" style="enable-background:new 0 0 184.751 184.751;" xml:space="preserve">
             <path d="M0,92.375l46.188-80h92.378l46.185,80l-46.185,80H46.188L0,92.375z"/>
         </svg>
     </div>
@@ -317,10 +383,10 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-12 reviews-slider ">
+                <h3 class="reviews-title">happy clients say</h3>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <h3 class="reviews-title">happy clients say</h3>
                             <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A expedita fugiat laudantium sit soluta ullam.</p>
                             <div class="review-author">
                                 <div class="review-author-photo">PHOTO</div>
@@ -328,7 +394,6 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <h3 class="reviews-title">happy clients say</h3>
                             <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A expedita fugiat laudantium sit soluta ullam.</p>
                             <div class="review-author">
                                 <div class="review-author-photo">PHOTO</div>
@@ -336,7 +401,6 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <h3 class="reviews-title">happy clients say</h3>
                             <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A expedita fugiat laudantium sit soluta ullam.</p>
                             <div class="review-author">
                                 <div class="review-author-photo">PHOTO</div>
@@ -353,15 +417,15 @@
             </div>
             <div class="col-lg-6 col-md-12 partners ">
                 <div class="partners-wrapper d-flex">
-                   <div class="partners-line">
-                       <div class="partner-item col-md-6">
+                   <div class="partners-line row">
+                       <div class="partner-item col-12">
                            <svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="161px" height="43px">
                                <image  x="0px" y="0px" width="161px" height="43px"  xlink:href="data:img/png;base64,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" />
                            </svg>
                        </div>
-                       <div class="partner-item col-md-6">
+                       <div class="partner-item col-12">
                            <svg xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink"
                                 width="131px" height="32px">
@@ -369,15 +433,15 @@
                            </svg>
                        </div>
                    </div>
-                    <div class="partners-line">
-                        <div class="partner-item  col-md-6">
+                    <div class="partners-line row">
+                        <div class="partner-item col-12">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  xmlns:xlink="http://www.w3.org/1999/xlink"
                                  width="143px" height="34px">
                                 <image  x="0px" y="0px" width="143px" height="34px"  xlink:href="data:img/png;base64,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" />
                             </svg>
                         </div>
-                        <div class="partner-item  col-md-6">
+                        <div class="partner-item col-12">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                  xmlns:xlink="http://www.w3.org/1999/xlink"
                                  width="152px" height="28px">
@@ -481,24 +545,24 @@
     <h2 class="section-header product-features-header">our <span class="red-text">skills</span></h2>
     <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="red-text">Lorem , ea fugit ipsum</span> nam nesciunt non odit vitae? Exercitationem, facere, recusandae.</p>
     <div class="container">
-        <div class="row">
-            <div class="skills-wrapper d-flex">
-                <div class="skill-item">
+        <div class="">
+            <div class="skills-wrapper d-flex row">
+                <div class="skill-item col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="chart" data-percent="90"><span class="percent"><span class="red-text">90</span>%</span></div>
                     <h4 class="skill-name">photoshop</h4>
                     <p class="skill-description">Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="chart" data-percent="80"><span class="percent"><span class="red-text">80</span>%</span></div>
                     <h4 class="skill-name">html</h4>
                     <p class="skill-description">Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="chart" data-percent="70"><span class="percent"><span class="red-text">70</span>%</span></div>
                     <h4 class="skill-name">php</h4>
                     <p class="skill-description">Lorem ipsum dolor sit amet, consectetur.</p>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item col-12 col-sm-6 col-md-6 col-lg-3">
                     <div class="chart" data-percent="90"><span class="percent"><span class="red-text">90</span>%</span></div>
                     <h4 class="skill-name">wordpress</h4>
                     <p class="skill-description">Lorem ipsum dolor sit amet, consectetur.</p>
@@ -511,7 +575,7 @@
     <h2 class="section-header product-features-header">our <span class="red-text">services</span></h2>
     <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="red-text">Lorem , ea fugit ipsum</span> nam nesciunt non odit vitae? Exercitationem, facere, recusandae.</p>
     <div class="container">
-        <div class="row">
+        <div class="">
             <div class="services-wrapper row ">
                 <div class="service-item col-sm-12 col-md-6">
                     <div class="service-header col-md-12">
@@ -587,7 +651,8 @@
     <div class="container">
         <div class="row">
             <div class="card-deck">
-                <div class="card">
+            
+            <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">
                             <p>Reseller</p>
@@ -604,24 +669,7 @@
                     <div class="card-footer">
                         <button class="btn-order m-2"> order now</button>
                     </div>
-                </div><div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Reseller</p>
-                            <span>199$ <sub>year</sub></span>
-                        </h5>
-
-                        <p class="card-text">CPU E3-1230 3.3GHz 8MB-V2 </p>
-                        <p class="card-text">HARD 500GB SATA 7200 RPM</p>
-                        <p class="card-text">RAM 8GB DDR3</p>
-                        <p class="card-text">Traffic 10 TB</p>
-                        <p class="card-text"> Connection 100 MB</p>
-                        <p class="card-text">5IP</p>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn-order m-2"> order now</button>
-                    </div>
-                </div>
+            </div>
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">
@@ -640,25 +688,99 @@
                     <button class="btn-order m-2"> order now</button>
                 </div>
             </div>
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <p>Reseller</p>
-                            <span>199$ <sub>year</sub></span>
-                        </h5>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <p>Reseller</p>
+                        <span>199$ <sub>year</sub></span>
+                    </h5>
 
-                        <p class="card-text">CPU E3-1230 3.3GHz 8MB-V2 </p>
-                        <p class="card-text">HARD 500GB SATA 7200 RPM</p>
-                        <p class="card-text">RAM 8GB DDR3</p>
-                        <p class="card-text">Traffic 10 TB</p>
-                        <p class="card-text"> Connection 100 MB</p>
-                        <p class="card-text">5IP</p>
-                    </div>
-                    <div class="card-footer">
-                        <button class="btn-order m-2"> order now</button>
-                    </div>
+                    <p class="card-text">CPU E3-1230 3.3GHz 8MB-V2 </p>
+                    <p class="card-text">HARD 500GB SATA 7200 RPM</p>
+                    <p class="card-text">RAM 8GB DDR3</p>
+                    <p class="card-text">Traffic 10 TB</p>
+                    <p class="card-text"> Connection 100 MB</p>
+                    <p class="card-text">5IP</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn-order m-2"> order now</button>
                 </div>
             </div>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide card-carousel" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                          </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card d-block w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Reseller</p>
+                                    <span>199$ <sub>year</sub></span>
+                                </h5>
+                                <p class="card-text">CPU E3-1230 3.3GHz 8MB-V2 </p>
+                                <p class="card-text">HARD 500GB SATA 7200 RPM</p>
+                                <p class="card-text">RAM 8GB DDR3</p>
+                                <p class="card-text">Traffic 10 TB</p>
+                                <p class="card-text"> Connection 100 MB</p>
+                                <p class="card-text">5IP</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn-order m-2"> order now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card d-block w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Reseller</p>
+                                    <span>199$ <sub>year</sub></span>
+                                </h5>
+                                <p class="card-text">CPU E3-1230 3.3GHz 8MB-V2 </p>
+                                <p class="card-text">HARD 500GB SATA 7200 RPM</p>
+                                <p class="card-text">RAM 8GB DDR3</p>
+                                <p class="card-text">Traffic 10 TB</p>
+                                <p class="card-text"> Connection 100 MB</p>
+                                <p class="card-text">5IP</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn-order m-2"> order now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card d-block w-100">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <p>Reseller</p>
+                                    <span>199$ <sub>year</sub></span>
+                                </h5>
+                                <p class="card-text">CPU E3-1230 3.3GHz 8MB-V2 </p>
+                                <p class="card-text">HARD 500GB SATA 7200 RPM</p>
+                                <p class="card-text">RAM 8GB DDR3</p>
+                                <p class="card-text">Traffic 10 TB</p>
+                                <p class="card-text"> Connection 100 MB</p>
+                                <p class="card-text">5IP</p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn-order m-2"> order now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                </div>
         </div>
     </div>
 </section>
@@ -737,8 +859,8 @@
 <section class="follow-section">
     <div class="container">
         <h2 class="section-header product-features-header">Follow <span class="red-text">Creativia</span></h2>
-        <div class="follows row">
-            <div class="follow socials">
+        <div class="follows ">
+            <div class="follow socials row">
                 <a href="#" class="hexagon-svg">
                     <svg viewbox="0 0 100 100" class="hexagon-body" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <polygon fill="transparent"
@@ -794,11 +916,11 @@
     <div class="map-wrapper">
         <div class="mapouter">
             <div class="gmap_canvas">
-                <iframe width="100%" height="635" id="gmap_canvas" src="https://maps.google.com/maps?q=egypt%2C%20cair&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                <iframe width="100%" height="650" id="gmap_canvas" src="https://maps.google.com/maps?q=egypt%2C%20cair&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                 <a href="https://www.crocothemes.net"></a></div>
         </div>
         <div class="container forms">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="map-address col-md-3">
                     <p>Egypt, Creativia</p>
                     <p>Address: Cairo123</p>
@@ -817,22 +939,24 @@
             </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-wrapper d-flex">
-            <a href="#"><img src="app/img/footer-logo.png" alt="Creativia"></a>
-            <span></span>
-        </div>
-    </footer>
 </section>
+<footer>
+    <div class="footer-wrapper row ml-0">
+        <div class="col-12 col-md-6 offset-md-6 d-flex justify-content-between">
+            <a href="#"><img src="app/img/footer-logo.png" alt="Creativia"></a>
+            <a href="#" class="custom-link">Design by Amr Srour</a>  
+        </div>      
+    </div>
+</footer>
 
 
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script type="module" src="app/js/jquery.easypiechart.js"></script>
 <script src="app/js/vendors/bootstrap.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 <script src="app/js/main.js"></script>
-<script type="module" src="app/js/jquery.easypiechart.js"></script>
 </body>
 </html>

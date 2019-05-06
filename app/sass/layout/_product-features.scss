@@ -77,4 +77,25 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+  
+  @media screen and (max-width:992px) {
+    img {
+      position: absolute;
+      left: 7rem;
+      padding-bottom: 100px;
+      top: -31rem;
+      z-index: -1;
+      opacity: .5;
+    }
+    .slider-btn {
+      top:11px;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, -27%);
+    }
+  }
+
 }

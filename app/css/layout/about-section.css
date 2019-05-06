@@ -1,8 +1,15 @@
+.hexagon-big {
+  position: static;
+  width: 290px;
+  height: 290px;
+  background-color: #fff;
+  overflow: hidden;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+
 .box {
   width: 300px;
   height: 300px;
-  margin: auto;
-  background: #fff; }
+  margin: auto; }
 
 .box-left,
 .box-right {
@@ -14,7 +21,14 @@
   .box-left .box-inner,
   .box-right .box-inner {
     width: 260px;
-    height: 260px; }
+    height: 260px;
+    background-size: cover;
+    background-position: 0 0;
+    background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe"); }
+    .box-left .box-inner:before, .box-left .box-inner:after,
+    .box-right .box-inner:before,
+    .box-right .box-inner:after {
+      background-color: transparent; }
 
 .box-inner {
   width: 290px;
@@ -27,6 +41,8 @@
   position: relative; }
 
 .hexagon {
+  width: 290px;
+  height: 290px;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
 
@@ -45,6 +61,19 @@
 .hexagon-wrapper .box-right {
   position: absolute;
   right: 1rem; }
+
+@media screen and (max-width: 576px) {
+  .hexagon-wrapper div {
+    display: flex;
+    flex-direction: column; }
+    .hexagon-wrapper div .box, .hexagon-wrapper div .box-left, .hexagon-wrapper div .box-right {
+      position: static;
+      width: 180px;
+      height: 180px; }
+      .hexagon-wrapper div .box .box-inner, .hexagon-wrapper div .box-left .box-inner, .hexagon-wrapper div .box-right .box-inner {
+        width: 170px;
+        height: 170px;
+        margin: auto; } }
 
 .btn-link {
   display: flex !important;
@@ -71,7 +100,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%; }
+  width: 50%;
+  bottom: -5.75rem;
+  z-index: 1;
+  position: static;
+  transform: translate(0%); }
+  .about .divider svg path {
+    fill: #262626; }
   .about .divider:before, .about .divider:after {
     content: '';
     width: 50%;
@@ -79,6 +114,39 @@
     height: 1px;
     background-color: #262626;
     margin: 0 auto; }
-  .about .divider svg {
-    width: 25px;
-    height: 25px; }
+
+.advantage-item .advantages-header {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 1rem; }
+
+.advantage-item .hexagon {
+  background-color: #626262 !important;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1.5rem; }
+  .advantage-item .hexagon .inner-hexagon {
+    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    width: 68px;
+    height: 68px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .advantage-item .hexagon .inner-hexagon svg {
+      color: #262626; }
+  .advantage-item .hexagon:hover {
+    background-color: #ff0036 !important; }
+    .advantage-item .hexagon:hover .inner-hexagon {
+      background-color: #ff0036; }
+      .advantage-item .hexagon:hover .inner-hexagon svg {
+        color: #fff; }
+        .advantage-item .hexagon:hover .inner-hexagon svg path {
+          fill: #fff; }
+  .advantage-item .hexagon:before, .advantage-item .hexagon:after {
+    content: '';
+    width: 0; }

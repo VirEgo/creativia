@@ -1,32 +1,18 @@
 
-//.hexagon, .hexagon div {
-//  margin: 0 auto;
-//  transform-origin: 50% 50%;
-//  overflow: hidden;
-//  width: 300px;
-//  height: 300px;
-//}
-//.hexagon {
-//  width: 325px;
-//  height: 230px;
-//}
-//.hexagon div {
-//  width: 100%;
-//  height: 100%;
-//}
-//.hexagon {
-//  transform: rotate(120deg);
-//}
-//.hexagon-first {
-//  transform: rotate(-60deg);
-//}
+.hexagon-big {
+  position: static;
+  width: 290px;
+  height: 290px;
+  background-color: #fff;
+  overflow: hidden;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
 
 $red-color:     #ff0036;
 .box {
   width: 300px;
   height: 300px;
   margin: auto;
-  background: #fff;
 }
 .box-left,
 .box-right{
@@ -38,6 +24,13 @@ $red-color:     #ff0036;
   .box-inner {
     width: 260px;
     height: 260px;
+    background-size: cover;
+    background-position: 0 0;
+    background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
+
+    &:before, &:after {
+      background-color: transparent;
+    }
   }
 }
 .box-inner {
@@ -53,6 +46,8 @@ $red-color:     #ff0036;
 
 .hexagon {
   //transform: rotate(-60deg);
+  width: 290px;
+  height: 290px;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
@@ -74,6 +69,22 @@ $red-color:     #ff0036;
   .box-right{
     position: absolute;
     right: 1rem;
+  }
+  @media screen and (max-width: 576px) {
+    div {
+      display: flex;
+      flex-direction: column;
+      .box, .box-left, .box-right {
+        position: static;
+        width: 180px;
+        height: 180px;
+        .box-inner {
+          width: 170px;
+          height: 170px;
+          margin: auto;
+        }
+      }
+    }
   }
 }
 
@@ -107,6 +118,15 @@ $red-color:     #ff0036;
     justify-content: center;
     align-items: center;
     width: 50%;
+    bottom: -5.75rem;
+    z-index: 1;
+    position: static;
+    transform: translate(0%);
+    svg {
+      path {
+        fill: #262626;
+      }
+    }
 
     &:before,
     &:after {
@@ -117,12 +137,54 @@ $red-color:     #ff0036;
       background-color: #262626;
       margin: 0 auto;
     }
-    svg {
-      width: 25px;
-      height: 25px;
+
+  }
+}
+.advantage-item {
+  .advantages-header {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .hexagon {
+    background-color: #626262!important;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.5rem;
+    .inner-hexagon {
+      -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      width: 68px;
+      height: 68px;
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        color: #262626;
+      }
+    }
+    
+    &:hover {
+      background-color: #ff0036!important;
+      .inner-hexagon {
+        background-color: #ff0036;
+        svg {
+          color: #fff;
+          path {
+            fill: #fff;
+          }
+        }
+
+      }
+    }
+    &:before,
+    &:after {
+      content: '';
+      width: 0;
     }
   }
 }
-
-
-

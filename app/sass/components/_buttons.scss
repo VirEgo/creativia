@@ -16,6 +16,11 @@
     color: #fff;
     text-decoration: none;
   }
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
 }
 
 .btn-order {

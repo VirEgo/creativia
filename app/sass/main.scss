@@ -10,9 +10,11 @@
 @import "layout/team-section";
 @import "layout/services";
 @import "layout/twitter-section";
+@import "layout/bestseller";
 @import "layout/blog-section";
 @import "layout/follow-section";
 @import "layout/location-section";
+@import "layout/footer";
 
 //fonts
 @import "../css/base/fonts.css";
@@ -26,6 +28,9 @@
 * {
   font-family: "ralewayregular", sans-serif;
 }
+body {
+  padding-bottom: 0;
+}
 ul {
   li {
     list-style: none;
@@ -36,10 +41,14 @@ ul {
     }
   }
 }
-a{
+.custom-link{
   text-decoration: none;
   color: #000;
   font-size: 1rem;
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
 }
 input, textarea {
   outline: none;
@@ -121,6 +130,9 @@ section {
       }
     }
   }
+  @media screen and (max-width: 576px) {
+    padding-bottom: 50px;
+  }
 }
 
 .hexagon {
@@ -192,5 +204,22 @@ section {
   &:nth-child(10){
     display: none;
   }
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  &.carousel-control {
+    &:hover {
+      color: #ff0036;
+      background-color: transparent;
+      .carousel-control-prev-icon {
+        color: #ff0036;
+      }
+    }
+  }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: none!important;
 }
 
