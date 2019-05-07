@@ -7,7 +7,7 @@
     .services .card-body .card-title p {
       font-size: 20px;
       background-color: #262626;
-      color: #fff;
+      color: #ffffff;
       text-transform: uppercase;
       margin-bottom: 0 !important;
       padding: 15px 0; }
@@ -54,7 +54,7 @@
       fill: #262626; }
   .service-item:hover {
     transition: all  ease 1s;
-    color: #fff; }
+    color: #ffffff; }
     .service-item:hover .service-body {
       background-color: #3d2329;
       transition: all  ease 1s; }
@@ -62,7 +62,7 @@
       background-color: #ff0036;
       transition: all  ease 1s; }
     .service-item:hover svg > path {
-      fill: #fff;
+      fill: #ffffff;
       transition: all  ease 1s; }
 
 .card-footer {
@@ -76,7 +76,7 @@
     transition: all  ease-in-out .8s; }
     .card:hover .card-title span {
       background-color: #ff0036;
-      color: #fff;
+      color: #ffffff;
       transition: all  ease-in-out .8s; }
     .card:hover .btn-order {
       background-color: #ff0036;

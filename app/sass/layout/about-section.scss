@@ -1,8 +1,9 @@
+@import "../components/variables";
 .hexagon-big {
   position: static;
   width: 290px;
   height: 290px;
-  background-color: #fff;
+  background-color: $white;
   overflow: hidden;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
@@ -172,13 +173,13 @@
     }
     
     &:hover {
-      background-color: #ff0036!important;
+      background-color: $red-color!important;
       .inner-hexagon {
-        background-color: #ff0036;
+        background-color: $red-color;
         svg {
-          color: #fff;
+          color: $white;
           path {
-            fill: #fff;
+            fill: $white;
           }
         }
 
@@ -205,14 +206,14 @@
     display: block;
     width: 0px;
     height:0px;
-    border-bottom: solid $lineWidth #ff0036;
-    bottom:$width /2 - $lineWidth/2;
+    border-bottom: solid $lineWidth  $color;
+    bottom:$width/2 - $lineWidth/2;
     transform: rotate(90deg);
   }
   &::after {
     content: '';
     display: block;
-    width: $width - 7px;
+    width: $width - 8px;
     height:0px;
     border-bottom: solid $lineWidth $color;
     position: absolute;
@@ -221,7 +222,7 @@
 }
 
 .accordion-icon {
-  @include plusMinus(20px, 2px, #ff0036);
+  @include plusMinus(20px, 2px, $red-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,17 +236,14 @@
       &::before {
         content: '';
         display: block;
-        width: 20px - 7px;
+        width: 20px - 8px;
         height:0px;
-        border-bottom: solid 2px #ff0036;
+        border-bottom: solid 2px $red-color;
         position: absolute;
         bottom: 9px;
         transform: rotate(90deg);
         transition: width 0.3s;
       }
     }
-
   }
 }
- 
-  

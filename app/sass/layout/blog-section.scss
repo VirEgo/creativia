@@ -1,3 +1,4 @@
+@import "../components/variables";
 .article {
   margin-bottom: 2rem;
   .article-image {
@@ -33,7 +34,7 @@
       margin-right: 23px;
       transition: color ease-in-out .5s;
       &:hover {
-        color: #ff0036;
+        color: $red-color;
       }
     }
 

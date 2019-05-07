@@ -1,6 +1,6 @@
 
 // variables
-@import "components/_variables.scss";
+@import "components/variables";
 //components
 @import "components/buttons";
 //fonts
@@ -46,7 +46,7 @@ ul {
   font-size: 1rem;
   &:hover {
     text-decoration: none;
-    color: #fff;
+    color: $white;
   }
 }
 input, textarea {
@@ -72,9 +72,9 @@ input, textarea {
   &:-webkit-autofill:focus {
     border: 1px solid #c6c6c6;
     -webkit-text-fill-color: #000;
-    background-color: #fff!important;
+    background-color: $white!important;
     background-image: none;
-    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    -webkit-box-shadow: 0 0 0px 1000px $white inset;
   }
 }
 section {
@@ -147,7 +147,7 @@ section {
   text-decoration: none;
 }
 .hexagon, .hexagon:before, .hexagon:after {
-  background: #fff;
+  background: $white;
 }
 .hexagon:before, .hexagon:after {
   content: "";
@@ -173,7 +173,7 @@ section {
   height: 55px;
   background:#666;
   z-index: 1;
-  color: #fff;
+  color: $white;
   display: block;
   text-align: center;
   line-height: 55px;
@@ -190,7 +190,7 @@ section {
 
 .skill-progressbar > .inner {
   position: absolute;
-  color: red;
+  color: $red-color;
 }
 
 .skill-progressbar > svg {
@@ -211,10 +211,10 @@ section {
 .carousel-control-next{
   &.carousel-control {
     &:hover {
-      color: #ff0036;
+      color: $red-color;
       background-color: transparent;
       .carousel-control-prev-icon {
-        color: #ff0036;
+        color: $red-color;
       }
     }
   }

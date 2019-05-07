@@ -1,5 +1,7 @@
+@import "../components/variables";
+@import "../components/buttons";
 .product-features {
-  height: 90vh;
+  height: 70vh;
   @media screen and (max-width: 767px) {
     height: auto;
   }
@@ -36,15 +38,15 @@
     color: #333;
     padding: 10px 15px;
     padding-right: 0;
+    justify-content: space-between;
     border: 1px solid #c9c9c9;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 24px;
     &:hover {
-      background-color: #ff0036;
+      background-color: $red-color;
       text-decoration: none;
       text-transform: uppercase;
-      color: #fff;
+      color: $white;
       svg {
         &:first-child {
           path {
@@ -53,13 +55,13 @@
         }
         &:last-child {
           path {
-            fill: #fff!important;
+            fill: $white!important;
           }
         }
       }
       a {
         text-decoration: none;
-        color: #fff;
+        color: $white;
       }
     }
     a {
@@ -71,20 +73,29 @@
     padding-top: 0;
   }
 }
+.links-right {
+  .link-item {
+    justify-content: unset;
+  }
+  .links-icon {
+    margin-left: 3rem; 
+  }
+}
 .mockup {
  img {
-   position: absolute;
-   left: -3rem;
-   padding-bottom: 100px;
-   z-index: -1;
+   width: 100%;
+  //  position: absolute;
+  //  left: -3rem;
+   padding-bottom: 0px;
+  //  z-index: -1;
  }
   .slider-btn {
-    background-color: #393939;
     z-index: 2;
     position: absolute;
-    bottom: -120%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
+    margin-right: 0;
   }
   @media screen and (max-width:767px) {
     display: none;

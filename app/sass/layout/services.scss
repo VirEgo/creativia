@@ -1,4 +1,4 @@
-$red-color:     #ff0036;
+@import "../components/variables";
 .services {
   background-color: #272727;
   color: #a4a4a4;
@@ -9,7 +9,7 @@ $red-color:     #ff0036;
       p {
         font-size: 20px;
         background-color: #262626;
-        color: #fff;
+        color: $white;
         text-transform: uppercase;
         margin-bottom: 0!important;
         padding: 15px 0;
@@ -84,10 +84,10 @@ $red-color:     #ff0036;
   }
   &:hover {
     transition: all  ease 1s;
-    color: #fff;
+    color: $white;
     .service-body { background-color: #3d2329; transition: all  ease 1s; }
-    .hexagon {background-color: #ff0036; transition: all  ease 1s;}
-    svg > path {fill: #fff; transition: all  ease 1s;}
+    .hexagon {background-color: $red-color; transition: all  ease 1s;}
+    svg > path {fill: $white; transition: all  ease 1s;}
   }
 }
 
@@ -104,12 +104,12 @@ $red-color:     #ff0036;
     .card-title {
      span {
        background-color: $red-color;
-       color: #fff;
+       color: $white;
        transition: all  ease-in-out .8s;
      }
     }
     .btn-order {
-      background-color: #ff0036;
+      background-color: $red-color;
       transition: all  ease-in-out .8s;
     }
   }

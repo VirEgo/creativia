@@ -2,7 +2,7 @@
   position: static;
   width: 290px;
   height: 290px;
-  background-color: #fff;
+  background-color: #ffffff;
   overflow: hidden;
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
 
@@ -147,9 +147,9 @@
     .advantage-item .hexagon:hover .inner-hexagon {
       background-color: #ff0036; }
       .advantage-item .hexagon:hover .inner-hexagon svg {
-        color: #fff; }
+        color: #ffffff; }
         .advantage-item .hexagon:hover .inner-hexagon svg path {
-          fill: #fff; }
+          fill: #ffffff; }
   .advantage-item .hexagon:before, .advantage-item .hexagon:after {
     content: '';
     width: 0; }
@@ -176,7 +176,7 @@
   .accordion-icon::after {
     content: '';
     display: block;
-    width: 13px;
+    width: 12px;
     height: 0px;
     border-bottom: solid 2px #ff0036;
     position: absolute;
@@ -187,7 +187,7 @@
   .btn-link.collapsed .accordion-icon::before {
     content: '';
     display: block;
-    width: 13px;
+    width: 12px;
     height: 0px;
     border-bottom: solid 2px #ff0036;
     position: absolute;

@@ -1,3 +1,4 @@
+@import "../components/variables";
 .portfolio-section {
   position: relative;
   .divider {
@@ -47,7 +48,7 @@
   align-items: center;
   background-color: #262626;
   .portfolio-header {
-    color: #fff;
+    color: $white;
     padding-bottom: 27px;
     font-weight: 700;
   }
@@ -136,11 +137,11 @@
     flex-direction: column;
     svg {
       path {
-        fill: #fff;
+        fill: $white;
       }
     }
     p {
-      color: #fff;
+      color: $white;
       font-size: 16px;
     }
   }

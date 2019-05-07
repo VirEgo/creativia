@@ -1,5 +1,6 @@
+@import "../components/variables";
 .follow-section{
-  color: #fff;
+  color: $white;
   background: rgba(0, 0, 0, 0) url("../img/header-bg.png") 0% 0%;
   transition: background-color 1s;
   background-repeat: no-repeat;
@@ -24,13 +25,13 @@
   display: flex;
   justify-content: center;
   .hexagon {
-    background-color: #ff0036;
+    background-color: $red-color;
     margin-right: 2rem;
     width: 60px;
     height: 60px;
     svg {
       path {
-        fill: #fff;
+        fill: $white;
       }
     }
   }
@@ -46,13 +47,13 @@
 }
 .follow {
   a {
-    color: #ff0036;
+    color: $red-color;
     &:hover {
-      color: #fff;
+      color: $white;
       .hexagon-body {
         polygon {
           transition: fill ease .5s;
-          fill: #ff0036;
+          fill: $red-color;
         }
       }
     }

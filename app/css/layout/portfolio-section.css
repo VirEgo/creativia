@@ -38,7 +38,7 @@
   align-items: center;
   background-color: #262626; }
   .portfolio-nav-wrapper .portfolio-header {
-    color: #fff;
+    color: #ffffff;
     padding-bottom: 27px;
     font-weight: 700; }
   @media screen and (max-width: 767px) {
@@ -107,9 +107,9 @@
     align-items: center;
     flex-direction: column; }
     .portfolio-example .portfolio-hover svg path {
-      fill: #fff; }
+      fill: #ffffff; }
     .portfolio-example .portfolio-hover p {
-      color: #fff;
+      color: #ffffff;
       font-size: 16px; }
   .portfolio-example:hover .portfolio-hover {
     visibility: visible;

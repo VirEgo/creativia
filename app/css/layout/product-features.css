@@ -1,5 +1,86 @@
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.slider-btn {
+  padding: 10px 35px;
+  display: block;
+  text-transform: uppercase;
+  background-color: #393939;
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 30px; }
+  .slider-btn:hover {
+    background-color: #ff0036;
+    color: #ffffff;
+    text-decoration: none; }
+  @media screen and (max-width: 767px) {
+    .slider-btn {
+      padding: 10px;
+      font-size: 14px;
+      margin-right: 10px; } }
+
+.btn-order {
+  background-color: #262626;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  padding: 12px 50px; }
+
+.view-more-btn {
+  padding: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  border-radius: 0;
+  background-color: #262626;
+  transition: background-color ease-in-out .5s; }
+  .view-more-btn:hover {
+    background-color: #ff0036; }
+
+.more-articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border-radius: 50%; }
+  .more-articles svg {
+    width: 30px !important;
+    height: 30px;
+    vertical-align: middle; }
+    .more-articles svg path {
+      fill: #a2a2a2; }
+  .more-articles:hover svg {
+    transform: translateY(10px);
+    transition: all ease-in-out .4s; }
+    .more-articles:hover svg path {
+      fill: #474f54; }
+
+.submit-form {
+  max-width: 120px;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  background-color: #262626;
+  color: #ffffff;
+  border: none;
+  transition: background-color ease-in-out .3s; }
+  .submit-form:hover {
+    background-color: #ff0036; }
+  @media screen and (max-width: 576px) {
+    .submit-form {
+      padding: 3px 20px;
+      font-size: 14px;
+      margin: auto; } }
+
 .product-features {
-  height: 90vh; }
+  height: 70vh; }
   @media screen and (max-width: 767px) {
     .product-features {
       height: auto; } }
@@ -31,22 +112,22 @@
     color: #333;
     padding: 10px 15px;
     padding-right: 0;
+    justify-content: space-between;
     border: 1px solid #c9c9c9;
     display: flex;
-    justify-content: space-between;
     margin-bottom: 24px; }
     .links .link-item:hover {
       background-color: #ff0036;
       text-decoration: none;
       text-transform: uppercase;
-      color: #fff; }
+      color: #ffffff; }
       .links .link-item:hover svg:first-child path {
         fill: #ff0036 !important; }
       .links .link-item:hover svg:last-child path {
-        fill: #fff !important; }
+        fill: #ffffff !important; }
       .links .link-item:hover a {
         text-decoration: none;
-        color: #fff; }
+        color: #ffffff; }
     .links .link-item a {
       text-decoration: none;
       color: #333; }
@@ -54,19 +135,23 @@
     .links {
       padding-top: 0; } }
 
+.links-right .link-item {
+  justify-content: unset; }
+
+.links-right .links-icon {
+  margin-left: 3rem; }
+
 .mockup img {
-  position: absolute;
-  left: -3rem;
-  padding-bottom: 100px;
-  z-index: -1; }
+  width: 100%;
+  padding-bottom: 0px; }
 
 .mockup .slider-btn {
-  background-color: #393939;
   z-index: 2;
   position: absolute;
-  bottom: -120%;
+  bottom: 10%;
   left: 50%;
-  transform: translate(-50%, 0%); }
+  transform: translate(-50%, 0%);
+  margin-right: 0; }
 
 @media screen and (max-width: 767px) {
   .mockup {

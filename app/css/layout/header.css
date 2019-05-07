@@ -111,7 +111,7 @@
       .nav-item .nav-link {
         font-size: 14px; }
         .nav-item .nav-link:hover {
-          color: #fff !important; }
+          color: #ffffff !important; }
           .nav-item .nav-link:hover:before {
             content: '';
             width: 100%;
@@ -129,7 +129,7 @@
             margin-top: 40px;
             left: 0; } }
     .nav-item .nav-link:hover {
-      color: #fff !important; }
+      color: #ffffff !important; }
   .nav-item .btn-group {
     margin-top: 53px; }
 

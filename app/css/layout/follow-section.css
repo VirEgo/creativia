@@ -1,5 +1,5 @@
 .follow-section {
-  color: #fff;
+  color: #ffffff;
   background: rgba(0, 0, 0, 0) url("../img/header-bg.png") 0% 0%;
   transition: background-color 1s;
   background-repeat: no-repeat;
@@ -30,7 +30,7 @@
     width: 60px;
     height: 60px; }
     .socials .hexagon svg path {
-      fill: #fff; }
+      fill: #ffffff; }
   .socials .hexagon:before {
     top: -50px;
     width: auto;
@@ -42,7 +42,7 @@
 .follow a {
   color: #ff0036; }
   .follow a:hover {
-    color: #fff; }
+    color: #ffffff; }
     .follow a:hover .hexagon-body polygon {
       transition: fill ease .5s;
       fill: #ff0036; }

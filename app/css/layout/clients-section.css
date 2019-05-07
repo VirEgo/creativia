@@ -1,5 +1,5 @@
 .clients {
-  color: #fff;
+  color: #ffffff;
   position: relative;
   margin-top: 177px;
   padding-bottom: 100px;
@@ -77,9 +77,25 @@
       background-color: transparent;
       backface-visibility: hidden;
       transition: all 0.6s ease-in-out; }
+      .clients .carousel .carousel-item .review-author-name p {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 1rem; }
   @media screen and (max-width: 767px) {
     .clients {
       margin-top: 0; } }
+  .clients .box-inner {
+    width: 70px;
+    height: 70px;
+    background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
+    background-size: cover;
+    background-position: 0 0;
+    margin: auto;
+    top: 6px;
+    position: static;
+    overflow: hidden;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
 
 .reviews-slider-indicator {
   display: flex; }
@@ -87,7 +103,7 @@
     width: 10px;
     height: 10px;
     display: block;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 0 2px;
     margin-top: 28px; }
     .reviews-slider-indicator .indicator.active {

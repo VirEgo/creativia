@@ -4,16 +4,16 @@
   flex-direction: row;
 }
 .slider-btn {
-  padding: 17px 35px;
+  padding: 10px 35px;
   display: block;
   text-transform: uppercase;
-  background-color: #131313;
-  color: #fff;
+  background-color: #393939;
+  color: $white;
   text-decoration: none;
   margin-right: 30px;
   &:hover {
     background-color: $red-color;
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
   @media screen and (max-width: 767px) {
@@ -26,14 +26,14 @@
 .btn-order {
   background-color: #262626;
   font-size: 14px;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   border: none;
   padding: 12px 50px;
 }
 .view-more-btn {
   padding: 15px;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   font-size: 16px;
   border: none;
@@ -41,7 +41,7 @@
   background-color: #262626;
   transition: background-color ease-in-out .5s;
   &:hover {
-    background-color: #ff0036;
+    background-color: $red-color;
   }
 }
 .more-articles {
@@ -77,11 +77,11 @@
   padding: 15px 30px ;
   text-transform: uppercase;
   background-color: #262626;
-  color: #fff;
+  color: $white;
   border: none;
   transition: background-color ease-in-out .3s;
   &:hover {
-    background-color: #ff0036;
+    background-color: $red-color;
   }
   @media screen and (max-width: 576px) {
     padding: 3px 20px;
