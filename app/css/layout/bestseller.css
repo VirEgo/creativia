@@ -1,0 +1,19 @@
+.card-deck {
+  display: flex; }
+  @media screen and (max-width: 767px) {
+    .card-deck {
+      display: none !important; } }
+
+.card-carousel {
+  display: none; }
+  .card-carousel .carousel-indicators {
+    margin-bottom: 0; }
+    .card-carousel .carousel-indicators li {
+      background-color: #000; }
+  @media screen and (max-width: 767px) {
+    .card-carousel {
+      visibility: visible;
+      display: flex;
+      flex-direction: column-reverse;
+      margin: auto;
+      width: 90%; } }

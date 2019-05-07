@@ -1,0 +1,83 @@
+.services {
+  background-color: #272727;
+  color: #a4a4a4; }
+  .services .card-body {
+    padding: 0;
+    text-align: center; }
+    .services .card-body .card-title p {
+      font-size: 20px;
+      background-color: #262626;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 0 !important;
+      padding: 15px 0; }
+    .services .card-body .card-title span {
+      display: block;
+      width: 100%;
+      font-size: 36px;
+      background-color: #f2f2f2;
+      color: #262626;
+      padding: 25px 0; }
+      .services .card-body .card-title span sub {
+        font-size: 14px; }
+    .services .card-body .card-text {
+      border-bottom: 1px solid #f2f2f2;
+      font-size: 14px;
+      padding: 20px 0;
+      margin-bottom: 0; }
+
+@media screen and (max-width: 576px) {
+  .services-wrapper .service-item:first-child .service-header {
+    justify-content: flex-start; }
+  .services-wrapper .service-item:last-child .service-header {
+    justify-content: flex-end; } }
+
+.service-item {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  transition: all  ease .4s; }
+  .service-item .service-header {
+    display: flex;
+    margin-bottom: 1rem; }
+    .service-item .service-header .service-name {
+      text-transform: uppercase; }
+  .service-item .service-body {
+    padding: 30px 35px;
+    background-color: #343434; }
+  .service-item .hexagon {
+    background-color: #a4a4a4; }
+  .service-item .hexagon {
+    margin-right: 1rem; }
+    .service-item .hexagon:before {
+      top: -50px; }
+    .service-item .hexagon svg path {
+      fill: #262626; }
+  .service-item:hover {
+    transition: all  ease 1s;
+    color: #fff; }
+    .service-item:hover .service-body {
+      background-color: #3d2329;
+      transition: all  ease 1s; }
+    .service-item:hover .hexagon {
+      background-color: #ff0036;
+      transition: all  ease 1s; }
+    .service-item:hover svg > path {
+      fill: #fff;
+      transition: all  ease 1s; }
+
+.card-footer {
+  display: flex;
+  justify-content: center; }
+
+.card {
+  cursor: pointer;
+  transition: all  ease-in-out .8s; }
+  .card:hover {
+    transition: all  ease-in-out .8s; }
+    .card:hover .card-title span {
+      background-color: #ff0036;
+      color: #fff;
+      transition: all  ease-in-out .8s; }
+    .card:hover .btn-order {
+      background-color: #ff0036;
+      transition: all  ease-in-out .8s; }

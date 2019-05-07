@@ -1,0 +1,35 @@
+.article {
+  margin-bottom: 2rem; }
+  .article .article-image img {
+    width: 100%;
+    height: 200px; }
+  @media screen and (max-width: 767px) {
+    .article .article-image {
+      width: auto;
+      margin: auto;
+      justify-content: center;
+      display: flex; } }
+  @media screen and (max-width: 767px) {
+    .article .article-blog {
+      text-align: center; }
+      .article .article-blog .article-title {
+        padding-top: 1rem; } }
+  .article .article-title {
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 18px; }
+  .article .article-info {
+    padding-bottom: 20px; }
+    .article .article-info a {
+      text-decoration: none;
+      color: #a2a2a2;
+      margin-right: 23px;
+      transition: color ease-in-out .5s; }
+      .article .article-info a:hover {
+        color: #ff0036; }
+    .article .article-info svg {
+      margin-right: 10px; }
+  .article .article-text {
+    font-size: 16px;
+    color: #505050;
+    line-height: 15px; }

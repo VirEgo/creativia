@@ -1,8 +1,8 @@
 .btn-group {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-}
+  flex-direction: row; }
+
 .slider-btn {
   padding: 17px 35px;
   display: block;
@@ -10,18 +10,16 @@
   background-color: #131313;
   color: #fff;
   text-decoration: none;
-  margin-right: 30px;
-  &:hover {
-    background-color: $red-color;
+  margin-right: 30px; }
+  .slider-btn:hover {
+    background-color: #ff0036;
     color: #fff;
-    text-decoration: none;
-  }
+    text-decoration: none; }
   @media screen and (max-width: 767px) {
-    padding: 10px;
-    font-size: 14px;
-    margin-right: 10px;
-  }
-}
+    .slider-btn {
+      padding: 10px;
+      font-size: 14px;
+      margin-right: 10px; } }
 
 .btn-order {
   background-color: #262626;
@@ -29,8 +27,8 @@
   color: #fff;
   text-transform: uppercase;
   border: none;
-  padding: 12px 50px;
-}
+  padding: 12px 50px; }
+
 .view-more-btn {
   padding: 15px;
   color: #fff;
@@ -39,11 +37,10 @@
   border: none;
   border-radius: 0;
   background-color: #262626;
-  transition: background-color ease-in-out .5s;
-  &:hover {
-    background-color: #ff0036;
-  }
-}
+  transition: background-color ease-in-out .5s; }
+  .view-more-btn:hover {
+    background-color: #ff0036; }
+
 .more-articles {
   display: flex;
   align-items: center;
@@ -53,39 +50,31 @@
   width: 40px;
   height: 40px;
   background-color: #f2f2f2;
-  border-radius: 50%;
-  svg{
-    width: 30px!important;
+  border-radius: 50%; }
+  .more-articles svg {
+    width: 30px !important;
     height: 30px;
-    vertical-align: middle;
-    path {
-      fill: #a2a2a2;
-    }
-  }
-  &:hover {
-    svg {
-      transform: translateY(10px);
-      transition: all ease-in-out .4s;
-      path{
-        fill: #474f54;
-      }
-    }
-  }
-}
+    vertical-align: middle; }
+    .more-articles svg path {
+      fill: #a2a2a2; }
+  .more-articles:hover svg {
+    transform: translateY(10px);
+    transition: all ease-in-out .4s; }
+    .more-articles:hover svg path {
+      fill: #474f54; }
+
 .submit-form {
   max-width: 120px;
-  padding: 15px 30px ;
+  padding: 15px 30px;
   text-transform: uppercase;
   background-color: #262626;
   color: #fff;
   border: none;
-  transition: background-color ease-in-out .3s;
-  &:hover {
-    background-color: #ff0036;
-  }
+  transition: background-color ease-in-out .3s; }
+  .submit-form:hover {
+    background-color: #ff0036; }
   @media screen and (max-width: 576px) {
-    padding: 3px 20px;
-    font-size: 14px;
-    margin: auto;
-  }
-}
+    .submit-form {
+      padding: 3px 20px;
+      font-size: 14px;
+      margin: auto; } }

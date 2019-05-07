@@ -1,0 +1,89 @@
+.product-features {
+  height: 90vh; }
+  @media screen and (max-width: 767px) {
+    .product-features {
+      height: auto; } }
+
+.product-features-header {
+  font-size: 30px;
+  font-weight: bold; }
+
+.links {
+  padding-top: 3rem;
+  position: relative;
+  cursor: pointer; }
+  .links .links-icon {
+    position: relative; }
+    .links .links-icon svg {
+      position: absolute;
+      margin: auto;
+      margin-left: -2rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px; }
+      .links .links-icon svg:first-child {
+        z-index: 1; }
+  .links .link-item {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    padding: 10px 15px;
+    padding-right: 0;
+    border: 1px solid #c9c9c9;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px; }
+    .links .link-item:hover {
+      background-color: #ff0036;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff; }
+      .links .link-item:hover svg:first-child path {
+        fill: #ff0036 !important; }
+      .links .link-item:hover svg:last-child path {
+        fill: #fff !important; }
+      .links .link-item:hover a {
+        text-decoration: none;
+        color: #fff; }
+    .links .link-item a {
+      text-decoration: none;
+      color: #333; }
+  @media screen and (max-width: 767px) {
+    .links {
+      padding-top: 0; } }
+
+.mockup img {
+  position: absolute;
+  left: -3rem;
+  padding-bottom: 100px;
+  z-index: -1; }
+
+.mockup .slider-btn {
+  background-color: #393939;
+  z-index: 2;
+  position: absolute;
+  bottom: -120%;
+  left: 50%;
+  transform: translate(-50%, 0%); }
+
+@media screen and (max-width: 767px) {
+  .mockup {
+    display: none; } }
+
+@media screen and (max-width: 992px) {
+  .mockup img {
+    position: absolute;
+    left: 7rem;
+    padding-bottom: 100px;
+    top: -31rem;
+    z-index: -1;
+    opacity: .5; }
+  .mockup .slider-btn {
+    height: 35px;
+    padding: 7px 20px;
+    top: 11px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -27%); } }

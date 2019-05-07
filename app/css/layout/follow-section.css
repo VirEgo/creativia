@@ -1,0 +1,65 @@
+.follow-section {
+  color: #fff;
+  background: rgba(0, 0, 0, 0) url("../img/header-bg.png") 0% 0%;
+  transition: background-color 1s;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .follow-section:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color ease-in-out .9s; }
+  .follow-section:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
+    content: ' '; }
+
+.follows {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.socials {
+  display: flex;
+  justify-content: center; }
+  .socials .hexagon {
+    background-color: #ff0036;
+    margin-right: 2rem;
+    width: 60px;
+    height: 60px; }
+    .socials .hexagon svg path {
+      fill: #fff; }
+  .socials .hexagon:before {
+    top: -50px;
+    width: auto;
+    height: auto; }
+  .socials .hexagon:before, .socials .hexagon:after {
+    height: auto;
+    width: auto; }
+
+.follow a {
+  color: #ff0036; }
+  .follow a:hover {
+    color: #fff; }
+    .follow a:hover .hexagon-body polygon {
+      transition: fill ease .5s;
+      fill: #ff0036; }
+
+.follow svg {
+  width: 60px;
+  height: 60px; }
+
+.hexagon-svg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  display: block;
+  margin-right: 3rem;
+  transform: rotate(28deg); }
+  .hexagon-svg svg {
+    position: absolute; }
+    .hexagon-svg svg:last-child {
+      left: 50%;
+      transform: translateX(-50%) rotate(-28deg); }

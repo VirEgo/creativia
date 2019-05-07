@@ -82,6 +82,9 @@
   flex-direction: row;
   padding: 0px !important; }
 
+.accordion .card-body {
+  padding: 1.25rem; }
+
 .accordion-icon {
   width: 25px;
   height: 25px;

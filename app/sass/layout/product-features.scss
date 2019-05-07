@@ -13,6 +13,7 @@
 .links {
   padding-top: 3rem;
   position: relative;
+  cursor: pointer;
   .links-icon {
     position: relative;
     svg {
@@ -34,12 +35,13 @@
     text-transform: uppercase;
     color: #333;
     padding: 10px 15px;
+    padding-right: 0;
     border: 1px solid #c9c9c9;
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
     &:hover {
-      background-color: $red-color;
+      background-color: #ff0036;
       text-decoration: none;
       text-transform: uppercase;
       color: #fff;
@@ -74,6 +76,7 @@
    position: absolute;
    left: -3rem;
    padding-bottom: 100px;
+   z-index: -1;
  }
   .slider-btn {
     background-color: #393939;

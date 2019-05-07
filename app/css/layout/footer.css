@@ -1,0 +1,17 @@
+.footer-wrapper {
+  background: #000;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer-wrapper a {
+    color: #6c6c6c;
+    font-size: 16px; }
+  @media screen and (max-width: 576px) {
+    .footer-wrapper .footer-links {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .footer-wrapper .footer-links a:first-child {
+        padding-bottom: 0.5rem; } }

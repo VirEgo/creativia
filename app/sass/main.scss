@@ -1,5 +1,10 @@
-//@import "../css/vendors/font-awesome.css";
-//@import "../css/vendors/bootstrap.css";
+
+// variables
+@import "components/_variables.scss";
+//components
+@import "components/buttons";
+//fonts
+@import "../css/base/fonts.css";
 
 //layouts
 @import "layout/header";
@@ -16,18 +21,12 @@
 @import "layout/location-section";
 @import "layout/footer";
 
-//fonts
-@import "../css/base/fonts.css";
 
-//components
-@import "components/buttons";
-
-// variables
-@import "components/variables";
 
 * {
   font-family: "ralewayregular", sans-serif;
 }
+
 body {
   padding-bottom: 0;
 }
