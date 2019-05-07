@@ -303,6 +303,47 @@
     content: '';
     width: 0; }
 
+.accordion-icon {
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .accordion-icon::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-bottom: solid 2px #ff0036;
+    bottom: 9px;
+    transform: rotate(90deg); }
+  .accordion-icon::after {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 0px;
+    border-bottom: solid 2px #ff0036;
+    position: absolute;
+    bottom: 9px; }
+
+.btn-link.collapsed .accordion-icon {
+  transform: rotate(0deg); }
+  .btn-link.collapsed .accordion-icon::before {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 0px;
+    border-bottom: solid 2px #ff0036;
+    position: absolute;
+    bottom: 9px;
+    transform: rotate(90deg);
+    transition: width 0.3s; }
+
 .portfolio-section {
   position: relative; }
   .portfolio-section .divider {
@@ -422,6 +463,9 @@
 
 .product-features {
   height: 90vh; }
+  @media screen and (max-width: 767px) {
+    .product-features {
+      height: auto; } }
 
 .product-features-header {
   font-size: 30px;
@@ -467,6 +511,9 @@
     .links .link-item a {
       text-decoration: none;
       color: #333; }
+  @media screen and (max-width: 767px) {
+    .links {
+      padding-top: 0; } }
 
 .mockup img {
   position: absolute;
@@ -571,6 +618,18 @@
   .clients .section-description {
     padding-bottom: 35px !important;
     padding: 0 4rem; }
+  .clients .carousel {
+    top: 0;
+    position: static !important; }
+    .clients .carousel .carousel-indicators {
+      position: static; }
+    .clients .carousel .carousel-item {
+      background-color: transparent;
+      backface-visibility: hidden;
+      transition: all 0.6s ease-in-out; }
+  @media screen and (max-width: 767px) {
+    .clients {
+      margin-top: 0; } }
 
 .reviews-slider-indicator {
   display: flex; }
@@ -583,16 +642,6 @@
     margin-top: 28px; }
     .reviews-slider-indicator .indicator.active {
       background-color: #ff0036; }
-
-.carousel {
-  top: 0;
-  position: static !important; }
-  .carousel .carousel-indicators {
-    position: static; }
-  .carousel .carousel-item {
-    background-color: transparent;
-    backface-visibility: hidden;
-    transition: all 0.6s ease-in-out; }
 
 .team-wrapper {
   flex-direction: row; }
@@ -1151,6 +1200,9 @@ section {
   section .section-description {
     padding-bottom: 100px;
     text-align: center; }
+    @media screen and (max-width: 767px) {
+      section .section-description {
+        padding-bottom: 20px; } }
   section .divider {
     margin: 0 auto;
     display: flex;

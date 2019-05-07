@@ -1,7 +1,8 @@
+
+$red-color:     #ff0036;
 *{
   font-family: "ralewayregular", sans-serif;
 }
-$red-color:     #ff0036;
 .header-row {
   background-color: rgba(0,0,0,.7);
   position: relative;
@@ -10,9 +11,6 @@ $red-color:     #ff0036;
   @media screen and (max-width: 992px){
     background-color: rgba(0, 0, 0, 1);
     text-align: center;
-    .nav-item {
-
-    }
   }
   @media screen and (max-width: 767px){
     margin-top: 0;
@@ -165,7 +163,7 @@ $red-color:     #ff0036;
   }
 .btn-group {
   margin-top: 53px;
-}
+  }
 }
 
 .overflow {

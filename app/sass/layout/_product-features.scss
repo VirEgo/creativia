@@ -1,5 +1,8 @@
 .product-features {
   height: 90vh;
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 }
 .product-features-header {
   font-size: 30px;
@@ -61,6 +64,9 @@
       text-decoration: none;
       color: #333;
     }
+  }
+  @media screen and (max-width: 767px){
+    padding-top: 0;
   }
 }
 .mockup {

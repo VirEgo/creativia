@@ -8,4 +8,8 @@ $(function() {
     });
 });
 
+$('#accordion-icon').on('click', function(){
+  $(this).toggleClass('closed');
+  console.log("click");
+});
 

@@ -150,3 +150,44 @@
   .advantage-item .hexagon:before, .advantage-item .hexagon:after {
     content: '';
     width: 0; }
+
+.accordion-icon {
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; }
+  .accordion-icon::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-bottom: solid 2px #ff0036;
+    bottom: 9px;
+    transform: rotate(90deg); }
+  .accordion-icon::after {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 0px;
+    border-bottom: solid 2px #ff0036;
+    position: absolute;
+    bottom: 9px; }
+
+.btn-link.collapsed .accordion-icon {
+  transform: rotate(0deg); }
+  .btn-link.collapsed .accordion-icon::before {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 0px;
+    border-bottom: solid 2px #ff0036;
+    position: absolute;
+    bottom: 9px;
+    transform: rotate(90deg);
+    transition: width 0.3s; }
