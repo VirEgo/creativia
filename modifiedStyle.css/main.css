@@ -794,7 +794,7 @@
   margin-right: 25px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 506px) {
   .clients .partners-line .partner-item:nth-child(1) {
     margin-right: 0;
     margin-bottom: 0.5rem;
@@ -1207,6 +1207,15 @@
 }
 
 @media screen and (max-width: 767px) {
+  .article .article-image {
+    width: auto;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .article .article-blog {
     text-align: center;
   }
@@ -1344,13 +1353,19 @@
   padding-bottom: 85px;
 }
 
+@media screen and (max-width: 576px) {
+  .map-section {
+    padding-bottom: 35px;
+  }
+}
+
 .map-wrapper {
   position: relative;
   width: 100%;
 }
 
 .map-wrapper .forms {
-  top: 50px;
+  top: 25px;
 }
 
 .map-wrapper .forms .map-address {
@@ -1397,7 +1412,7 @@
 @media screen and (max-width: 992px) {
   .map-wrapper .forms .map-address,
   .map-wrapper .forms .map-form {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -1433,12 +1448,14 @@
   .map-wrapper .forms .form-title {
     margin-bottom: 1.3rem !important;
     text-align: center;
+    font-size: 20px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .map-wrapper .forms .map-wrapper .forms {
     width: 100%;
+    top: 25px;
   }
 }
 
@@ -1458,7 +1475,7 @@
 .footer-wrapper {
   background: #000;
   width: 100%;
-  height: 50px;
+  padding: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1467,6 +1484,18 @@
 .footer-wrapper a {
   color: #6c6c6c;
   font-size: 16px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer-wrapper .footer-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-wrapper .footer-links a:first-child {
+    padding-bottom: 0.5rem;
+  }
 }
 
 .btn-group {

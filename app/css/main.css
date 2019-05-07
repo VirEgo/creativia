@@ -494,6 +494,8 @@
     z-index: -1;
     opacity: .5; }
   .mockup .slider-btn {
+    height: 35px;
+    padding: 7px 20px;
     top: 11px;
     left: 50%;
     bottom: 0;
