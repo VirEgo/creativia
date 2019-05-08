@@ -75,6 +75,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.75rem; }
+    @media screen and (max-width: 576px) {
+      .chart .percent {
+        top: 45%; } }
 
 @media screen and (max-width: 480px) {
   .skills-wrapper {
