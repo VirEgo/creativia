@@ -1,6 +1,7 @@
 
 // variables
 @import "components/variables";
+@import "components/mixin";
 //components
 @import "components/buttons";
 //fonts
@@ -145,11 +146,10 @@ section {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-}
-.hexagon, .hexagon:before, .hexagon:after {
   background: $white;
 }
-.hexagon:before, .hexagon:after {
+.hexagon:before, 
+.hexagon:after {
   content: "";
   position: absolute;
   left: 22px;
@@ -158,6 +158,7 @@ section {
   -moz-transform: rotate(145deg) skew(22.5deg);
   -webkit-transform: rotate(145deg) skew(22.5deg);
   transform: rotate(145deg) skew(22.5deg);
+  background: $white;
 }
 .hexagon:before {
   top: -29px;
@@ -223,4 +224,3 @@ section {
 .carousel-control-next-icon {
   background: none!important;
 }
-

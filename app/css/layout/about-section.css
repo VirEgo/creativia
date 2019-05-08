@@ -125,7 +125,7 @@
   margin-bottom: 1rem; }
 
 .advantage-item .hexagon {
-  background-color: #626262 !important;
+  background-color: #626262;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -143,7 +143,7 @@
     .advantage-item .hexagon .inner-hexagon svg {
       color: #262626; }
   .advantage-item .hexagon:hover {
-    background-color: #ff0036 !important; }
+    background-color: #ff0036; }
     .advantage-item .hexagon:hover .inner-hexagon {
       background-color: #ff0036; }
       .advantage-item .hexagon:hover .inner-hexagon svg {

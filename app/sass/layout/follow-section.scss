@@ -77,4 +77,7 @@
       transform: translateX(-50%) rotate(-28deg);
     }
   }
+  @media screen and (max-width: 576px) {
+    margin-right: 1rem;
+  }
 }

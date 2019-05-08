@@ -53,7 +53,7 @@
   background-color: #f2f2f2;
   border-radius: 50%; }
   .more-articles svg {
-    width: 30px !important;
+    width: 30px;
     height: 30px;
     vertical-align: middle; }
     .more-articles svg path {
@@ -358,7 +358,7 @@
   margin-bottom: 1rem; }
 
 .advantage-item .hexagon {
-  background-color: #626262 !important;
+  background-color: #626262;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -376,7 +376,7 @@
     .advantage-item .hexagon .inner-hexagon svg {
       color: #262626; }
   .advantage-item .hexagon:hover {
-    background-color: #ff0036 !important; }
+    background-color: #ff0036; }
     .advantage-item .hexagon:hover .inner-hexagon {
       background-color: #ff0036; }
       .advantage-item .hexagon:hover .inner-hexagon svg {
@@ -544,6 +544,9 @@
   .portfolio-example:hover .portfolio-hover {
     visibility: visible;
     transition: all ease-in-out .5s; }
+  @media screen and (max-width: 576px) {
+    .portfolio-example img {
+      left: 53%; } }
 
 .btn-group {
   display: flex;
@@ -599,7 +602,7 @@
   background-color: #f2f2f2;
   border-radius: 50%; }
   .more-articles svg {
-    width: 30px !important;
+    width: 30px;
     height: 30px;
     vertical-align: middle; }
     .more-articles svg path {
@@ -707,7 +710,7 @@
 @media screen and (max-width: 992px) {
   .mockup img {
     position: absolute;
-    left: 7rem;
+    left: 0rem;
     padding-bottom: 100px;
     top: -31rem;
     z-index: -1;
@@ -1062,6 +1065,35 @@
       margin: auto;
       width: 90%; } }
 
+.card-title {
+  text-align: center; }
+  .card-title p {
+    background-color: #262626;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 20px;
+    margin-bottom: 0;
+    font-size: 16px; }
+  .card-title span {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 32px;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    font-weight: bold; }
+    .card-title span sub {
+      font-size: 14px; }
+
+.card-body {
+  padding: 0 !important; }
+  .card-body > p {
+    padding: 0 20px;
+    border-bottom: 1px solid #f2f2f2; }
+
+.btn-order {
+  padding: 12px 25px; }
+
 .article {
   margin-bottom: 2rem; }
   .article .article-image img {
@@ -1163,6 +1195,9 @@
     .hexagon-svg svg:last-child {
       left: 50%;
       transform: translateX(-50%) rotate(-28deg); }
+  @media screen and (max-width: 576px) {
+    .hexagon-svg {
+      margin-right: 1rem; } }
 
 .map-section {
   padding-bottom: 85px; }
@@ -1349,12 +1384,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-decoration: none; }
-
-.hexagon, .hexagon:before, .hexagon:after {
+  text-decoration: none;
   background: #ffffff; }
 
-.hexagon:before, .hexagon:after {
+.hexagon:before,
+.hexagon:after {
   content: "";
   position: absolute;
   left: 22px;
@@ -1362,7 +1396,8 @@ section {
   height: 57px;
   -moz-transform: rotate(145deg) skew(22.5deg);
   -webkit-transform: rotate(145deg) skew(22.5deg);
-  transform: rotate(145deg) skew(22.5deg); }
+  transform: rotate(145deg) skew(22.5deg);
+  background: #ffffff; }
 
 .hexagon:before {
   top: -29px; }

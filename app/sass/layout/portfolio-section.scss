@@ -151,4 +151,9 @@
       transition: all ease-in-out .5s;
     }
   }
+  @media screen and (max-width: 576px){
+    img {
+      left: 53%;
+    }
+  }
 }

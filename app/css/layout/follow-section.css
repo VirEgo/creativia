@@ -63,3 +63,6 @@
     .hexagon-svg svg:last-child {
       left: 50%;
       transform: translateX(-50%) rotate(-28deg); }
+  @media screen and (max-width: 576px) {
+    .hexagon-svg {
+      margin-right: 1rem; } }
