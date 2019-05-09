@@ -28,26 +28,7 @@
 .socials {
   display: flex;
   justify-content: center;
-  .hexagon {
-    background-color: $red-color;
-    margin-right: 2rem;
-    width: 60px;
-    height: 60px;
-    svg {
-      path {
-        fill: $white;
-      }
-    }
-  }
-  .hexagon:before {
-    top: -50px;
-    width: auto;
-    height: auto;
-  }
-  .hexagon:before, .hexagon:after {
-    height: auto;
-    width: auto;
-  }
+  
 }
 .follow {
   a {
@@ -68,10 +49,7 @@
   }
 }
 .hexagon-svg {
-  width: 60px;
-  height: 60px;
-  position: relative;
-  display: block;
+  @include hexagon(60px, 60px);
   margin-right: 3rem;
   transform: rotate(28deg);
   svg {

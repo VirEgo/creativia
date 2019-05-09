@@ -89,8 +89,8 @@ section {
   .section-description {
     padding-bottom: 100px;
     text-align: center;
-    @media screen and (max-width: 767px) {
-      padding-bottom: 20px;
+    @media screen and (max-width: 767px){
+      padding: 0 30px 100px 30px;
     }
   }
   .divider {
@@ -102,46 +102,45 @@ section {
 }
 
 .hexagon {
-  width: 30px;
-  height: 30px;
-  position: relative;
+  @include hexagon(30px, 30px);
+ 
   margin:auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   background: $white;
-}
-.hexagon:before, 
-.hexagon:after {
-  content: "";
-  position: absolute;
-  left: 22px;
-  width: 57px;
-  height: 57px;
-  -moz-transform: rotate(145deg) skew(22.5deg);
-  -webkit-transform: rotate(145deg) skew(22.5deg);
-  transform: rotate(145deg) skew(22.5deg);
-  background: $white;
-}
-.hexagon:before {
-  top: -29px;
-}
-.hexagon:after {
-  top: 27px;
-}
-.hexagon i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 55px;
-  background:#666;
-  z-index: 1;
-  color: $white;
-  display: block;
-  text-align: center;
-  line-height: 55px;
+  &:before, 
+  &:after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    width: 57px;
+    height: 57px;
+    -moz-transform: rotate(145deg) skew(22.5deg);
+    -webkit-transform: rotate(145deg) skew(22.5deg);
+    transform: rotate(145deg) skew(22.5deg);
+    background: $white;
+  }
+  &:before {
+    top: -29px;
+  }
+  &:after {
+    top: 27px;
+  }
+  i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 55px;
+    background:#666;
+    z-index: 1;
+    color: $white;
+    display: block;
+    text-align: center;
+    line-height: 55px;
+  }
 }
 
 .skill-progressbar {

@@ -231,18 +231,40 @@
     background-color: inherit;
     content: ' '; }
 
-.hexagon-big {
-  position: static;
-  width: 290px;
-  height: 290px;
-  background-color: #ffffff;
-  overflow: hidden;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+.hexagon-wrapper .box {
+  z-index: 1;
+  margin: auto; }
+
+.hexagon-wrapper .box-left {
+  position: absolute;
+  left: -1rem; }
+
+.hexagon-wrapper .box-right {
+  position: absolute;
+  right: 1rem; }
+
+@media screen and (max-width: 576px) {
+  .hexagon-wrapper div {
+    display: flex;
+    flex-direction: column; }
+    .hexagon-wrapper div .box, .hexagon-wrapper div .box-left, .hexagon-wrapper div .box-right {
+      position: static;
+      width: 180px;
+      height: 180px; }
+      .hexagon-wrapper div .box .box-inner, .hexagon-wrapper div .box-left .box-inner, .hexagon-wrapper div .box-right .box-inner {
+        width: 170px;
+        height: 170px;
+        margin: auto; } }
 
 .box {
   width: 300px;
   height: 300px;
   margin: auto; }
+  .box.hexagon-big {
+    position: static;
+    background-color: #ffffff;
+    overflow: hidden;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
 
 .box-left,
 .box-right {
@@ -282,31 +304,6 @@
 .hexagon-inner {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
-
-.hexagon-wrapper .box {
-  z-index: 1;
-  margin: auto; }
-
-.hexagon-wrapper .box-left {
-  position: absolute;
-  left: -1rem; }
-
-.hexagon-wrapper .box-right {
-  position: absolute;
-  right: 1rem; }
-
-@media screen and (max-width: 576px) {
-  .hexagon-wrapper div {
-    display: flex;
-    flex-direction: column; }
-    .hexagon-wrapper div .box, .hexagon-wrapper div .box-left, .hexagon-wrapper div .box-right {
-      position: static;
-      width: 180px;
-      height: 180px; }
-      .hexagon-wrapper div .box .box-inner, .hexagon-wrapper div .box-left .box-inner, .hexagon-wrapper div .box-right .box-inner {
-        width: 170px;
-        height: 170px;
-        margin: auto; } }
 
 .btn-link {
   display: flex !important;
@@ -862,6 +859,10 @@
     .reviews-slider-indicator .indicator.active {
       background-color: #ff0036; }
 
+@media screen and (max-width: 767px) {
+  .teamwork .section-description {
+    padding-bottom: 20px; } }
+
 .team-wrapper {
   flex-direction: row; }
   @media (max-width: 768px) {
@@ -942,6 +943,10 @@
     @media screen and (max-width: 576px) {
       .chart .percent {
         top: 45%; } }
+
+@media screen and (max-width: 767px) {
+  .skills .section-description {
+    padding-bottom: 20px; } }
 
 @media screen and (max-width: 480px) {
   .skills-wrapper {
@@ -1238,20 +1243,6 @@
 .socials {
   display: flex;
   justify-content: center; }
-  .socials .hexagon {
-    background-color: #ff0036;
-    margin-right: 2rem;
-    width: 60px;
-    height: 60px; }
-    .socials .hexagon svg path {
-      fill: #ffffff; }
-  .socials .hexagon:before {
-    top: -50px;
-    width: auto;
-    height: auto; }
-  .socials .hexagon:before, .socials .hexagon:after {
-    height: auto;
-    width: auto; }
 
 .follow a {
   color: #ff0036; }
@@ -1268,8 +1259,8 @@
 .hexagon-svg {
   width: 60px;
   height: 60px;
-  position: relative;
-  display: block;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   margin-right: 3rem;
   transform: rotate(28deg); }
   .hexagon-svg svg {
@@ -1427,7 +1418,7 @@ section {
     text-align: center; }
     @media screen and (max-width: 767px) {
       section .section-description {
-        padding-bottom: 20px; } }
+        padding: 0 30px 100px 30px; } }
   section .divider {
     margin: 0 auto;
     display: flex;
@@ -1461,44 +1452,40 @@ section {
 .hexagon {
   width: 30px;
   height: 30px;
-  position: relative;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   background: #ffffff; }
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  left: 22px;
-  width: 57px;
-  height: 57px;
-  -moz-transform: rotate(145deg) skew(22.5deg);
-  -webkit-transform: rotate(145deg) skew(22.5deg);
-  transform: rotate(145deg) skew(22.5deg);
-  background: #ffffff; }
-
-.hexagon:before {
-  top: -29px; }
-
-.hexagon:after {
-  top: 27px; }
-
-.hexagon i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100px;
-  height: 55px;
-  background: #666;
-  z-index: 1;
-  color: #ffffff;
-  display: block;
-  text-align: center;
-  line-height: 55px; }
+  .hexagon:before, .hexagon:after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    width: 57px;
+    height: 57px;
+    -moz-transform: rotate(145deg) skew(22.5deg);
+    -webkit-transform: rotate(145deg) skew(22.5deg);
+    transform: rotate(145deg) skew(22.5deg);
+    background: #ffffff; }
+  .hexagon:before {
+    top: -29px; }
+  .hexagon:after {
+    top: 27px; }
+  .hexagon i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 55px;
+    background: #666;
+    z-index: 1;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    line-height: 55px; }
 
 .skill-progressbar {
   width: 100px;

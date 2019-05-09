@@ -50,20 +50,6 @@
 .socials {
   display: flex;
   justify-content: center; }
-  .socials .hexagon {
-    background-color: #ff0036;
-    margin-right: 2rem;
-    width: 60px;
-    height: 60px; }
-    .socials .hexagon svg path {
-      fill: #ffffff; }
-  .socials .hexagon:before {
-    top: -50px;
-    width: auto;
-    height: auto; }
-  .socials .hexagon:before, .socials .hexagon:after {
-    height: auto;
-    width: auto; }
 
 .follow a {
   color: #ff0036; }
@@ -80,8 +66,8 @@
 .hexagon-svg {
   width: 60px;
   height: 60px;
-  position: relative;
-  display: block;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   margin-right: 3rem;
   transform: rotate(28deg); }
   .hexagon-svg svg {

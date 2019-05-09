@@ -1,4 +1,11 @@
 @import "../components/variables";
+.teamwork {
+  .section-description {
+    @media screen and (max-width: 767px) {
+      padding-bottom: 20px;
+    }
+  }
+}
 .team-wrapper {
   flex-direction: row;
   @media (max-width: 768px) {
@@ -94,6 +101,13 @@
     font-size: 1.75rem;
     @media screen and (max-width:576px) {
       top: 45%;
+    }
+  }
+}
+.skills {
+  .section-description {
+    @media screen and (max-width: 767px) {
+      padding-bottom: 20px;
     }
   }
 }

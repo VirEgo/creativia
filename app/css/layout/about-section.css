@@ -1,15 +1,37 @@
-.hexagon-big {
-  position: static;
-  width: 290px;
-  height: 290px;
-  background-color: #ffffff;
-  overflow: hidden;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+.hexagon-wrapper .box {
+  z-index: 1;
+  margin: auto; }
+
+.hexagon-wrapper .box-left {
+  position: absolute;
+  left: -1rem; }
+
+.hexagon-wrapper .box-right {
+  position: absolute;
+  right: 1rem; }
+
+@media screen and (max-width: 576px) {
+  .hexagon-wrapper div {
+    display: flex;
+    flex-direction: column; }
+    .hexagon-wrapper div .box, .hexagon-wrapper div .box-left, .hexagon-wrapper div .box-right {
+      position: static;
+      width: 180px;
+      height: 180px; }
+      .hexagon-wrapper div .box .box-inner, .hexagon-wrapper div .box-left .box-inner, .hexagon-wrapper div .box-right .box-inner {
+        width: 170px;
+        height: 170px;
+        margin: auto; } }
 
 .box {
   width: 300px;
   height: 300px;
   margin: auto; }
+  .box.hexagon-big {
+    position: static;
+    background-color: #ffffff;
+    overflow: hidden;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
 
 .box-left,
 .box-right {
@@ -49,31 +71,6 @@
 .hexagon-inner {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
-
-.hexagon-wrapper .box {
-  z-index: 1;
-  margin: auto; }
-
-.hexagon-wrapper .box-left {
-  position: absolute;
-  left: -1rem; }
-
-.hexagon-wrapper .box-right {
-  position: absolute;
-  right: 1rem; }
-
-@media screen and (max-width: 576px) {
-  .hexagon-wrapper div {
-    display: flex;
-    flex-direction: column; }
-    .hexagon-wrapper div .box, .hexagon-wrapper div .box-left, .hexagon-wrapper div .box-right {
-      position: static;
-      width: 180px;
-      height: 180px; }
-      .hexagon-wrapper div .box .box-inner, .hexagon-wrapper div .box-left .box-inner, .hexagon-wrapper div .box-right .box-inner {
-        width: 170px;
-        height: 170px;
-        margin: auto; } }
 
 .btn-link {
   display: flex !important;

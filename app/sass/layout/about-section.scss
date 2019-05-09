@@ -1,61 +1,5 @@
 @import "../components/variables";
 @import "../components/mixin";
-.hexagon-big {
-  position: static;
-  width: 290px;
-  height: 290px;
-  background-color: $white;
-  overflow: hidden;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-
-.box {
-  width: 300px;
-  height: 300px;
-  margin: auto;
-}
-.box-left,
-.box-right{
-  width: 270px;
-  height: 270px;
-  margin: auto;
-  position: absolute;
-  top: 1rem;
-  .box-inner {
-    width: 260px;
-    height: 260px;
-    background-size: cover;
-    background-position: 0 0;
-    background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
-
-    &:before, &:after {
-      background-color: transparent;
-    }
-  }
-}
-.box-inner {
-  width: 290px;
-  height: 290px;
-  background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
-  background-size: cover;
-  background-position: 0 0;
-  margin: auto;
-  top: 6px;
-  position: relative;
-}
-
-.hexagon {
-  //transform: rotate(-60deg);
-  width: 290px;
-  height: 290px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-
-.hexagon-inner {
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
 
 .hexagon-wrapper {
   .box{
@@ -88,6 +32,53 @@
   }
 }
 
+.box {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  &.hexagon-big {
+    position: static;
+    background-color: $white;
+    overflow: hidden;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+}
+.box-left,
+.box-right{
+  width: 270px;
+  height: 270px;
+  margin: auto;
+  position: absolute;
+  top: 1rem;
+  .box-inner {
+    width: 260px;
+    height: 260px;
+    background-size: cover;
+    background-position: 0 0;
+    background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
+
+    &:before, &:after {
+      background-color: transparent;
+    }
+  }
+}
+.box-inner {
+  width: 290px;
+  height: 290px;
+  background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
+  background-size: cover;
+  background-position: 0 0;
+  margin: auto;
+  top: 6px;
+  position: relative;
+}
+.hexagon {
+  @include hexagon(290px, 290px);
+}
+.hexagon-inner {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
 .btn-link {
   display: flex!important;
   justify-content: center;
@@ -152,7 +143,6 @@
         color: #262626;
       }
     }
-    
     &:hover {
       background-color: $red-color;
       .inner-hexagon {
@@ -163,7 +153,6 @@
             fill: $white;
           }
         }
-
       }
     }
     &:before,
@@ -173,14 +162,12 @@
     }
   }
 }
-
 .accordion-icon {
   @include plusMinus(20px, 2px, $red-color);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
-  
 }
 .btn-link {
   &.collapsed {

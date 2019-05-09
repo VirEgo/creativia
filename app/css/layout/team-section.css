@@ -1,3 +1,7 @@
+@media screen and (max-width: 767px) {
+  .teamwork .section-description {
+    padding-bottom: 20px; } }
+
 .team-wrapper {
   flex-direction: row; }
   @media (max-width: 768px) {
@@ -78,6 +82,10 @@
     @media screen and (max-width: 576px) {
       .chart .percent {
         top: 45%; } }
+
+@media screen and (max-width: 767px) {
+  .skills .section-description {
+    padding-bottom: 20px; } }
 
 @media screen and (max-width: 480px) {
   .skills-wrapper {
