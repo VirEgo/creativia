@@ -6,6 +6,32 @@
     font-size: 16px;
     font-weight: bold;
     color: #cacaca; }
+  .twitter .divider {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.6rem; }
+    .twitter .divider.black:before, .twitter .divider.black:after {
+      background-color: #ff0036; }
+    .twitter .divider.black svg path {
+      fill: #ff0036; }
+    .twitter .divider:before, .twitter .divider:after {
+      content: '';
+      width: 50%;
+      display: block;
+      height: 2px;
+      background-color: #ff0036;
+      margin: 0 auto; }
+    .twitter .divider svg {
+      width: 20px;
+      height: 20px; }
+      .twitter .divider svg path {
+        fill: #ff0036; }
 
 .tweet {
   margin: auto;

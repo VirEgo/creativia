@@ -24,6 +24,10 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: -6.85rem; }
+    .clients .divider.black:before, .clients .divider.black:after {
+      background-color: #ff0036; }
+    .clients .divider.black svg path {
+      fill: #ff0036; }
     .clients .divider:before, .clients .divider:after {
       content: '';
       width: 50%;

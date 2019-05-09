@@ -1,37 +1,14 @@
 @import "../components/variables";
+@import "../components/mixin";
 .portfolio-section {
   position: relative;
   .divider {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 5.6rem;
-
-
-    &:before,
-    &:after {
-      content: '';
-      width: 50%;
-      display: block;
-      height: 2px;
-      background-color: $red-color;
-      margin: 0 auto;
-    }
-    svg {
-      path {
-        fill: $red-color;
-      }
-    }
+    @include divider(5.6rem, $red-color);
+  
     @media screen and (max-width: 576px){
       bottom: 2.5rem;
     }
   }
-
 }
 .portfolios {
   padding-bottom: 110px;

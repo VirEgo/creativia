@@ -69,10 +69,9 @@
     background-color: #343434;
   }
   .hexagon {
-    background-color: #a4a4a4;
-  }
-  .hexagon {
     margin-right: 1rem;
+    background-color: #a4a4a4;
+
     &:before {
       top: -50px;
     }

@@ -1,27 +1,66 @@
 @mixin plusMinus($width, $lineWidth, $color) {
-    box-sizing: border-box;
-    transition: transform 0.3s;
-    width: $width;
-    height: $width;
-    transform: rotate(180deg);
-    position: relative;
-  
-    &::before {
-      content: '';
-      display: block;
-      width: 0px;
-      height:0px;
-      border-bottom: solid $lineWidth  $color;
-      bottom:$width/2 - $lineWidth/2;
-      transform: rotate(90deg);
+  box-sizing: border-box;
+  transition: transform 0.3s;
+  width: $width;
+  height: $width;
+  transform: rotate(180deg);
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height:0px;
+    border-bottom: solid $lineWidth  $color;
+    bottom:$width/2 - $lineWidth/2;
+    transform: rotate(90deg);
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: $width - 8px;
+    height:0px;
+    border-bottom: solid $lineWidth $color;
+    position: absolute;
+    bottom:$width /2 - $lineWidth/2;
+  }
+}
+
+@mixin divider($bottom, $svg-color ) {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: $bottom;
+  &.black {
+    &:before,
+    &:after {
+      background-color: $svg-color;
     }
-    &::after {
-      content: '';
-      display: block;
-      width: $width - 8px;
-      height:0px;
-      border-bottom: solid $lineWidth $color;
-      position: absolute;
-      bottom:$width /2 - $lineWidth/2;
+    svg {
+      path {
+        fill: $svg-color;
+      }
     }
   }
+  &:before,
+  &:after {
+    content: '';
+    width: 50%;
+    display: block;
+    height: 2px;
+    background-color: $svg-color;
+    margin: 0 auto;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      fill: $svg-color;
+    }
+  }
+}

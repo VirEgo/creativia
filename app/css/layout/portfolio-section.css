@@ -10,6 +10,10 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 5.6rem; }
+    .portfolio-section .divider.black:before, .portfolio-section .divider.black:after {
+      background-color: #ff0036; }
+    .portfolio-section .divider.black svg path {
+      fill: #ff0036; }
     .portfolio-section .divider:before, .portfolio-section .divider:after {
       content: '';
       width: 50%;
@@ -17,8 +21,11 @@
       height: 2px;
       background-color: #ff0036;
       margin: 0 auto; }
-    .portfolio-section .divider svg path {
-      fill: #ff0036; }
+    .portfolio-section .divider svg {
+      width: 20px;
+      height: 20px; }
+      .portfolio-section .divider svg path {
+        fill: #ff0036; }
     @media screen and (max-width: 576px) {
       .portfolio-section .divider {
         bottom: 2.5rem; } }

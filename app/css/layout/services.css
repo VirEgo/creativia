@@ -45,9 +45,8 @@
     padding: 30px 35px;
     background-color: #343434; }
   .service-item .hexagon {
+    margin-right: 1rem;
     background-color: #a4a4a4; }
-  .service-item .hexagon {
-    margin-right: 1rem; }
     .service-item .hexagon:before {
       top: -50px; }
     .service-item .hexagon svg path {

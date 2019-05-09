@@ -94,43 +94,7 @@ section {
     }
   }
   .divider {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -.65rem;
-    &.black {
-      &:before,
-      &:after {
-        background-color: #000;
-      }
-      svg {
-        path {
-          fill: #000;
-        }
-      }
-    }
-
-    &:before,
-    &:after {
-      content: '';
-      width: 50%;
-      display: block;
-      height: 2px;
-      background-color: $red-color;
-      margin: 0 auto;
-    }
-    svg {
-      width: 20px;
-      height: 20px;
-      path {
-        fill: $red-color;
-      }
-    }
+    @include divider(-.65rem, #262626);
   }
   @media screen and (max-width: 576px) {
     padding-bottom: 50px;
@@ -187,16 +151,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.skill-progressbar > .inner {
-  position: absolute;
-  color: $red-color;
-}
-
-.skill-progressbar > svg {
-  height: 100%;
-  display: block;
+  & > .inner {
+    position: absolute;
+    color: $red-color;
+  }
+  & > svg {
+    height: 100%;
+    display: block;
+  }
 }
 
 .gm-style {

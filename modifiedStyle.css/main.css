@@ -458,18 +458,27 @@
 }
 
 .about .divider {
-  margin: 5rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -5.75rem;
+  margin: 5rem auto;
   z-index: 1;
   position: static;
   transform: translate(0%);
 }
 
-.about .divider svg path {
+.about .divider.black:before,
+.about .divider.black:after {
+  background-color: #262626;
+}
+
+.about .divider.black svg path {
   fill: #262626;
 }
 
@@ -478,9 +487,18 @@
   content: '';
   width: 50%;
   display: block;
-  height: 1px;
+  height: 2px;
   background-color: #262626;
   margin: 0 auto;
+}
+
+.about .divider svg {
+  width: 20px;
+  height: 20px;
+}
+
+.about .divider svg path {
+  fill: #262626;
 }
 
 .advantage-item .advantages-header {
@@ -1038,6 +1056,15 @@
   bottom: -6.85rem;
 }
 
+.clients .divider.black:before,
+.clients .divider.black:after {
+  background-color: #ff0036;
+}
+
+.clients .divider.black svg path {
+  fill: #ff0036;
+}
+
 .clients .divider:before,
 .clients .divider:after {
   content: '';
@@ -1286,6 +1313,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.75rem;
+}
+
+@media screen and (max-width: 576px) {
+  .chart .percent {
+    top: 45%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1971,7 +2004,7 @@ section .divider {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -.65rem;
+  bottom: -0.65rem;
 }
 
 section .divider.black:before,
@@ -1989,7 +2022,7 @@ section .divider:after {
   width: 50%;
   display: block;
   height: 2px;
-  background-color: #ff0036;
+  background-color: #000;
   margin: 0 auto;
 }
 
@@ -1999,7 +2032,7 @@ section .divider svg {
 }
 
 section .divider svg path {
-  fill: #ff0036;
+  fill: #000;
 }
 
 @media screen and (max-width: 576px) {

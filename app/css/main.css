@@ -332,24 +332,35 @@
       fill: #ff0036; }
 
 .about .divider {
-  margin: 5rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -5.75rem;
+  margin: 5rem auto;
   z-index: 1;
   position: static;
   transform: translate(0%); }
-  .about .divider svg path {
+  .about .divider.black:before, .about .divider.black:after {
+    background-color: #262626; }
+  .about .divider.black svg path {
     fill: #262626; }
   .about .divider:before, .about .divider:after {
     content: '';
     width: 50%;
     display: block;
-    height: 1px;
+    height: 2px;
     background-color: #262626;
     margin: 0 auto; }
+  .about .divider svg {
+    width: 20px;
+    height: 20px; }
+    .about .divider svg path {
+      fill: #262626; }
 
 .advantage-item .advantages-header {
   text-transform: uppercase;
@@ -440,6 +451,10 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 5.6rem; }
+    .portfolio-section .divider.black:before, .portfolio-section .divider.black:after {
+      background-color: #ff0036; }
+    .portfolio-section .divider.black svg path {
+      fill: #ff0036; }
     .portfolio-section .divider:before, .portfolio-section .divider:after {
       content: '';
       width: 50%;
@@ -447,8 +462,11 @@
       height: 2px;
       background-color: #ff0036;
       margin: 0 auto; }
-    .portfolio-section .divider svg path {
-      fill: #ff0036; }
+    .portfolio-section .divider svg {
+      width: 20px;
+      height: 20px; }
+      .portfolio-section .divider svg path {
+        fill: #ff0036; }
     @media screen and (max-width: 576px) {
       .portfolio-section .divider {
         bottom: 2.5rem; } }
@@ -749,6 +767,10 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: -6.85rem; }
+    .clients .divider.black:before, .clients .divider.black:after {
+      background-color: #ff0036; }
+    .clients .divider.black svg path {
+      fill: #ff0036; }
     .clients .divider:before, .clients .divider:after {
       content: '';
       width: 50%;
@@ -978,9 +1000,8 @@
     padding: 30px 35px;
     background-color: #343434; }
   .service-item .hexagon {
+    margin-right: 1rem;
     background-color: #a4a4a4; }
-  .service-item .hexagon {
-    margin-right: 1rem; }
     .service-item .hexagon:before {
       top: -50px; }
     .service-item .hexagon svg path {
@@ -1023,6 +1044,32 @@
     font-size: 16px;
     font-weight: bold;
     color: #cacaca; }
+  .twitter .divider {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.6rem; }
+    .twitter .divider.black:before, .twitter .divider.black:after {
+      background-color: #ff0036; }
+    .twitter .divider.black svg path {
+      fill: #ff0036; }
+    .twitter .divider:before, .twitter .divider:after {
+      content: '';
+      width: 50%;
+      display: block;
+      height: 2px;
+      background-color: #ff0036;
+      margin: 0 auto; }
+    .twitter .divider svg {
+      width: 20px;
+      height: 20px; }
+      .twitter .divider svg path {
+        fill: #ff0036; }
 
 .tweet {
   margin: auto;
@@ -1358,23 +1405,23 @@ section {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -.65rem; }
+    bottom: -0.65rem; }
     section .divider.black:before, section .divider.black:after {
-      background-color: #000; }
+      background-color: #262626; }
     section .divider.black svg path {
-      fill: #000; }
+      fill: #262626; }
     section .divider:before, section .divider:after {
       content: '';
       width: 50%;
       display: block;
       height: 2px;
-      background-color: #ff0036;
+      background-color: #262626;
       margin: 0 auto; }
     section .divider svg {
       width: 20px;
       height: 20px; }
       section .divider svg path {
-        fill: #ff0036; }
+        fill: #262626; }
   @media screen and (max-width: 576px) {
     section {
       padding-bottom: 50px; } }
@@ -1428,14 +1475,12 @@ section {
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.skill-progressbar > .inner {
-  position: absolute;
-  color: #ff0036; }
-
-.skill-progressbar > svg {
-  height: 100%;
-  display: block; }
+  .skill-progressbar > .inner {
+    position: absolute;
+    color: #ff0036; }
+  .skill-progressbar > svg {
+    height: 100%;
+    display: block; }
 
 .gm-style div:nth-child(11) {
   display: none; }

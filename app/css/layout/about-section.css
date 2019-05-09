@@ -99,24 +99,35 @@
       fill: #ff0036; }
 
 .about .divider {
-  margin: 5rem auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: -5.75rem;
+  margin: 5rem auto;
   z-index: 1;
   position: static;
   transform: translate(0%); }
-  .about .divider svg path {
+  .about .divider.black:before, .about .divider.black:after {
+    background-color: #262626; }
+  .about .divider.black svg path {
     fill: #262626; }
   .about .divider:before, .about .divider:after {
     content: '';
     width: 50%;
     display: block;
-    height: 1px;
+    height: 2px;
     background-color: #262626;
     margin: 0 auto; }
+  .about .divider svg {
+    width: 20px;
+    height: 20px; }
+    .about .divider svg path {
+      fill: #262626; }
 
 .advantage-item .advantages-header {
   text-transform: uppercase;

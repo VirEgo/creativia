@@ -1,4 +1,5 @@
 @import "../components/variables";
+@import "../components//mixin";
 .clients {
   color: $white;
   position: relative;
@@ -18,32 +19,7 @@
   }
 
   .divider {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -6.85rem;
-
-    &:before,
-    &:after {
-      content: '';
-      width: 50%;
-      display: block;
-      height: 2px;
-      background-color: $red-color;
-      margin: 0 auto;
-    }
-    svg {
-      width: 20px;
-      height: 20px;
-      path {
-        fill: $red-color;
-      }
-    }
+    @include divider(-6.85rem, $red-color);
   }
   .partners {
     display: flex;

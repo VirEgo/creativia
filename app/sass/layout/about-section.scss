@@ -118,31 +118,11 @@
 }
 .about {
   .divider {
+    @include divider (-5.75rem, #262626);
     margin: 5rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    bottom: -5.75rem;
     z-index: 1;
     position: static;
     transform: translate(0%);
-    svg {
-      path {
-        fill: #262626;
-      }
-    }
-
-    &:before,
-    &:after {
-      content: '';
-      width: 50%;
-      display: block;
-      height: 1px;
-      background-color: #262626;
-      margin: 0 auto;
-    }
-
   }
 }
 .advantage-item {
