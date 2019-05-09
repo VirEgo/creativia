@@ -80,10 +80,12 @@
       margin: auto; } }
 
 .product-features {
-  height: 70vh; }
+  height: 80vh; }
   @media screen and (max-width: 767px) {
     .product-features {
-      height: auto; } }
+      height: auto; }
+      .product-features .section-description {
+        padding-bottom: 0; } }
 
 .product-features-header {
   font-size: 30px;
@@ -137,6 +139,10 @@
 
 .links-right .link-item {
   justify-content: unset; }
+  @media screen and (max-width: 767px) {
+    .links-right .link-item {
+      flex-direction: row-reverse;
+      justify-content: space-between; } }
 
 .links-right .links-icon {
   margin-left: 3rem; }

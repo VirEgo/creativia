@@ -1,9 +1,13 @@
 @import "../components/variables";
 @import "../components/buttons";
 .product-features {
-  height: 70vh;
+  height: 80vh;
+ 
   @media screen and (max-width: 767px) {
     height: auto;
+    .section-description {
+      padding-bottom: 0;
+    }
   }
 }
 .product-features-header {
@@ -76,6 +80,10 @@
 .links-right {
   .link-item {
     justify-content: unset;
+    @media screen and (max-width: 767px) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
   }
   .links-icon {
     margin-left: 3rem; 
