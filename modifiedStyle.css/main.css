@@ -326,19 +326,55 @@
   content: ' ';
 }
 
-.hexagon-big {
-  position: static;
-  width: 290px;
-  height: 290px;
-  background-color: #ffffff;
-  overflow: hidden;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+.hexagon-wrapper .box {
+  z-index: 1;
+  margin: auto;
+}
+
+.hexagon-wrapper .box-left {
+  position: absolute;
+  left: -1rem;
+}
+
+.hexagon-wrapper .box-right {
+  position: absolute;
+  right: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .hexagon-wrapper div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hexagon-wrapper div .box,
+  .hexagon-wrapper div .box-left,
+  .hexagon-wrapper div .box-right {
+    position: static;
+    width: 180px;
+    height: 180px;
+  }
+
+  .hexagon-wrapper div .box .box-inner,
+  .hexagon-wrapper div .box-left .box-inner,
+  .hexagon-wrapper div .box-right .box-inner {
+    width: 170px;
+    height: 170px;
+    margin: auto;
+  }
 }
 
 .box {
   width: 300px;
   height: 300px;
   margin: auto;
+}
+
+.box.hexagon-big {
+  position: static;
+  background-color: #ffffff;
+  overflow: hidden;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 }
 
 .box-left,
@@ -387,44 +423,6 @@
 .hexagon-inner {
   clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-}
-
-.hexagon-wrapper .box {
-  z-index: 1;
-  margin: auto;
-}
-
-.hexagon-wrapper .box-left {
-  position: absolute;
-  left: -1rem;
-}
-
-.hexagon-wrapper .box-right {
-  position: absolute;
-  right: 1rem;
-}
-
-@media screen and (max-width: 576px) {
-  .hexagon-wrapper div {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hexagon-wrapper div .box,
-  .hexagon-wrapper div .box-left,
-  .hexagon-wrapper div .box-right {
-    position: static;
-    width: 180px;
-    height: 180px;
-  }
-
-  .hexagon-wrapper div .box .box-inner,
-  .hexagon-wrapper div .box-left .box-inner,
-  .hexagon-wrapper div .box-right .box-inner {
-    width: 170px;
-    height: 170px;
-    margin: auto;
-  }
 }
 
 .btn-link {
@@ -619,6 +617,15 @@
   bottom: 5.6rem;
 }
 
+.portfolio-section .divider.black:before,
+.portfolio-section .divider.black:after {
+  background-color: #ff0036;
+}
+
+.portfolio-section .divider.black svg path {
+  fill: #ff0036;
+}
+
 .portfolio-section .divider:before,
 .portfolio-section .divider:after {
   content: '';
@@ -627,6 +634,11 @@
   height: 2px;
   background-color: #ff0036;
   margin: 0 auto;
+}
+
+.portfolio-section .divider svg {
+  width: 20px;
+  height: 20px;
 }
 
 .portfolio-section .divider svg path {
@@ -784,120 +796,17 @@
   }
 }
 
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.slider-btn {
-  padding: 10px 35px;
-  display: block;
-  text-transform: uppercase;
-  background-color: #393939;
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 30px;
-}
-
-.slider-btn:hover {
-  background-color: #ff0036;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 767px) {
-  .slider-btn {
-    padding: 10px;
-    font-size: 14px;
-    margin-right: 10px;
-  }
-}
-
-.btn-order {
-  background-color: #262626;
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-  border: none;
-  padding: 12px 50px;
-}
-
-.view-more-btn {
-  padding: 15px;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 16px;
-  border: none;
-  border-radius: 0;
-  background-color: #262626;
-  transition: background-color ease-in-out .5s;
-}
-
-.view-more-btn:hover {
-  background-color: #ff0036;
-}
-
-.more-articles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  background-color: #f2f2f2;
-  border-radius: 50%;
-}
-
-.more-articles svg {
-  width: 30px;
-  height: 30px;
-  vertical-align: middle;
-}
-
-.more-articles svg path {
-  fill: #a2a2a2;
-}
-
-.more-articles:hover svg {
-  transform: translateY(10px);
-  transition: all ease-in-out .4s;
-}
-
-.more-articles:hover svg path {
-  fill: #474f54;
-}
-
-.submit-form {
-  max-width: 120px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  background-color: #262626;
-  color: #ffffff;
-  border: none;
-  transition: background-color ease-in-out .3s;
-}
-
-.submit-form:hover {
-  background-color: #ff0036;
-}
-
-@media screen and (max-width: 576px) {
-  .submit-form {
-    padding: 3px 20px;
-    font-size: 14px;
-    margin: auto;
-  }
-}
-
 .product-features {
-  height: 70vh;
+  height: 80vh;
 }
 
 @media screen and (max-width: 767px) {
   .product-features {
     height: auto;
+  }
+
+  .product-features .section-description {
+    padding-bottom: 0;
   }
 }
 
@@ -976,6 +885,13 @@
 
 .links-right .link-item {
   justify-content: unset;
+}
+
+@media screen and (max-width: 767px) {
+  .links-right .link-item {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 }
 
 .links-right .links-icon {
@@ -1197,6 +1113,12 @@
   background-color: #ff0036;
 }
 
+@media screen and (max-width: 767px) {
+  .teamwork .section-description {
+    padding-bottom: 20px;
+  }
+}
+
 .team-wrapper {
   flex-direction: row;
 }
@@ -1321,6 +1243,12 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .skills .section-description {
+    padding-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .skills-wrapper {
     flex-direction: column;
@@ -1416,11 +1344,8 @@
 }
 
 .service-item .hexagon {
-  background-color: #a4a4a4;
-}
-
-.service-item .hexagon {
   margin-right: 1rem;
+  background-color: #a4a4a4;
 }
 
 .service-item .hexagon:before {
@@ -1486,6 +1411,46 @@
   font-size: 16px;
   font-weight: bold;
   color: #cacaca;
+}
+
+.twitter .divider {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.6rem;
+}
+
+.twitter .divider.black:before,
+.twitter .divider.black:after {
+  background-color: #ff0036;
+}
+
+.twitter .divider.black svg path {
+  fill: #ff0036;
+}
+
+.twitter .divider:before,
+.twitter .divider:after {
+  content: '';
+  width: 50%;
+  display: block;
+  height: 2px;
+  background-color: #ff0036;
+  margin: 0 auto;
+}
+
+.twitter .divider svg {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter .divider svg path {
+  fill: #ff0036;
 }
 
 .tweet {
@@ -1676,6 +1641,46 @@
   content: ' ';
 }
 
+.follow-section .divider {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.65rem;
+}
+
+.follow-section .divider.black:before,
+.follow-section .divider.black:after {
+  background-color: #ff0036;
+}
+
+.follow-section .divider.black svg path {
+  fill: #ff0036;
+}
+
+.follow-section .divider:before,
+.follow-section .divider:after {
+  content: '';
+  width: 50%;
+  display: block;
+  height: 2px;
+  background-color: #ff0036;
+  margin: 0 auto;
+}
+
+.follow-section .divider svg {
+  width: 20px;
+  height: 20px;
+}
+
+.follow-section .divider svg path {
+  fill: #ff0036;
+}
+
 .follows {
   display: flex;
   justify-content: center;
@@ -1685,29 +1690,6 @@
 .socials {
   display: flex;
   justify-content: center;
-}
-
-.socials .hexagon {
-  background-color: #ff0036;
-  margin-right: 2rem;
-  width: 60px;
-  height: 60px;
-}
-
-.socials .hexagon svg path {
-  fill: #ffffff;
-}
-
-.socials .hexagon:before {
-  top: -50px;
-  width: auto;
-  height: auto;
-}
-
-.socials .hexagon:before,
-.socials .hexagon:after {
-  height: auto;
-  width: auto;
 }
 
 .follow a {
@@ -1731,8 +1713,8 @@
 .hexagon-svg {
   width: 60px;
   height: 60px;
-  position: relative;
-  display: block;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   margin-right: 3rem;
   transform: rotate(28deg);
 }
@@ -1991,7 +1973,7 @@ section .section-description {
 
 @media screen and (max-width: 767px) {
   section .section-description {
-    padding-bottom: 20px;
+    padding: 0 30px 100px 30px;
   }
 }
 
@@ -2009,11 +1991,11 @@ section .divider {
 
 section .divider.black:before,
 section .divider.black:after {
-  background-color: #000;
+  background-color: #262626;
 }
 
 section .divider.black svg path {
-  fill: #000;
+  fill: #262626;
 }
 
 section .divider:before,
@@ -2022,7 +2004,7 @@ section .divider:after {
   width: 50%;
   display: block;
   height: 2px;
-  background-color: #000;
+  background-color: #262626;
   margin: 0 auto;
 }
 
@@ -2032,7 +2014,7 @@ section .divider svg {
 }
 
 section .divider svg path {
-  fill: #000;
+  fill: #262626;
 }
 
 @media screen and (max-width: 576px) {
@@ -2044,7 +2026,8 @@ section .divider svg path {
 .hexagon {
   width: 30px;
   height: 30px;
-  position: relative;
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   margin: auto 0;
   display: flex;
   justify-content: center;
@@ -2078,7 +2061,7 @@ section .divider svg path {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100px;
+  width: 300px;
   height: 55px;
   background: #666;
   z-index: 1;

@@ -80,10 +80,8 @@
       font-size: 14px;
       margin: auto; } }
 
-* {
-  font-family: "ralewayregular", sans-serif; }
-
 .header-row {
+  font-family: "latoregular", sans-serif;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 10;
@@ -128,7 +126,8 @@
 
 .nav-item {
   padding: 0px 15px;
-  margin: 30px 0; }
+  margin: 30px 0;
+  font-family: "ralewayregular", sans-serif; }
 
 .octagon {
   position: absolute;
@@ -153,9 +152,13 @@
   top: 32%; }
   .carousel-caption h5 {
     font-weight: bold;
-    font-size: 30px; }
+    font-size: 30px;
+    font-family: "ralewaybold", sans-serif;
+    margin-bottom: 52px; }
   .carousel-caption p {
-    font-size: 1rem; }
+    font-size: 1rem;
+    font-family: "latoregular", sans-serif;
+    margin-bottom: 52px; }
   @media screen and (max-width: 576px) {
     .carousel-caption h5 {
       font-size: 20px; }
@@ -230,6 +233,13 @@
     left: 0;
     background-color: inherit;
     content: ' '; }
+
+section.about {
+  font-family: "latoregular", sans-serif; }
+  section.about .accordion-text p {
+    font-family: "latoregular", sans-serif;
+    font-size: 14px;
+    margin-bottom: 45px; }
 
 .hexagon-wrapper .box {
   z-index: 1;
@@ -311,9 +321,12 @@
   align-items: center;
   flex-direction: row;
   padding: 0px !important; }
+  .btn-link span.red-text {
+    font-family: "raleway_mediumregular", sans-serif;
+    font-size: 20px; }
 
-.accordion .card-body {
-  padding: 1.25rem; }
+.accordion .card-body-custom {
+  padding: 15px; }
 
 .accordion-icon {
   width: 25px;
@@ -362,8 +375,13 @@
 .advantage-item .advantages-header {
   text-transform: uppercase;
   font-size: 20px;
+  font-family: "raleway_mediumregular", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem; }
+
+.advantage-item .advantages-description {
+  font-family: "latoregular", sans-serif;
+  font-size: 16px; }
 
 .advantage-item .hexagon {
   background-color: #626262;
@@ -485,7 +503,8 @@
   .portfolio-nav-wrapper .portfolio-header {
     color: #ffffff;
     padding-bottom: 27px;
-    font-weight: 700; }
+    font-weight: 700;
+    font-size: 30px; }
   @media screen and (max-width: 767px) {
     .portfolio-nav-wrapper {
       padding: 30px 0; }
@@ -504,7 +523,8 @@
         padding: 8px; } }
 
 .portfolio-item {
-  padding: 0 23px; }
+  padding: 0 23px;
+  font-family: "latobold", sans-serif; }
   .portfolio-item a {
     color: #a4a4a4;
     font-size: 16px;
@@ -563,94 +583,11 @@
     .portfolio-example img {
       left: 53%; } }
 
-.btn-group {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row; }
-
-.slider-btn {
-  padding: 10px 35px;
-  display: block;
-  text-transform: uppercase;
-  background-color: #393939;
-  color: #ffffff;
-  text-decoration: none;
-  margin-right: 30px; }
-  .slider-btn:hover {
-    background-color: #ff0036;
-    color: #ffffff;
-    text-decoration: none; }
-  @media screen and (max-width: 767px) {
-    .slider-btn {
-      padding: 10px;
-      font-size: 14px;
-      margin-right: 10px; } }
-
-.btn-order {
-  background-color: #262626;
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-  border: none;
-  padding: 12px 50px; }
-
-.view-more-btn {
-  padding: 15px;
-  color: #ffffff;
-  text-transform: uppercase;
-  font-size: 16px;
-  border: none;
-  border-radius: 0;
-  background-color: #262626;
-  transition: background-color ease-in-out .5s; }
-  .view-more-btn:hover {
-    background-color: #ff0036; }
-
-.more-articles {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  border: none;
-  width: 40px;
-  height: 40px;
-  background-color: #f2f2f2;
-  border-radius: 50%; }
-  .more-articles svg {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle; }
-    .more-articles svg path {
-      fill: #a2a2a2; }
-  .more-articles:hover svg {
-    transform: translateY(10px);
-    transition: all ease-in-out .4s; }
-    .more-articles:hover svg path {
-      fill: #474f54; }
-
-.submit-form {
-  max-width: 120px;
-  padding: 15px 30px;
-  text-transform: uppercase;
-  background-color: #262626;
-  color: #ffffff;
-  border: none;
-  transition: background-color ease-in-out .3s; }
-  .submit-form:hover {
-    background-color: #ff0036; }
-  @media screen and (max-width: 576px) {
-    .submit-form {
-      padding: 3px 20px;
-      font-size: 14px;
-      margin: auto; } }
-
-.product-features {
-  height: 80vh; }
-  @media screen and (max-width: 767px) {
-    .product-features {
-      height: auto; }
-      .product-features .section-description {
-        padding-bottom: 0; } }
+@media screen and (max-width: 767px) {
+  .product-features {
+    height: auto; }
+    .product-features .section-description {
+      padding-bottom: 0; } }
 
 .product-features-header {
   font-size: 30px;
@@ -674,6 +611,8 @@
       .links .links-icon svg:first-child {
         z-index: 1; }
   .links .link-item {
+    font-family: "raleway_mediumregular", sans-serif;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: #333;
@@ -698,6 +637,9 @@
     .links .link-item a {
       text-decoration: none;
       color: #333; }
+    @media screen and (max-width: 1199px) {
+      .links .link-item {
+        font-size: 1rem; } }
   @media screen and (max-width: 767px) {
     .links {
       padding-top: 0; } }
@@ -715,18 +657,26 @@
 .mockup img {
   width: 100%;
   padding-bottom: 0px; }
+  @media screen and (max-width: 767px) {
+    .mockup img {
+      display: none; } }
 
 .mockup .slider-btn {
   z-index: 2;
   position: absolute;
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0%);
   margin-right: 0; }
-
-@media screen and (max-width: 767px) {
-  .mockup {
-    display: none; } }
+  @media screen and (max-width: 1199px) {
+    .mockup .slider-btn {
+      padding: 10px 20px;
+      font-size: 14px; } }
+  @media screen and (max-width: 992px) {
+    .mockup .slider-btn {
+      top: 14rem !important; } }
 
 @media screen and (max-width: 992px) {
   .mockup img {
@@ -827,11 +777,17 @@
       background-color: transparent;
       backface-visibility: hidden;
       transition: all 0.6s ease-in-out; }
-      .clients .carousel .carousel-item .review-author-name p {
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 12px;
-        margin-top: 1rem; }
+      .clients .carousel .carousel-item .review-author-name {
+        font-family: "ralewaybold", sans-serif;
+        font-size: 16px; }
+        .clients .carousel .carousel-item .review-author-name p {
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 12px;
+          margin-top: 1rem; }
+      .clients .carousel .carousel-item .review-text {
+        font-family: "latoregular", sans-serif;
+        font-size: 16px; }
   @media screen and (max-width: 767px) {
     .clients {
       margin-top: 0; } }
@@ -859,6 +815,11 @@
     .reviews-slider-indicator .indicator.active {
       background-color: #ff0036; }
 
+.reviews-slider .reviews-title {
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase; }
+
 @media screen and (max-width: 767px) {
   .teamwork .section-description {
     padding-bottom: 20px; } }
@@ -881,6 +842,12 @@
   border: 1px solid #c9c9c9;
   border-radius: 0 !important;
   text-align: center; }
+  .person-card .person-name {
+    font-family: "raleway_mediumregular", sans-serif;
+    font-size: 20px; }
+  .person-card .person-position {
+    font-family: "latoregular", sans-serif;
+    font-size: 16px; }
   .person-card img {
     border-radius: 0; }
   .person-card:hover {
@@ -940,6 +907,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.75rem; }
+    @media screen and (max-width: 992px) {
+      .chart .percent {
+        top: 30%;
+        left: 30%;
+        transform: translate(-35%, -35%); } }
     @media screen and (max-width: 576px) {
       .chart .percent {
         top: 45%; } }
@@ -958,11 +930,16 @@
   .skill-item .skill-name {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 600; }
+    font-family: "raleway_mediumregular", sans-serif; }
+  .skill-item .skill-desciption {
+    font-family: "latoregular", sans-serif;
+    font-size: 16px; }
   .skill-item .percent {
-    font-family: Arial, sans-serif; }
+    font-family: "lato_lightregular", sans-serif;
+    font-size: 40px; }
     .skill-item .percent .red-text {
-      font-family: Arial, sans-serif; }
+      font-family: "lato_lightregular", sans-serif;
+      font-size: 40px; }
 
 .services {
   background-color: #272727;
@@ -1006,9 +983,13 @@
     display: flex;
     margin-bottom: 1rem; }
     .service-item .service-header .service-name {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-family: "raleway_mediumregular", sans-serif;
+      font-size: 20px; }
   .service-item .service-body {
-    padding: 30px 35px;
+    padding: 32px;
+    font-family: "latoregular", sans-serif;
+    font-size: 16px;
     background-color: #343434; }
   .service-item .hexagon {
     margin-right: 1rem;
@@ -1053,8 +1034,8 @@
   position: relative; }
   .twitter p {
     font-size: 16px;
-    font-weight: bold;
-    color: #cacaca; }
+    color: #cacaca;
+    font-family: "latoregular", sans-serif; }
   .twitter .divider {
     margin: 0 auto;
     display: flex;
@@ -1106,6 +1087,17 @@
     .container .big-tweet path {
       fill: #3d3d3d; }
 
+section.bestseller .card-body {
+  padding: 0 !important; }
+  section.bestseller .card-body > p {
+    padding: 0 20px;
+    border-bottom: 1px solid #f2f2f2; }
+
+section.bestseller .btn-order {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-family: "ralewayregular", sans-serif; }
+
 .card-deck {
   display: flex; }
   @media screen and (max-width: 767px) {
@@ -1126,34 +1118,30 @@
       margin: auto;
       width: 90%; } }
 
-.card-title {
-  text-align: center; }
-  .card-title p {
+.card-body .card-title {
+  text-align: center;
+  font-family: "raleway_mediumregular", sans-serif; }
+  .card-body .card-title p {
     background-color: #262626;
     color: #ffffff;
     text-transform: uppercase;
     padding: 20px;
     margin-bottom: 0;
-    font-size: 16px; }
-  .card-title span {
+    font-size: 20px; }
+  .card-body .card-title span {
     display: block;
     width: 100%;
     padding: 15px;
-    font-size: 32px;
+    font-size: 50px;
     background-color: #f2f2f2;
-    font-family: sans-serif;
+    font-family: "latobold", sans-serif;
     font-weight: bold; }
-    .card-title span sub {
+    .card-body .card-title span sub {
       font-size: 14px; }
 
-.card-body {
-  padding: 0 !important; }
-  .card-body > p {
-    padding: 0 20px;
-    border-bottom: 1px solid #f2f2f2; }
-
-.btn-order {
-  padding: 12px 25px; }
+.card-body .card-text {
+  font-family: "latoregular", sans-serif;
+  font-size: 16px; }
 
 .article {
   margin-bottom: 2rem; }
@@ -1174,9 +1162,11 @@
   .article .article-title {
     font-size: 20px;
     padding-bottom: 20px;
-    line-height: 18px; }
+    font-family: "ralewaybold", sans-serif; }
   .article .article-info {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-family: "latoregular", sans-serif; }
     .article .article-info a {
       text-decoration: none;
       color: #a2a2a2;
@@ -1188,6 +1178,7 @@
       margin-right: 10px; }
   .article .article-text {
     font-size: 16px;
+    font-family: "latoregular", sans-serif;
     color: #505050;
     line-height: 15px; }
 
@@ -1255,6 +1246,13 @@
 .follow svg {
   width: 60px;
   height: 60px; }
+
+.socials-numbers span {
+  font-size: 16px;
+  font-family: "latoregular", sans-serif;
+  margin-right: 75px;
+  margin-top: 40px;
+  text-align: center; }
 
 .hexagon-svg {
   width: 60px;
@@ -1368,9 +1366,6 @@
       .footer-wrapper .footer-links a:first-child {
         padding-bottom: 0.5rem; } }
 
-* {
-  font-family: "ralewayregular", sans-serif; }
-
 body {
   padding-bottom: 0; }
 
@@ -1412,10 +1407,14 @@ section {
   section .section-header {
     padding-top: 100px;
     padding-bottom: 55px;
-    text-align: center; }
+    text-align: center;
+    font-size: 30px;
+    font-family: "ralewaybold", sans-serif; }
   section .section-description {
     padding-bottom: 100px;
-    text-align: center; }
+    text-align: center;
+    font-family: "latobold", sans-serif;
+    font-size: 16px; }
     @media screen and (max-width: 767px) {
       section .section-description {
         padding: 0 30px 100px 30px; } }

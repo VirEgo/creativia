@@ -1,7 +1,4 @@
-@import "../components/variables";
-@import "../components/buttons";
 .product-features {
-  height: 80vh;
  
   @media screen and (max-width: 767px) {
     height: auto;
@@ -37,6 +34,8 @@
     }
   }
   .link-item {
+    font-family: $relaway-medium;
+    font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
     color: #333;
@@ -72,6 +71,9 @@
       text-decoration: none;
       color: #333;
     }
+    @media screen and (max-width: 1199px) {
+      font-size: 1rem;
+    }
   }
   @media screen and (max-width: 767px){
     padding-top: 0;
@@ -96,18 +98,29 @@
   //  left: -3rem;
    padding-bottom: 0px;
   //  z-index: -1;
+  @media screen and (max-width:767px) {
+    display: none;
+  }
  }
   .slider-btn {
     z-index: 2;
     position: absolute;
+    font-family: $relaway-medium;
+    font-size: 20px;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%, 0%);
     margin-right: 0;
+
+    @media screen and (max-width:1199px) {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+    @media screen and (max-width:992px) {
+      top: 14rem!important;
+    }
   }
-  @media screen and (max-width:767px) {
-    display: none;
-  }
+  
   
  
   @media screen and (max-width: 992px) {

@@ -11,7 +11,7 @@ gulp.src('app/css/main.css')
     .pipe(gulp.dest('modifiedStyle.css'));
 
 gulp.task('sass', function() {
-    return gulp.src('app/sass/**/*.scss')
+    return gulp.src('app/sass/main.scss')
         .pipe(sass())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}))

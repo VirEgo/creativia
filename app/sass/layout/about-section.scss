@@ -1,6 +1,13 @@
-@import "../components/variables";
-@import "../components/mixin";
-
+section.about {
+  font-family: $lato;
+  .accordion-text {
+    p {
+      font-family: $lato;
+      font-size: 14px;
+      margin-bottom: 45px;
+    }
+  }
+}
 .hexagon-wrapper {
   .box{
     z-index: 1;
@@ -85,10 +92,14 @@
   align-items: center;
   flex-direction: row;
   padding: 0px!important;
+  span.red-text {
+    font-family: $relaway-medium;
+    font-size: 20px;
+  }
 }
 .accordion {
-  .card-body {
-    padding: 1.25rem;
+  .card-body-custom {
+    padding: 15px;
   }
 }
 .accordion-icon {
@@ -120,8 +131,14 @@
   .advantages-header {
     text-transform: uppercase;
     font-size: 20px;
+    font-family: $relaway-medium;
     font-weight: 700;
     margin-bottom: 1rem;
+  }
+  .advantages-description {
+    font-family: $lato;
+    font-size: 16px;
+
   }
   .hexagon {
     background-color: #626262;

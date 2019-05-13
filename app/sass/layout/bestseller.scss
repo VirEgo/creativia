@@ -1,4 +1,17 @@
-@import "../components/variables";
+section.bestseller {
+    .card-body {
+        padding: 0!important;
+        & > p {
+          padding: 0 20px;
+          border-bottom: 1px solid #f2f2f2
+        }
+    }
+    .btn-order {
+        padding: 12px 25px;
+        font-size: 18px;
+        font-family: $relaway-regular;
+    }
+}
 .card-deck {
     display: flex;
     @media screen and (max-width: 767px) {
@@ -23,36 +36,35 @@
     }
   }
 
-  .card-title {
-      text-align: center;
-      p {
-          background-color: #262626;
-          color: $white;
-          text-transform: uppercase;
-          padding: 20px;
-          margin-bottom: 0;
-          font-size: 16px;
-      }
-      span {
-          display: block;
-          width: 100%;
-          padding: 15px;
-          font-size: 32px;
-          background-color: #f2f2f2;
-          font-family: sans-serif;
-          font-weight: bold;
-          sub {
-              font-size: 14px;
-          }
-      }
-  }
   .card-body {
-      padding: 0!important;
-      & > p {
-        padding: 0 20px;
-        border-bottom: 1px solid #f2f2f2
-      }
+    .card-title {
+        text-align: center;
+        font-family: $relaway-medium;
+        p {
+            background-color: #262626;
+            color: $white;
+            text-transform: uppercase;
+            padding: 20px;
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        span {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 50px;
+            background-color: #f2f2f2;
+            font-family: $lato-bold;
+            font-weight: bold;
+            sub {
+                font-size: 14px;
+            }
+        }
+    }
+    .card-text {
+        font-family: $lato;
+        font-size: 16px;
+    }
   }
-  .btn-order {
-      padding: 12px 25px;
-  }
+
+  

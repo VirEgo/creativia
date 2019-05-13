@@ -1,9 +1,5 @@
-@import "../components/variables";
-
-*{
-  font-family: "ralewayregular", sans-serif;
-}
 .header-row {
+  font-family: $lato;
   background-color: rgba(0,0,0,.7);
   position: relative;
   z-index: 10;
@@ -56,6 +52,7 @@
 .nav-item {
   padding: 0px 15px;
   margin: 30px 0;
+  font-family: $relaway-regular;
 }
 .octagon {
   position: absolute;
@@ -85,9 +82,13 @@
   h5 {
     font-weight: bold;
     font-size: 30px;
+    font-family: $relaway-bold;
+    margin-bottom: 52px;
   }
   p {
     font-size: 1rem;
+    font-family: $lato;
+    margin-bottom: 52px;
   }
   @media screen and (max-width:576px) {
     // top: 20%;

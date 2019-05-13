@@ -1,13 +1,11 @@
-@import "../components/variables";
-@import "../components/mixin";
 .twitter {
   background-color: #272727;
   padding-top: 100px;
   position: relative;
   p {
     font-size: 16px;
-    font-weight: bold;
     color: #cacaca;
+    font-family: $lato;
   }
   .divider {
     @include divider( -.6rem, $red-color);
