@@ -18,6 +18,9 @@
       }
     }
   }
+  .section-header {
+    padding-top: 40px!important;
+  }
 }
 
 .navbar {
@@ -45,9 +48,6 @@
     right: 0;
     align-items: flex-end;
   }
-}
-.section-header {
-  padding-top: 40px!important;
 }
 .nav-item {
   padding: 0px 15px;

@@ -107,11 +107,8 @@
   }
 }
 
-* {
-  font-family: "ralewayregular", sans-serif;
-}
-
 .header-row {
+  font-family: "latoregular", sans-serif;
   background-color: rgba(0, 0, 0, 0.7);
   position: relative;
   z-index: 10;
@@ -181,6 +178,7 @@
 .nav-item {
   padding: 0px 15px;
   margin: 30px 0;
+  font-family: "ralewayregular", sans-serif;
 }
 
 .octagon {
@@ -214,10 +212,14 @@
 .carousel-caption h5 {
   font-weight: bold;
   font-size: 30px;
+  font-family: "ralewaybold", sans-serif;
+  margin-bottom: 52px;
 }
 
 .carousel-caption p {
   font-size: 1rem;
+  font-family: "latoregular", sans-serif;
+  margin-bottom: 52px;
 }
 
 @media screen and (max-width: 576px) {
@@ -324,6 +326,16 @@
   left: 0;
   background-color: inherit;
   content: ' ';
+}
+
+section.about {
+  font-family: "latoregular", sans-serif;
+}
+
+section.about .accordion-text p {
+  font-family: "latoregular", sans-serif;
+  font-size: 14px;
+  margin-bottom: 45px;
 }
 
 .hexagon-wrapper .box {
@@ -433,8 +445,13 @@
   padding: 0px !important;
 }
 
-.accordion .card-body {
-  padding: 1.25rem;
+.btn-link span.red-text {
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
+}
+
+.accordion .card-body-custom {
+  padding: 15px;
 }
 
 .accordion-icon {
@@ -502,8 +519,14 @@
 .advantage-item .advantages-header {
   text-transform: uppercase;
   font-size: 20px;
+  font-family: "raleway_mediumregular", sans-serif;
   font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.advantage-item .advantages-description {
+  font-family: "latoregular", sans-serif;
+  font-size: 16px;
 }
 
 .advantage-item .hexagon {
@@ -672,6 +695,7 @@
   color: #ffffff;
   padding-bottom: 27px;
   font-weight: 700;
+  font-size: 30px;
 }
 
 @media screen and (max-width: 767px) {
@@ -703,6 +727,7 @@
 
 .portfolio-item {
   padding: 0 23px;
+  font-family: "latobold", sans-serif;
 }
 
 .portfolio-item a {
@@ -796,10 +821,6 @@
   }
 }
 
-.product-features {
-  height: 80vh;
-}
-
 @media screen and (max-width: 767px) {
   .product-features {
     height: auto;
@@ -841,6 +862,8 @@
 }
 
 .links .link-item {
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #333;
@@ -877,6 +900,12 @@
   color: #333;
 }
 
+@media screen and (max-width: 1199px) {
+  .links .link-item {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .links {
     padding-top: 0;
@@ -903,18 +932,33 @@
   padding-bottom: 0px;
 }
 
+@media screen and (max-width: 767px) {
+  .mockup img {
+    display: none;
+  }
+}
+
 .mockup .slider-btn {
   z-index: 2;
   position: absolute;
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0%);
   margin-right: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .mockup {
-    display: none;
+@media screen and (max-width: 1199px) {
+  .mockup .slider-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .mockup .slider-btn {
+    top: 14rem !important;
   }
 }
 
@@ -1070,11 +1114,21 @@
   transition: all 0.6s ease-in-out;
 }
 
+.clients .carousel .carousel-item .review-author-name {
+  font-family: "ralewaybold", sans-serif;
+  font-size: 16px;
+}
+
 .clients .carousel .carousel-item .review-author-name p {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
   margin-top: 1rem;
+}
+
+.clients .carousel .carousel-item .review-text {
+  font-family: "latoregular", sans-serif;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1113,6 +1167,12 @@
   background-color: #ff0036;
 }
 
+.reviews-slider .reviews-title {
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 767px) {
   .teamwork .section-description {
     padding-bottom: 20px;
@@ -1145,6 +1205,16 @@
   border: 1px solid #c9c9c9;
   border-radius: 0 !important;
   text-align: center;
+}
+
+.person-card .person-name {
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
+}
+
+.person-card .person-position {
+  font-family: "latoregular", sans-serif;
+  font-size: 16px;
 }
 
 .person-card img {
@@ -1237,6 +1307,14 @@
   font-size: 1.75rem;
 }
 
+@media screen and (max-width: 992px) {
+  .chart .percent {
+    top: 30%;
+    left: 30%;
+    transform: translate(-35%, -35%);
+  }
+}
+
 @media screen and (max-width: 576px) {
   .chart .percent {
     top: 45%;
@@ -1263,15 +1341,22 @@
 .skill-item .skill-name {
   text-transform: uppercase;
   font-size: 20px;
-  font-weight: 600;
+  font-family: "raleway_mediumregular", sans-serif;
+}
+
+.skill-item .skill-desciption {
+  font-family: "latoregular", sans-serif;
+  font-size: 16px;
 }
 
 .skill-item .percent {
-  font-family: Arial, sans-serif;
+  font-family: "lato_lightregular", sans-serif;
+  font-size: 40px;
 }
 
 .skill-item .percent .red-text {
-  font-family: Arial, sans-serif;
+  font-family: "lato_lightregular", sans-serif;
+  font-size: 40px;
 }
 
 .services {
@@ -1336,10 +1421,14 @@
 
 .service-item .service-header .service-name {
   text-transform: uppercase;
+  font-family: "raleway_mediumregular", sans-serif;
+  font-size: 20px;
 }
 
 .service-item .service-body {
-  padding: 30px 35px;
+  padding: 32px;
+  font-family: "latoregular", sans-serif;
+  font-size: 16px;
   background-color: #343434;
 }
 
@@ -1409,8 +1498,8 @@
 
 .twitter p {
   font-size: 16px;
-  font-weight: bold;
   color: #cacaca;
+  font-family: "latoregular", sans-serif;
 }
 
 .twitter .divider {
@@ -1487,6 +1576,21 @@
   fill: #3d3d3d;
 }
 
+section.bestseller .card-body {
+  padding: 0 !important;
+}
+
+section.bestseller .card-body > p {
+  padding: 0 20px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+section.bestseller .btn-order {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-family: "ralewayregular", sans-serif;
+}
+
 .card-deck {
   display: flex;
 }
@@ -1519,44 +1623,37 @@
   }
 }
 
-.card-title {
+.card-body .card-title {
   text-align: center;
+  font-family: "raleway_mediumregular", sans-serif;
 }
 
-.card-title p {
+.card-body .card-title p {
   background-color: #262626;
   color: #ffffff;
   text-transform: uppercase;
   padding: 20px;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-.card-title span {
+.card-body .card-title span {
   display: block;
   width: 100%;
   padding: 15px;
-  font-size: 32px;
+  font-size: 50px;
   background-color: #f2f2f2;
-  font-family: sans-serif;
+  font-family: "latobold", sans-serif;
   font-weight: bold;
 }
 
-.card-title span sub {
+.card-body .card-title span sub {
   font-size: 14px;
 }
 
-.card-body {
-  padding: 0 !important;
-}
-
-.card-body > p {
-  padding: 0 20px;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.btn-order {
-  padding: 12px 25px;
+.card-body .card-text {
+  font-family: "latoregular", sans-serif;
+  font-size: 16px;
 }
 
 .article {
@@ -1590,11 +1687,13 @@
 .article .article-title {
   font-size: 20px;
   padding-bottom: 20px;
-  line-height: 18px;
+  font-family: "ralewaybold", sans-serif;
 }
 
 .article .article-info {
   padding-bottom: 20px;
+  font-size: 12px;
+  font-family: "latoregular", sans-serif;
 }
 
 .article .article-info a {
@@ -1614,6 +1713,7 @@
 
 .article .article-text {
   font-size: 16px;
+  font-family: "latoregular", sans-serif;
   color: #505050;
   line-height: 15px;
 }
@@ -1708,6 +1808,14 @@
 .follow svg {
   width: 60px;
   height: 60px;
+}
+
+.socials-numbers span {
+  font-size: 16px;
+  font-family: "latoregular", sans-serif;
+  margin-right: 75px;
+  margin-top: 40px;
+  text-align: center;
 }
 
 .hexagon-svg {
@@ -1883,10 +1991,6 @@
   }
 }
 
-* {
-  font-family: "ralewayregular", sans-serif;
-}
-
 body {
   padding-bottom: 0;
 }
@@ -1964,11 +2068,15 @@ section .section-header {
   padding-top: 100px;
   padding-bottom: 55px;
   text-align: center;
+  font-size: 30px;
+  font-family: "ralewaybold", sans-serif;
 }
 
 section .section-description {
   padding-bottom: 100px;
   text-align: center;
+  font-family: "latobold", sans-serif;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 767px) {

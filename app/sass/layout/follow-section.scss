@@ -17,6 +17,14 @@
   .divider {
     @include divider( -.65rem,$red-color);
   }
+  .hexagon-link {
+    justify-content: center;
+    margin-right: 50px;
+    span {
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
 }
 .follows {
   display: flex;
@@ -56,6 +64,7 @@
   }
 }
 .hexagon-svg {
+  margin-right: 0!important;
   @include hexagon(60px, 60px);
   margin-right: 3rem;
   transform: rotate(28deg);
