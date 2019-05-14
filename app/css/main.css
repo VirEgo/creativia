@@ -908,11 +908,6 @@ section.about {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.75rem; }
-    @media screen and (max-width: 992px) {
-      .chart .percent {
-        top: 30%;
-        left: 30%;
-        transform: translate(-35%, -35%); } }
     @media screen and (max-width: 576px) {
       .chart .percent {
         top: 45%; } }
@@ -941,6 +936,11 @@ section.about {
     .skill-item .percent .red-text {
       font-family: "lato_lightregular", sans-serif;
       font-size: 40px; }
+  @media screen {
+    .skill-item .percent {
+      font-size: 30px; }
+      .skill-item .percent .red-text {
+        font-size: 30px; } }
 
 .services {
   background-color: #272727;

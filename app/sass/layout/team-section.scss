@@ -105,9 +105,9 @@
     transform: translate(-50%, -50%);
     font-size: 1.75rem;
     @media screen and (max-width:992px) {
-      top: 30%;
-      left: 30%;
-      transform: translate(-35%, -35%);
+      // top: 30%;
+      // left: 30%;
+      // transform: translate(-35%, -35%);
     }
     @media screen and (max-width:576px) {
       top: 45%;
@@ -144,6 +144,14 @@
     .red-text {
       font-family: $lato-light;
       font-size: 40px;
+    }
+  }
+  @media screen {
+    .percent {
+      font-size: 30px;
+      .red-text {
+        font-size: 30px;
+      }
     }
   }
 }
