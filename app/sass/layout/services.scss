@@ -59,6 +59,7 @@
   .service-header {
     display: flex;
     margin-bottom: 1rem;
+    align-items: center;
     .service-name {
       text-transform: uppercase;
       font-family: $relaway-medium;
@@ -73,6 +74,8 @@
   }
   .hexagon {
     margin-right: 1rem;
+    width: 65px;
+    height: 57px;
     background-color: #a4a4a4;
 
     &:before {

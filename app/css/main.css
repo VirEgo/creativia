@@ -250,7 +250,7 @@ section.about {
 
 .hexagon-wrapper .box-right {
   position: absolute;
-  right: 1rem; }
+  right: -1rem; }
 
 @media screen and (max-width: 576px) {
   .hexagon-wrapper div {
@@ -267,25 +267,26 @@ section.about {
 
 .box {
   width: 300px;
-  height: 300px;
+  height: 280px;
   margin: auto; }
   .box.hexagon-big {
     position: static;
     background-color: #ffffff;
     overflow: hidden;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+    -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+    clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0); }
 
 .box-left,
 .box-right {
   width: 270px;
-  height: 270px;
+  height: 250px;
   margin: auto;
   position: absolute;
   top: 1rem; }
   .box-left .box-inner,
   .box-right .box-inner {
     width: 260px;
-    height: 260px;
+    height: 250px;
     background-size: cover;
     background-position: 0 0;
     background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe"); }
@@ -296,7 +297,7 @@ section.about {
 
 .box-inner {
   width: 290px;
-  height: 290px;
+  height: 270px;
   background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
   background-size: cover;
   background-position: 0 0;
@@ -307,12 +308,12 @@ section.about {
 .hexagon {
   width: 290px;
   height: 290px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0); }
 
 .hexagon-inner {
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0); }
 
 .btn-link {
   display: flex !important;
@@ -388,12 +389,13 @@ section.about {
   display: flex;
   justify-content: center;
   width: 70px;
-  height: 70px;
+  height: 61px;
   margin-bottom: 1.5rem; }
   .advantage-item .hexagon .inner-hexagon {
-    -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+    clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
     width: 68px;
-    height: 68px;
+    height: 60px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -980,7 +982,8 @@ section.about {
   transition: all  ease .4s; }
   .service-item .service-header {
     display: flex;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    align-items: center; }
     .service-item .service-header .service-name {
       text-transform: uppercase;
       font-family: "raleway_mediumregular", sans-serif;
@@ -992,6 +995,8 @@ section.about {
     background-color: #343434; }
   .service-item .hexagon {
     margin-right: 1rem;
+    width: 65px;
+    height: 57px;
     background-color: #a4a4a4; }
     .service-item .hexagon:before {
       top: -50px; }
@@ -1261,14 +1266,15 @@ section.bestseller .btn-order {
 
 .hexagon-svg {
   margin-right: 0 !important;
-  width: 60px;
-  height: 60px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  margin-right: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: rotate(28deg); }
   .hexagon-svg svg {
-    position: absolute; }
+    position: absolute;
+    display: flex;
+    justify-content: center; }
     .hexagon-svg svg:last-child {
       left: 50%;
       transform: translateX(-50%) rotate(-28deg); }
@@ -1457,8 +1463,8 @@ section {
 .hexagon {
   width: 30px;
   height: 30px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
   margin: auto 0;
   display: flex;
   justify-content: center;
@@ -1469,7 +1475,6 @@ section {
     content: "";
     position: absolute;
     left: 22px;
-    width: 57px;
     height: 57px;
     -moz-transform: rotate(145deg) skew(22.5deg);
     -webkit-transform: rotate(145deg) skew(22.5deg);

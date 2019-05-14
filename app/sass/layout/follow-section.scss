@@ -65,11 +65,16 @@
 }
 .hexagon-svg {
   margin-right: 0!important;
-  @include hexagon(60px, 60px);
-  margin-right: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-right: 3rem;
   transform: rotate(28deg);
   svg {
     position: absolute;
+    display: flex;
+    justify-content: center;
     &:last-child {
       left: 50%;
       transform: translateX(-50%) rotate(-28deg);

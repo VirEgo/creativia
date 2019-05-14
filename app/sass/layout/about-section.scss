@@ -19,7 +19,7 @@ section.about {
   }
   .box-right{
     position: absolute;
-    right: 1rem;
+    right: -1rem;
   }
   @media screen and (max-width: 576px) {
     div {
@@ -41,25 +41,26 @@ section.about {
 
 .box {
   width: 300px;
-  height: 300px;
+  height:280px;
   margin: auto;
   &.hexagon-big {
     position: static;
     background-color: $white;
     overflow: hidden;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+    clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
   }
 }
 .box-left,
 .box-right{
   width: 270px;
-  height: 270px;
+  height: 250px;
   margin: auto;
   position: absolute;
   top: 1rem;
   .box-inner {
     width: 260px;
-    height: 260px;
+    height: 250px;
     background-size: cover;
     background-position: 0 0;
     background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
@@ -71,7 +72,7 @@ section.about {
 }
 .box-inner {
   width: 290px;
-  height: 290px;
+  height: 270px;
   background-image: url("https://drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe");
   background-size: cover;
   background-position: 0 0;
@@ -83,8 +84,8 @@ section.about {
   @include hexagon(290px, 290px);
 }
 .hexagon-inner {
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
 }
 .btn-link {
   display: flex!important;
@@ -146,12 +147,13 @@ section.about {
     display: flex;
     justify-content: center;
     width: 70px;
-    height: 70px;
+    height: 61px;
     margin-bottom: 1.5rem;
     .inner-hexagon {
-      -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+      -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+      clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
       width: 68px;
-      height: 68px;
+      height: 60px;
       background-color: white;
       display: flex;
       justify-content: center;
