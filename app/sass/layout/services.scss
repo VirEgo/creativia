@@ -55,7 +55,7 @@
 .service-item {
   margin-bottom: 2rem;
   cursor: pointer;
-  transition: all  ease .4s;
+  transition: all  ease .2s;
   .service-header {
     display: flex;
     margin-bottom: 1rem;
@@ -88,10 +88,10 @@
     }
   }
   &:hover {
-    transition: all  ease 1s;
+    transition: all  ease .4s;
     color: $white;
-    .service-body { background-color: #3d2329; transition: all  ease 1s; }
-    .hexagon {background-color: $red-color; transition: all  ease 1s;}
+    .service-body { background-color: #3d2329; transition: all  ease .4s; }
+    .hexagon {background-color: $red-color; transition: all  ease .4s;}
     svg > path {fill: $white; transition: all  ease 1s;}
   }
 }
@@ -103,19 +103,19 @@
 }
 .card {
   cursor: pointer;
-  transition: all  ease-in-out .8s;
+  transition: all  ease-in-out .4s;
   &:hover {
-    transition: all  ease-in-out .8s;
+    transition: all  ease-in-out .4s;
     .card-title {
      span {
        background-color: $red-color;
        color: $white;
-       transition: all  ease-in-out .8s;
+       transition: all  ease-in-out .4s;
      }
     }
     .btn-order {
       background-color: $red-color;
-      transition: all  ease-in-out .8s;
+      transition: all  ease-in-out .4s;
     }
   }
 }

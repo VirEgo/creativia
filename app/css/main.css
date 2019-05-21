@@ -361,7 +361,7 @@ textarea {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
-  padding: 12px 50px; }
+  width: 100%; }
 
 .view-more-btn {
   padding: 15px;
@@ -1124,13 +1124,20 @@ section.about {
       border: 1px solid #c9c9c9;
       background-color: #d6d6d6;
       box-shadow: inset hoff voff blur #000;
-      max-width: 215px; }
+      width: 270px;
+      height: 115px;
+      position: relative; }
       .clients .partners-line .partner-item:nth-child(1) {
-        margin-right: 25px; }
+        margin-right: 40px; }
         @media screen and (max-width: 506px) {
           .clients .partners-line .partner-item:nth-child(1) {
             margin-right: 0;
             margin-bottom: 0.5rem; } }
+      .clients .partners-line .partner-item img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
     .clients .partners-line:nth-child(1) {
       margin-bottom: 40px; }
       @media screen and (max-width: 767px) {
@@ -1158,6 +1165,13 @@ section.about {
           margin-top: 1rem;
           margin-bottom: 0;
           margin-bottom: 35px; }
+      .clients .carousel .carousel-item .hexagon {
+        margin: auto; }
+      .clients .carousel .carousel-item .review-author-photo {
+        width: 67px;
+        height: 57px;
+        -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+        clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0); }
       .clients .carousel .carousel-item .review-text {
         font-family: "latoregular", sans-serif;
         font-size: 16px; }
@@ -1173,8 +1187,7 @@ section.about {
     margin: auto;
     top: 6px;
     position: static;
-    overflow: hidden;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); }
+    overflow: hidden; }
 
 .reviews-slider-indicator {
   display: flex; }
@@ -1350,7 +1363,7 @@ section.about {
 .service-item {
   margin-bottom: 2rem;
   cursor: pointer;
-  transition: all  ease .4s; }
+  transition: all  ease .2s; }
   .service-item .service-header {
     display: flex;
     margin-bottom: 1rem;
@@ -1374,14 +1387,14 @@ section.about {
     .service-item .hexagon svg path {
       fill: #262626; }
   .service-item:hover {
-    transition: all  ease 1s;
+    transition: all  ease .4s;
     color: #ffffff; }
     .service-item:hover .service-body {
       background-color: #3d2329;
-      transition: all  ease 1s; }
+      transition: all  ease .4s; }
     .service-item:hover .hexagon {
       background-color: #ff0036;
-      transition: all  ease 1s; }
+      transition: all  ease .4s; }
     .service-item:hover svg > path {
       fill: #ffffff;
       transition: all  ease 1s; }
@@ -1392,16 +1405,16 @@ section.about {
 
 .card {
   cursor: pointer;
-  transition: all  ease-in-out .8s; }
+  transition: all  ease-in-out .4s; }
   .card:hover {
-    transition: all  ease-in-out .8s; }
+    transition: all  ease-in-out .4s; }
     .card:hover .card-title span {
       background-color: #ff0036;
       color: #ffffff;
-      transition: all  ease-in-out .8s; }
+      transition: all  ease-in-out .4s; }
     .card:hover .btn-order {
       background-color: #ff0036;
-      transition: all  ease-in-out .8s; }
+      transition: all  ease-in-out .4s; }
 
 .twitter {
   background-color: #272727;
@@ -1469,15 +1482,23 @@ section.bestseller .card-body {
     border-bottom: 1px solid #f2f2f2; }
 
 section.bestseller .btn-order {
-  padding: 12px 25px;
+  padding: 6px 25px;
   font-size: 18px;
   font-family: "ralewayregular", sans-serif; }
 
-.card-deck {
-  display: flex; }
-  @media screen and (max-width: 767px) {
-    .card-deck {
-      display: none !important; } }
+section.bestseller .card {
+  padding-left: 0;
+  padding-right: 0; }
+
+section.bestseller .card-body {
+  border: 1px solid #f2f2f2; }
+
+section.bestseller .card-item:hover .card-title > span {
+  background-color: #ff0036;
+  color: #fff; }
+
+section.bestseller .card-item:hover .btn-order {
+  background: #ff0036; }
 
 .card-carousel {
   display: none; }
@@ -1555,7 +1576,7 @@ section.bestseller .btn-order {
     font-size: 16px;
     font-family: "latoregular", sans-serif;
     color: #505050;
-    line-height: 15px; }
+    line-height: 21px; }
 
 .follow-section {
   color: #ffffff;

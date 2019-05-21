@@ -7,17 +7,34 @@ section.bestseller {
         }
     }
     .btn-order {
-        padding: 12px 25px;
+        padding: 6px 25px;
         font-size: 18px;
         font-family: $relaway-regular;
     }
-}
-.card-deck {
-    display: flex;
-    @media screen and (max-width: 767px) {
-        display: none!important;
+    .card {
+       
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card-body {
+        border: 1px solid #f2f2f2;
+    }
+    .card-item:hover {
+        .card-title > span {
+            background-color: $red-color;
+            color: #fff;
+        }
+        .btn-order {
+            background: $red-color;
+        }
     }
 }
+// .card-deck {
+//     display: flex;
+//     @media screen and (max-width: 767px) {
+//         display: none!important;
+//     }
+// }
 
 .card-carousel {
     display: none;
