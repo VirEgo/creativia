@@ -18,6 +18,10 @@ section.bestseller {
        
         padding-left: 0;
         padding-right: 0;
+        @media screen and (max-width: 767px){
+            width: 70%;
+            margin: auto;
+        }
     }
     .card-body {
         border-left: 1px solid #f2f2f2;

@@ -1506,6 +1506,10 @@ section.bestseller .btn-order {
 section.bestseller .card {
   padding-left: 0;
   padding-right: 0; }
+  @media screen and (max-width: 767px) {
+    section.bestseller .card {
+      width: 70%;
+      margin: auto; } }
 
 section.bestseller .card-body {
   border-left: 1px solid #f2f2f2;
