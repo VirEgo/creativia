@@ -82,6 +82,11 @@
       }
     }
   }
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
 }
 .submit-form {
   max-width: 120px;

@@ -230,7 +230,9 @@ section {
     }
   }
 }
-.carousel-control-prev-icon,
+header {
+  .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background: none!important;
+}
 }

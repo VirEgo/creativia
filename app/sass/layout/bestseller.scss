@@ -10,6 +10,9 @@ section.bestseller {
         padding: 6px 25px;
         font-size: 18px;
         font-family: $relaway-regular;
+        @media screen and (max-width: 767px) {
+            width: 75%;
+        }
     }
     .card {
        
@@ -17,7 +20,8 @@ section.bestseller {
         padding-right: 0;
     }
     .card-body {
-        border: 1px solid #f2f2f2;
+        border-left: 1px solid #f2f2f2;
+        border-right: 1px solid #f2f2f2;
     }
     .card-item:hover {
         .card-title > span {
@@ -27,6 +31,24 @@ section.bestseller {
         .btn-order {
             background: $red-color;
         }
+    }
+    .card-wrapper {
+        @media screen and (max-width: 992px){
+            .card-item {
+                padding-bottom: 1rem;
+            }
+         }
+        @media screen and (max-width: 767px){
+           .card-item {
+               display: none;
+           }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        opacity: 0.2;
+        background: black;
     }
 }
 // .card-deck {
@@ -82,6 +104,15 @@ section.bestseller {
         font-family: $lato;
         font-size: 16px;
     }
+    
   }
-
+  .card-footer {
+      background-color: #fff!important;
+      border-top: none; 
+      border: 1px solid #f2f2f2;
+  }
+  .card-footer-custom {
+    
+    background: #fff;
+}
   
