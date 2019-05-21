@@ -1,16 +1,26 @@
+.btn {
+  &:focus, 
+  &:active {
+    outline: none!important;
+    box-shadow: none!important;
+  }
+}
 .btn-group {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
 .slider-btn {
-  padding: 10px 35px;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding: 0px 35px;
   text-transform: uppercase;
   background-color: #393939;
   color: $white;
   text-decoration: none;
   margin-right: 30px;
+  height: 50px;
+  font-size: 20px;
   &:hover {
     background-color: $red-color;
     color: $white;

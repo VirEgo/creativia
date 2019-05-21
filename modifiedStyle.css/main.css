@@ -1,4 +1,482 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+
 @import url(../css/base/fonts.css);
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* make sure to set some focus styles for accessibility */
+
+:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 .btn-group {
   display: flex;
@@ -7,13 +485,16 @@
 }
 
 .slider-btn {
-  padding: 10px 35px;
-  display: block;
+  display: flex;
+  align-items: center;
+  padding: 0px 35px;
   text-transform: uppercase;
   background-color: #393939;
   color: #ffffff;
   text-decoration: none;
   margin-right: 30px;
+  height: 50px;
+  font-size: 20px;
 }
 
 .slider-btn:hover {
@@ -175,12 +656,6 @@
   }
 }
 
-.nav-item {
-  padding: 0px 15px;
-  margin: 30px 0;
-  font-family: "ralewayregular", sans-serif;
-}
-
 .octagon {
   position: absolute;
   top: -2.8rem;
@@ -237,9 +712,15 @@
   z-index: 3 !important;
 }
 
+.carousel-control-prev svg.svg-inline--fa,
+.carousel-control-next svg.svg-inline--fa {
+  width: 1.3em;
+  height: auto;
+}
+
 .navbar-brand {
   position: absolute;
-  top: -2.2rem;
+  top: -0.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -252,7 +733,9 @@
 .nav-item {
   padding: 0;
   margin: 0;
+  margin-right: 30px;
   box-sizing: border-box;
+  font-family: "ralewayregular", sans-serif;
 }
 
 .nav-item .nav-link {
@@ -262,7 +745,28 @@
   text-decoration: none;
   white-space: nowrap;
   position: relative;
-  padding-right: 0.4rem;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.nav-item .nav-link:before {
+  content: '';
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  background-color: #ff0036;
+  margin-top: -19px;
+  opacity: 0;
+}
+
+.nav-item .nav-link:after {
+  content: '';
+  width: 50%;
+  height: 3px;
+  position: absolute;
+  background-color: #ff0036;
+  margin-top: 40px;
+  opacity: 0;
 }
 
 @media screen and (max-width: 1198px) {
@@ -271,7 +775,7 @@
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .nav-item .nav-link {
     font-size: 14px;
   }
@@ -279,53 +783,50 @@
   .nav-item .nav-link:hover {
     color: #ffffff !important;
   }
-
-  .nav-item .nav-link:hover:before {
-    content: '';
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    background-color: #ff0036;
-    margin-top: -19px;
-    right: 0;
-  }
-
-  .nav-item .nav-link:hover:after {
-    content: '';
-    width: 100%;
-    height: 3px;
-    position: absolute;
-    background-color: #ff0036;
-    margin-top: 40px;
-    left: 0;
-  }
 }
 
 .nav-item .nav-link:hover {
   color: #ffffff !important;
 }
 
+.nav-item .nav-link:hover:before,
+.nav-item .nav-link:hover:after {
+  opacity: 1;
+  left: 25%;
+}
+
 .nav-item .btn-group {
   margin-top: 53px;
 }
 
-.overflow {
-  background: rgba(0, 0, 0, 0.7) url("app/img../img/header-bg.png?version=1");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(100vh + 60px);
+.carousel-item .overflow {
   z-index: 2;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.overflow:before {
+.carousel-item .overflow img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.carousel-item .overflow:after {
+  content: '\A';
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
-  background-color: inherit;
-  content: ' ';
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.carousel-item:hover .overflow:after {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
 }
 
 section.about {
@@ -334,7 +835,7 @@ section.about {
 
 section.about .accordion-text p {
   font-family: "latoregular", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 45px;
 }
 
@@ -345,12 +846,12 @@ section.about .accordion-text p {
 
 .hexagon-wrapper .box-left {
   position: absolute;
-  left: -1rem;
+  left: 2rem;
 }
 
 .hexagon-wrapper .box-right {
   position: absolute;
-  right: 1rem;
+  right: 2rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -378,7 +879,7 @@ section.about .accordion-text p {
 
 .box {
   width: 300px;
-  height: 300px;
+  height: 280px;
   margin: auto;
 }
 
@@ -386,13 +887,14 @@ section.about .accordion-text p {
   position: static;
   background-color: #ffffff;
   overflow: hidden;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
 }
 
 .box-left,
 .box-right {
   width: 270px;
-  height: 270px;
+  height: 250px;
   margin: auto;
   position: absolute;
   top: 1rem;
@@ -401,7 +903,7 @@ section.about .accordion-text p {
 .box-left .box-inner,
 .box-right .box-inner {
   width: 260px;
-  height: 260px;
+  height: 250px;
   background-size: cover;
   background-position: 0 0;
   background-image: url("app/imghttps:/drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe?version=1");
@@ -416,7 +918,7 @@ section.about .accordion-text p {
 
 .box-inner {
   width: 290px;
-  height: 290px;
+  height: 270px;
   background-image: url("app/imghttps:/drscdn.500px.org/photo/303244475/q%3D80_m%3D1000/v2?webp=true&sig=28fd0ec1cb0bbc38987e2ed627785206c2fb9fcdea4866a97e0bf4a6fcaa7bbe?version=1");
   background-size: cover;
   background-position: 0 0;
@@ -428,16 +930,16 @@ section.about .accordion-text p {
 .hexagon {
   width: 290px;
   height: 290px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
 }
 
 .hexagon-inner {
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
 }
 
-.btn-link {
+.link-btn {
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -445,20 +947,27 @@ section.about .accordion-text p {
   padding: 0px !important;
 }
 
-.btn-link span.red-text {
+.link-btn span {
   font-family: "raleway_mediumregular", sans-serif;
   font-size: 20px;
 }
 
-.accordion .card-body-custom {
-  padding: 15px;
+.link-btn:hover {
+  color: transparent;
+  border-bottom-color: transparent;
+}
+
+.link-btn:focus,
+.link-btn:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .accordion-icon {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  border: 1px solid #ff0036;
+  border: 1px solid #686868;
   display: block;
   margin: 0 2rem 0 0;
 }
@@ -469,7 +978,33 @@ section.about .accordion-text p {
 }
 
 .accordion-icon svg path {
+  fill: #686868;
+}
+
+.accordion-icon:hover {
+  border-color: #ff0036;
+}
+
+.accordion-icon:hover svg > path {
   fill: #ff0036;
+}
+
+.accordion .card-body-custom {
+  padding: 15px;
+  font-size: 14px;
+}
+
+.accordion .card-header:hover .link-btn .accordion-icon {
+  border-color: #ff0036;
+}
+
+.accordion .card-header:hover .link-btn .accordion-icon:before,
+.accordion .card-header:hover .link-btn .accordion-icon:after {
+  border-bottom-color: #ff0036;
+}
+
+.accordion .card-header:hover .link-btn span {
+  color: #ff0036;
 }
 
 .about .divider {
@@ -534,15 +1069,16 @@ section.about .accordion-text p {
   margin: auto;
   display: flex;
   justify-content: center;
-  width: 70px;
+  width: 80px;
   height: 70px;
   margin-bottom: 1.5rem;
 }
 
 .advantage-item .hexagon .inner-hexagon {
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  width: 68px;
-  height: 68px;
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  width: 76px;
+  height: 67px;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -550,6 +1086,8 @@ section.about .accordion-text p {
 }
 
 .advantage-item .hexagon .inner-hexagon svg {
+  width: 2em;
+  height: auto;
   color: #262626;
 }
 
@@ -593,7 +1131,7 @@ section.about .accordion-text p {
   display: block;
   width: 0px;
   height: 0px;
-  border-bottom: solid 2px #ff0036;
+  border-bottom: solid 2px #868686;
   bottom: 9px;
   transform: rotate(90deg);
 }
@@ -603,21 +1141,21 @@ section.about .accordion-text p {
   display: block;
   width: 12px;
   height: 0px;
-  border-bottom: solid 2px #ff0036;
+  border-bottom: solid 2px #868686;
   position: absolute;
   bottom: 9px;
 }
 
-.btn-link.collapsed .accordion-icon {
+.link-btn.collapsed .accordion-icon {
   transform: rotate(0deg);
 }
 
-.btn-link.collapsed .accordion-icon::before {
+.link-btn.collapsed .accordion-icon::before {
   content: '';
   display: block;
   width: 12px;
   height: 0px;
-  border-bottom: solid 2px #ff0036;
+  border-bottom: solid 2px #868686;
   position: absolute;
   bottom: 9px;
   transform: rotate(90deg);
@@ -626,6 +1164,7 @@ section.about .accordion-text p {
 
 .portfolio-section {
   position: relative;
+  padding-bottom: 0;
 }
 
 .portfolio-section .divider {
@@ -637,7 +1176,7 @@ section.about .accordion-text p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5.6rem;
+  bottom: -0.65rem;
 }
 
 .portfolio-section .divider.black:before,
@@ -670,7 +1209,7 @@ section.about .accordion-text p {
 
 @media screen and (max-width: 576px) {
   .portfolio-section .divider {
-    bottom: 2.5rem;
+    bottom: 0rem;
   }
 }
 
@@ -857,6 +1396,10 @@ section.about .accordion-text p {
   height: 30px;
 }
 
+.links .links-icon svg path {
+  fill: #e7e7e7;
+}
+
 .links .links-icon svg:first-child {
   z-index: 1;
 }
@@ -870,7 +1413,7 @@ section.about .accordion-text p {
   padding: 10px 15px;
   padding-right: 0;
   justify-content: space-between;
-  border: 1px solid #c9c9c9;
+  border: 1px solid #e7e7e7;
   display: flex;
   margin-bottom: 24px;
 }
@@ -1122,8 +1665,10 @@ section.about .accordion-text p {
 .clients .carousel .carousel-item .review-author-name p {
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 1rem;
+  margin-bottom: 0;
+  margin-bottom: 35px;
 }
 
 .clients .carousel .carousel-item .review-text {
@@ -1160,7 +1705,6 @@ section.about .accordion-text p {
   display: block;
   background-color: #ffffff;
   margin: 0 2px;
-  margin-top: 28px;
 }
 
 .reviews-slider-indicator .indicator.active {
@@ -1307,14 +1851,6 @@ section.about .accordion-text p {
   font-size: 1.75rem;
 }
 
-@media screen and (max-width: 992px) {
-  .chart .percent {
-    top: 30%;
-    left: 30%;
-    transform: translate(-35%, -35%);
-  }
-}
-
 @media screen and (max-width: 576px) {
   .chart .percent {
     top: 45%;
@@ -1357,6 +1893,16 @@ section.about .accordion-text p {
 .skill-item .percent .red-text {
   font-family: "lato_lightregular", sans-serif;
   font-size: 40px;
+}
+
+@media screen {
+  .skill-item .percent {
+    font-size: 30px;
+  }
+
+  .skill-item .percent .red-text {
+    font-size: 30px;
+  }
 }
 
 .services {
@@ -1417,6 +1963,7 @@ section.about .accordion-text p {
 .service-item .service-header {
   display: flex;
   margin-bottom: 1rem;
+  align-items: center;
 }
 
 .service-item .service-header .service-name {
@@ -1434,6 +1981,8 @@ section.about .accordion-text p {
 
 .service-item .hexagon {
   margin-right: 1rem;
+  width: 65px;
+  height: 57px;
   background-color: #a4a4a4;
 }
 
@@ -1830,16 +2379,17 @@ section.bestseller .btn-order {
 
 .hexagon-svg {
   margin-right: 0 !important;
-  width: 60px;
-  height: 60px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  margin-right: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: rotate(28deg);
 }
 
 .hexagon-svg svg {
   position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 .hexagon-svg svg:last-child {
@@ -2002,6 +2552,142 @@ section.bestseller .btn-order {
   }
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body {
   padding-bottom: 0;
 }
@@ -2014,6 +2700,15 @@ ul li a {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
+}
+
+.custom-container {
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .custom-link {
@@ -2145,8 +2840,8 @@ section .divider svg path {
 .hexagon {
   width: 30px;
   height: 30px;
-  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
-  -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
+  clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
   margin: auto 0;
   display: flex;
   justify-content: center;
@@ -2160,7 +2855,6 @@ section .divider svg path {
   content: "";
   position: absolute;
   left: 22px;
-  width: 57px;
   height: 57px;
   -moz-transform: rotate(145deg) skew(22.5deg);
   -webkit-transform: rotate(145deg) skew(22.5deg);

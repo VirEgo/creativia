@@ -3,7 +3,7 @@ section.about {
   .accordion-text {
     p {
       font-family: $lato;
-      font-size: 14px;
+      font-size: 16px;
       margin-bottom: 45px;
     }
   }
@@ -15,11 +15,11 @@ section.about {
   }
   .box-left{
     position: absolute;
-    left: -1rem;
+    left: 2rem;
   }
   .box-right{
     position: absolute;
-    right: -1rem;
+    right: 2rem;
   }
   @media screen and (max-width: 576px) {
     div {
@@ -87,27 +87,34 @@ section.about {
   -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
   clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
 }
-.btn-link {
+.link-btn {
   display: flex!important;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 0px!important;
-  span.red-text {
+  span {
     font-family: $relaway-medium;
     font-size: 20px;
   }
-}
-.accordion {
-  .card-body-custom {
-    padding: 15px;
+  &:hover {
+    color: transparent;
+    border-bottom-color: transparent;
+
   }
+  &:focus, 
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+  
+ 
 }
 .accordion-icon {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  border: 1px solid $red-color;
+  border: 1px solid #686868;
   display: block;
   margin: 0 2rem 0 0;
 
@@ -115,10 +122,37 @@ section.about {
     width: 15px;
     height: 15px;
     path {
+      fill: #686868;
+    }
+  }
+  &:hover {
+    border-color: $red-color;
+    svg>path {
       fill: $red-color;
     }
   }
 }
+.accordion {
+  .card-body-custom {
+    padding: 15px;
+    font-size: 14px;
+  }
+ 
+    .card-header {
+      &:hover {
+      .link-btn {
+        .accordion-icon {
+          border-color: $red-color;
+          &:before, &:after { border-bottom-color: $red-color}
+        }
+        span {
+          color: $red-color;
+        }
+      }
+    }
+  }
+}
+
 .about {
   .divider {
     @include divider (-5.75rem, #262626);
@@ -146,19 +180,21 @@ section.about {
     margin: auto;
     display: flex;
     justify-content: center;
-    width: 70px;
-    height: 61px;
+    width: 80px;
+    height: 70px;
     margin-bottom: 1.5rem;
     .inner-hexagon {
       -webkit-clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
       clip-path: polygon(76% 0, 100% 49%, 80% 100%, 24% 100%, 0 48%, 25% 0);
-      width: 68px;
-      height: 60px;
+      width: 76px;
+      height: 67px;
       background-color: white;
       display: flex;
       justify-content: center;
       align-items: center;
       svg {
+        width: 2em;
+        height: auto;
         color: #262626;
       }
     }
@@ -182,13 +218,13 @@ section.about {
   }
 }
 .accordion-icon {
-  @include plusMinus(20px, 2px, $red-color);
+  @include plusMinus(20px, 2px, #868686);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
-.btn-link {
+.link-btn {
   &.collapsed {
     .accordion-icon  {
       transform: rotate(0deg);
@@ -197,7 +233,7 @@ section.about {
         display: block;
         width: 20px - 8px;
         height:0px;
-        border-bottom: solid 2px $red-color;
+        border-bottom: solid 2px #868686;
         position: absolute;
         bottom: 9px;
         transform: rotate(90deg);

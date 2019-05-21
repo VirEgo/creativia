@@ -28,6 +28,9 @@
       transform: translate(-50%, -50%);
       width: 30px;
       height: 30px;
+      path {
+        fill: #e7e7e7;
+      }
       &:first-child {
         z-index: 1;
       }
@@ -42,7 +45,7 @@
     padding: 10px 15px;
     padding-right: 0;
     justify-content: space-between;
-    border: 1px solid #c9c9c9;
+    border: 1px solid #e7e7e7;
     display: flex;
     margin-bottom: 24px;
     &:hover {

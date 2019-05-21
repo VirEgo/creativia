@@ -49,11 +49,6 @@
     align-items: flex-end;
   }
 }
-.nav-item {
-  padding: 0px 15px;
-  margin: 30px 0;
-  font-family: $relaway-regular;
-}
 .octagon {
   position: absolute;
   top: -2.8rem;
@@ -107,11 +102,15 @@
 .carousel-control-prev, 
 .carousel-control-next {
   z-index: 3!important;
+  svg.svg-inline--fa {
+    width: 1.3em;
+    height: auto;
+  }
 }
 
 .navbar-brand {
   position: absolute;
-  top: -2.2rem;
+  top: -0.5rem;
   @media screen and (max-width: 767px){
     svg {
       width: 15%;
@@ -122,7 +121,11 @@
 .nav-item {
   padding: 0;
   margin: 0;
+  margin-right: 30px;
   box-sizing: border-box;
+  // padding: 0px 15px;
+  // margin: 30px 0;
+  font-family: $relaway-regular;
   .nav-link {
     font-size: 18px;
     text-transform: uppercase;
@@ -130,57 +133,86 @@
     text-decoration: none;
     white-space: nowrap;
     position: relative;
-    padding-right: 0.4rem;
+    // padding-right: 0.4rem;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    &:before {
+      content: '';
+      width: 50%;
+      height: 3px;
+      position: absolute;
+      background-color: $red-color;
+      margin-top: -19px;
+      opacity: 0;
+    }
+    &:after {
+      content: '';
+      width: 50%;
+      height: 3px;
+      position: absolute;
+      background-color: $red-color;
+      margin-top: 40px;
+      opacity: 0;
+    }
     @media screen and (max-width: 1198px) {
       font-size: 16px;
     }
-    @media screen and (min-width: 992px) {
+    @media screen and (max-width: 992px) {
       font-size: 14px;
       &:hover {
         color: $white!important;
-        &:before {
-          content: '';
-          width: 100%;
-          height: 3px;
-          position: absolute;
-          background-color: $red-color;
-          margin-top: -19px;
-          right: 0;
-        }
-        &:after {
-          content: '';
-          width: 100%;
-          height: 3px;
-          position: absolute;
-          background-color: $red-color;
-          margin-top: 40px;
-          left: 0;
-        }
       }
     }
     &:hover {
       color: $white!important;
+      &:before,
+      &:after {
+        opacity: 1;
+        left: 25%;
+      }
     }
   }
 .btn-group {
   margin-top: 53px;
   }
 }
-
-.overflow {
-  background: rgba(0, 0, 0, 0.7) url(../img/header-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(100vh + 60px);
-  z-index: 2;
-  position: relative;
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: inherit;
-    content: ' ';
+.carousel-item {
+  .overflow {
+    // background: url(../img/header-bg.png);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // height: calc(100vh + 60px);
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+    &:after {
+      content:'\A';
+      position:absolute;
+      width:100%; height:100%;
+      top:0; left:0;
+      background:rgba(0,0,0,0.6);
+      opacity:0;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+    }
+    
+  }
+  &:hover {
+    .overflow {
+      &:after {
+        background:rgba(0,0,0,0.8);
+        opacity: 1;
+      }
+    }
+    // .carousel-caption {
+    //   background:rgba(0,0,0,0.6);
+    //   opacity: 1;
+    //   color: #fff;
+    // }
   }
 }

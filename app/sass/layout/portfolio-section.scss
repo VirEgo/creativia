@@ -1,10 +1,11 @@
 .portfolio-section {
   position: relative;
+  padding-bottom: 0;
   .divider {
-    @include divider(5.6rem, $red-color);
+    @include divider(-0.65rem, $red-color);
   
     @media screen and (max-width: 576px){
-      bottom: 2.5rem;
+      bottom:0rem;
     }
   }
 }
